@@ -1,7 +1,7 @@
 import React from "react"
-
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
+import { theme } from "../theme/theme"
 
 const IndexPage = () => (
   <>
@@ -23,7 +23,7 @@ const IndexPage = () => (
           height: 130,
           width: 130,
           borderRadius: "100%",
-          background: "#ff8a8a",
+          background: theme.colors.secondary,
         }}
       />
     </motion.div>

@@ -1,0 +1,59 @@
+/* Sharpe Thin */
+@font-face {
+  font-family: "Sharpe Thin";
+  src: url("../fonts/Sharpe-Thin.woff");
+}
+
+/* Sharpe Thin Italic */
+@font-face {
+  font-family: "Sharpe Thin Italic";
+  src: url("../fonts/Sharpe-ThinItalic.woff");
+}
+
+/* Sharpe Light */
+@font-face {
+  font-family: "Sharpe Light";
+  src: url("../fonts/Sharpe-Light.woff");
+}
+
+/* Sharpe Light Italic */
+@font-face {
+  font-family: "Sharpe Light Italic";
+  src: url("../fonts/Sharpe-LightItalic.woff");
+}
+
+/* Sharpe Medium */
+@font-face {
+  font-family: "Sharpe Medium";
+  src: url("../fonts/Sharpe-Medium.woff");
+}
+
+/* Sharpe Medium Italic */
+@font-face {
+  font-family: "Sharpe Medium Italic";
+  src: url("../fonts/Sharpe-MediumItalic.woff");
+}
+
+/* Sharpe Bold */
+@font-face {
+  font-family: "Sharpe Bold";
+  src: url("../fonts/Sharpe-Bold.woff");
+}
+
+/* Sharpe Bold Italic */
+@font-face {
+  font-family: "Sharpe Bold Italic";
+  src: url("../fonts/Sharpe-BoldItalic.woff");
+}
+
+/* Sharpe Black */
+@font-face {
+  font-family: "Sharpe Black";
+  src: url("../fonts/Sharpe-Black.woff");
+}
+
+/* Sharpe Black Italic */
+@font-face {
+  font-family: "Sharpe Black Italic";
+  src: url("../fonts/Sharpe-BlackItalic.woff");
+}
