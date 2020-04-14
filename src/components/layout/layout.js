@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { MagicMotion } from "framer-motion"
 
-import "../css/layout.css"
-import "../css/typography.css"
+import "../../css/layout.css"
+import "../../css/typography.css"
 
 const Layout = ({ children }) => {
   return (
