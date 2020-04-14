@@ -5,5 +5,5 @@ import React from "react"
 export default ({ pageContext }) => {
   console.log(pageContext)
 
-  return <>{JSON.stringify(pageContext)}</>
+  return <></>
 }

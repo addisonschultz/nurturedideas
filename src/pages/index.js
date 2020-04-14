@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
 
-const IndexPage = () => (
+const IndexPage = ({}) => (
   <>
     <SEO title="Onepage" />
     <motion.div
