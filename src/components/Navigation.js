@@ -21,11 +21,12 @@ const Navigation = () => {
             className={"navigation-item"}
             style={{
               color: theme.colors.white1,
-              fontFamily: theme.font.sharpeBlack,
+              fontFamily: theme.font.sharpeBlackItalic,
               fontSize: theme.fontSize[6],
             }}
           >
-            Nurtured Ideas
+            Nurtured{" "}
+            <span style={{ fontFamily: theme.font.sharpeBlack }}>Ideas</span>
           </motion.h3>
         </Link>
       </motion.div>
@@ -33,7 +34,7 @@ const Navigation = () => {
       {/* Navigation Right Items */}
       <motion.div
         id={"navigation-right-container"}
-        style={{ float: "right", display: "flex" }}
+        style={{ float: "right", display: "flex", paddingTop: 10 }}
       >
         <Link to={"/artists"}>
           <motion.h3
@@ -41,8 +42,8 @@ const Navigation = () => {
             className={"navigation-item"}
             style={{
               color: theme.colors.white1,
-              fontFamily: theme.font.sharpeBlack,
-              fontSize: theme.fontSize[6],
+              fontFamily: theme.font.default,
+              fontSize: theme.fontSize[4],
             }}
           >
             Artists
@@ -54,8 +55,9 @@ const Navigation = () => {
             className={"navigation-item"}
             style={{
               color: theme.colors.white1,
-              fontFamily: theme.font.sharpeBlack,
-              fontSize: theme.fontSize[6],
+              fontFamily: theme.font.default,
+              fontSize: theme.fontSize[4],
+              paddingLeft: 10,
             }}
           >
             Releases

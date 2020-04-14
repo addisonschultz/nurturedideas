@@ -22,6 +22,11 @@ export const theme = {
   },
   spacing: ["0px", "4px", "8px", "12px", "16px", "20px", "24px"],
   font: {
+    // Defaults
+    system:
+      "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+
+    // Main brand font
     sharpeThin: "Sharpe Thin",
     sharpeThinItalic: "Sharpe Thin Italic",
     sharpeLight: "Sharpe Light",
