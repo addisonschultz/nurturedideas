@@ -1,0 +1,73 @@
+backend:
+  # name: git-gateway
+  name: github
+  repo: addisonschultz/nurturedideas
+  branch: master
+
+media_folder: static
+public_folder: ./
+
+site_url: https://nurtured-ideas.netlify.com
+display_url: https://nurtured-ideas.netlify.com
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+  # Artists
+  - name: artists
+    label: "Artists"
+    label_singular: "Artist"
+    folder: src/artists
+    create: true
+    format: json-frontmatter
+    extension: json
+    slug: "{{artistName}}"
+    fields:
+      - { name: artistName, label: Artist Name, widget: "string" }
+      - { name: image, label: Image, widget: "image" }
+      - { name: bio, label: Bio, widget: "text" }
+      - {
+          name: facebook,
+          label: Facebook,
+          widget: "string",
+          required: false,
+          default: "",
+        }
+      - {
+          name: twitter,
+          label: Twitter,
+          widget: "string",
+          required: false,
+          default: "",
+        }
+      - {
+          name: instagram,
+          label: Instagram,
+          widget: "string",
+          required: false,
+          default: "",
+        }
+      - {
+          name: spotify,
+          label: Spotify,
+          widget: "string",
+          required: false,
+          default: "",
+        }
+      - {
+          name: soundcloud,
+          label: Soundcloud,
+          widget: "string",
+          required: false,
+          default: "",
+        }
+      - name: releases
+        label: Releases
+        label_singular: release
+        widget: "list"
+        fields:
+          - { name: name, label: Name, widget: "string" }
+          - { name: link, label: Link, widget: "string" }
+          - { name: image, label: Image, widget: "image" }
