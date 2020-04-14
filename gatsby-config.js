@@ -6,6 +6,11 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-json`,
+    // Store src/images in filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,9 +18,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-netlify-cms`,
+    // Store src/artists in filesystem
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/artists/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -25,7 +34,7 @@ module.exports = {
         background_color: `#ff8a8a`,
         theme_color: `#ff8a8a`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
   ],

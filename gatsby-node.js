@@ -1,7 +1,34 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
+exports.createPages = async function({ actions, graphql }) {
+  const { data } = await graphql(`
+    query GetAllArtists {
+      allArtistsJson {
+        edges {
+          node {
+            artistName
+            bio
+            facebook
+            id
+            image
+            instagram
+            releases {
+              image
+              link
+              name
+            }
+            soundcloud
+            spotify
+            twitter
+          }
+        }
+      }
+    }
+  `)
+  data.allArtistsJson.edges.forEach(({ node }) => {
+    const slug = node.artistName.replace(/ /g, "-").toLowerCase()
+    actions.createPage({
+      path: slug,
+      component: require.resolve(`./src/templates/artist.js`),
+      context: { artistData: node },
+    })
+  })
+}

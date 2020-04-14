@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         height: "100vh",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "#000",
+        backgroundColor: "#fff",
         textAlign: "center",
       }}
     >
