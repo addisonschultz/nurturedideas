@@ -1,5 +1,5 @@
 {
-"soundcloud": "https://soundcloud.com/aireatlantica",
+  "soundcloud": "https://soundcloud.com/aireatlantica",
   "facebook": "https://www.facebook.com/aireatlantica",
   "bio": "Aire Atlantica is a producer, songwriter, and artist from NYC.",
   "releases": [
@@ -9,6 +9,7 @@
       "image": "a-wonderful-time.jpg"
     }
   ],
+  "website": "",
   "artistName": "Aire Atlantica",
   "instagram": "https://www.instagram.com/aireatlantica/",
   "twitter": "https://twitter.com/aireatlantica",

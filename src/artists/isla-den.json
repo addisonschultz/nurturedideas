@@ -1,10 +1,11 @@
 {
-"facebook": "https://www.facebook.com/isladen.world/",
+  "facebook": "https://www.facebook.com/isladen.world/",
   "twitter": "https://twitter.com/isla_den",
   "instagram": "https://www.instagram.com/isladen.world/",
   "spotify": "https://open.spotify.com/artist/2kF8VjhAZ6auoV6JTzIhDJ?si=a2VwMeJDSBqIlWLTq1kKDA",
   "soundcloud": "https://soundcloud.com/isladen",
   "artistName": "Isla Den",
   "bio": "staring into a black hole ...",
-  "image": "isla-den.jpg"
+  "image": "isla-den.jpg",
+  "website": ""
 }
