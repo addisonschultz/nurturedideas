@@ -4,30 +4,136 @@ import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
+// import logo from "../images/logo.png"
+import spotifyBlack0 from "../svg/spotify-black0.svg"
+import instagramBlack0 from "../svg/instagram-black0.svg"
+import twitterBlack0 from "../svg/twitter-black0.svg"
+import japan from "../video/japan.mp4"
+import HeroVideo from "../components/HeroVideo"
+import NewsletterForm from "../components/NewsletterForm"
+import SocialLink from "../components/SocialLink"
 
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <Navigation />
-    <motion.div
-      id={"index-container"}
-      style={{
-        height: "100%",
-        padding: "0px 10% 0px 10%",
-        background: "red",
-      }}
-    >
+const IndexPage = () => {
+  return (
+    <>
+      <SEO title="Home" />
+      <Navigation />
       <motion.div
-        id={"index-content"}
+        id={"index-container"}
         style={{
-          width: "100%",
-          height: "100%",
-          background: theme.colors.white1,
+          height: "auto",
+          padding: 0,
+          background: theme.colors.secondary,
         }}
-      ></motion.div>
-    </motion.div>
-    <Footer />
-  </>
-)
+      >
+        <motion.div
+          id={"index-content"}
+          style={{
+            width: "100%",
+            height: "auto",
+            background: theme.colors.secondary,
+            display: "flex",
+          }}
+        >
+          <motion.div
+            id={"index-left video-container"}
+            style={{
+              width: "auto",
+              height: 700,
+              overflow: "hidden",
+            }}
+          >
+            <HeroVideo src={japan} />
+          </motion.div>
+          <motion.div
+            id={"index-right"}
+            style={{
+              width: "75%",
+              height: "100%",
+            }}
+          >
+            <motion.div
+              id={"index-right-top index-form"}
+              style={{ height: 350, padding: 50 }}
+            >
+              <motion.h2
+                style={{
+                  textAlign: "left",
+                  color: theme.colors.white0,
+                  fontFamily: theme.font.sharpeBlack,
+                  paddingTop: theme.spacing[6],
+                }}
+              >
+                Stay in touch
+              </motion.h2>
+              <NewsletterForm
+                namePlaceholder={"Name"}
+                emailPlaceholder={"Email"}
+              />
+            </motion.div>
+            <motion.div
+              id={"index-right-bottom"}
+              style={{ height: "50%", background: theme.colors.white0 }}
+            >
+              <motion.div style={{ height: 350 }}>
+                <SocialLink
+                  iconSrc={spotifyBlack0}
+                  background={theme.colors.white1}
+                  text={"In Rotation"}
+                  href={
+                    "https://open.spotify.com/playlist/6IVeBCYTq0CXH3BsmtxaUq?si=_vAluEcbTmq6GLcAP1oIhw"
+                  }
+                />
+                <SocialLink
+                  iconSrc={instagramBlack0}
+                  background={theme.colors.white2}
+                  text={"@nurturedideas"}
+                  href={"https://www.instagram.com/nurturedideas/"}
+                />
+                <SocialLink
+                  iconSrc={twitterBlack0}
+                  background={theme.colors.white3}
+                  text={"@nurturedideas"}
+                  href={"https://twitter.com/NurturedIdeas"}
+                />
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+        <motion.div
+          style={{
+            height: 400,
+            padding: "0px 10% 0px 10%",
+            background: theme.colors.white0,
+          }}
+        >
+          <motion.div
+            style={{ height: "100%", paddingTop: 100, textAlign: "left" }}
+          >
+            <motion.h3
+              style={{
+                fontFamily: theme.font.sharpeBlackItalic,
+              }}
+            >
+              Nurtured{" "}
+              <span style={{ fontFamily: theme.font.sharpeBlack }}>Ideas</span>
+            </motion.h3>
+            <motion.p>
+              We're a group of artists, creatives, forward-thinking people, a
+              family.
+            </motion.p>
+            <motion.p>
+              A curation of some of the most promising up and coming artists and
+              producers, we aim to connect you with the people you want to know.
+              Sign up for the newsletter above, or contact us for any business
+              related inquiries.
+            </motion.p>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+      <Footer />
+    </>
+  )
+}
 
 export default IndexPage

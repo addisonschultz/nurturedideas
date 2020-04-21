@@ -25,6 +25,13 @@ module.exports = {
         path: `./src/artists/`,
       },
     },
+    // Load google fonts
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [``],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

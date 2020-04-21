@@ -1,35 +1,84 @@
 import React from "react"
-import SEO from "../components/layout/seo"
+import { graphql } from "gatsby"
 import { motion } from "framer-motion"
-import { theme } from "../theme/theme"
+import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
+import ArtistCard from "../components/ArtistCard"
+import { theme } from "../theme/theme"
+import * as utils from "../utils"
 
-const ArtistsPage = () => {
+const ArtistsPage = ({ data }) => {
+  const artists = data.allArtistsJson.edges
+
   return (
     <>
-      <SEO title="Releases" />
+      <SEO title="Artists" />
       <Navigation />
       <motion.div
         id={"artists-container"}
         style={{
-          height: "100%",
+          height: "auto",
           padding: "0px 10% 0px 10%",
-          background: "red",
+          background: theme.colors.secondary,
         }}
       >
         <motion.div
           id={"artists-content"}
           style={{
             width: "100%",
-            height: "100%",
-            background: theme.colors.white1,
+            height: "auto",
+            background: theme.colors.secondary,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            paddingTop: 50,
+            paddingBottom: 50,
           }}
-        ></motion.div>
+        >
+          {artists.map((artist, index) => {
+            return (
+              <ArtistCard
+                to={`/${utils.getArtistSlug(artist.node.artistName)}`}
+                spotify={artist.node.spotify}
+                soundcloud={artist.node.soundcloud}
+                artistName={artist.node.artistName}
+                image={artist.node.image}
+                key={index}
+              />
+            )
+          })}
+        </motion.div>
       </motion.div>
       <Footer />
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    allArtistsJson {
+      edges {
+        node {
+          artistName
+          bio
+          website
+          facebook
+          id
+          image
+          instagram
+          releases {
+            image
+            link
+            name
+          }
+          soundcloud
+          spotify
+          twitter
+        }
+      }
+    }
+  }
+`
 
 export default ArtistsPage

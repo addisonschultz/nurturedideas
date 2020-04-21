@@ -29,6 +29,13 @@ collections:
       - { name: image, label: Image, widget: "image" }
       - { name: bio, label: Bio, widget: "text" }
       - {
+          name: website,
+          label: Website,
+          widget: "string",
+          required: false,
+          default: "",
+        }
+      - {
           name: facebook,
           label: Facebook,
           widget: "string",

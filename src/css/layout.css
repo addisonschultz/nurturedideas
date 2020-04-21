@@ -43,6 +43,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+  color: initial;
 }
 a:active,
 a:hover {
@@ -50,6 +51,7 @@ a:hover {
 }
 a:visited {
   text-decoration: none;
+  color: intial;
 }
 abbr[title] {
   border-bottom: none;
@@ -266,7 +268,7 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -619,8 +621,84 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+
+/* Form inputs */
+
+.newsletter-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+#newsletter-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Form Checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+
+.checkbox .overlay .icon {
+  color: white;
+  display: none;
+}
+
+.checkbox input:checked ~ .overlay {
+  background-color: #1d5e36;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.checkbox input:checked ~ .overlay .icon {
+  display: block;
+}
+
+/* Form Button */
+
+#newsletter-submit-button {
+  outline: none;
+}
+
+.artist-social-link {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+}
+
+/* Smaller screen styles */
+@media only screen and (max-width: 900px) {
   html {
     font-size: 100%;
+  }
+
+  /* Footer */
+  #footer-container {
+    text-align: center;
+  }
+  #footer-left-container {
+    float: none !important;
+  }
+  #footer-right-container {
+    float: none !important;
   }
 }

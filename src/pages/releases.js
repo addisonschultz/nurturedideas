@@ -1,11 +1,16 @@
 import React from "react"
-import SEO from "../components/layout/seo"
+import { graphql } from "gatsby"
 import { motion } from "framer-motion"
-import { theme } from "../theme/theme"
+import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
+import ReleaseCard from "../components/ReleaseCard"
+import { theme } from "../theme/theme"
+import * as utils from "../utils"
 
-const ReleasesPage = () => {
+const ReleasesPage = ({ data }) => {
+  const artists = data.allArtistsJson.edges
+
   return (
     <>
       <SEO title="Releases" />
@@ -13,23 +18,66 @@ const ReleasesPage = () => {
       <motion.div
         id={"releases-container"}
         style={{
-          height: "100%",
+          height: "auto",
           padding: "0px 10% 0px 10%",
-          background: "red",
+          background: theme.colors.secondary,
         }}
       >
         <motion.div
           id={"releases-content"}
           style={{
             width: "100%",
-            height: "100%",
-            background: theme.colors.white1,
+            height: "auto",
+            background: theme.colors.secondary,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            paddingTop: 50,
+            paddingBottom: 50,
           }}
-        ></motion.div>
+        >
+          {utils.getReleases(artists).map((artist, index) => {
+            return (
+              <ReleaseCard
+                releaseName={artist.release.name}
+                artistName={artist.artistName}
+                image={artist.release.image}
+                link={artist.release.link}
+                key={index}
+              />
+            )
+          })}
+        </motion.div>
       </motion.div>
       <Footer />
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    allArtistsJson {
+      edges {
+        node {
+          artistName
+          bio
+          website
+          facebook
+          id
+          image
+          instagram
+          releases {
+            image
+            link
+            name
+          }
+          soundcloud
+          spotify
+          twitter
+        }
+      }
+    }
+  }
+`
 
 export default ReleasesPage

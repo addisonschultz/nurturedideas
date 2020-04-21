@@ -3,13 +3,16 @@ import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
 
 const Footer = () => {
+  const now = new Date()
+  const currentYear = now.getFullYear()
+
   return (
     <motion.div
       id={"footer-container"}
       style={{
-        background: theme.colors.primary,
-        height: 180,
-        padding: "0px 10% 0px 10%",
+        background: theme.colors.white0,
+        height: 80,
+        padding: "50px 10% 0px 10%",
       }}
     >
       {/* Footer Left Items */}
@@ -18,12 +21,12 @@ const Footer = () => {
           id={"footer-copyright"}
           className={"footer-item"}
           style={{
-            color: theme.colors.white1,
+            color: theme.colors.black0,
             fontFamily: theme.font.default,
             fontSize: theme.fontSize[2],
           }}
         >
-          © 2020 Nurtured Ideas. All Rights Reserved
+          © {currentYear} Nurtured Ideas. All Rights Reserved
         </motion.h3>
       </motion.div>
 
@@ -33,12 +36,16 @@ const Footer = () => {
           id={"footer-contact"}
           className={"footer-item"}
           style={{
-            color: theme.colors.white1,
+            color: theme.colors.black0,
             fontFamily: theme.font.default,
             fontSize: theme.fontSize[2],
           }}
         >
-          alistair@nurtured-ideas.com | jorge@nurtured-ideas.com
+          <a href="mailto:alistair@nurtured-ideas.com">
+            alistair@nurtured-ideas.com
+          </a>{" "}
+          |{" "}
+          <a href="mailto:jorge@nurtured-ideas.com">jorge@nurtured-ideas.com</a>
         </motion.h3>
       </motion.div>
     </motion.div>

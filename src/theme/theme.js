@@ -26,6 +26,9 @@ export const theme = {
     system:
       "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
 
+    // Accent
+    georgia: "Georgia, serif",
+
     // Main brand font
     sharpeThin: "Sharpe Thin",
     sharpeThinItalic: "Sharpe Thin Italic",
