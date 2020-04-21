@@ -1,11 +1,18 @@
 {
+"soundcloud": "https://soundcloud.com/camptcnc",
   "facebook": "",
-  "twitter": "https://twitter.com/camptcnc",
-  "instagram": "https://www.instagram.com/camptcnc/",
-  "spotify": "https://open.spotify.com/artist/4DDZ2T8rETAj6KnLeGnzWw?si=b9C5q0D1SBSgbrgQWBH4xw",
-  "soundcloud": "https://soundcloud.com/camptcnc",
+  "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019.",
+  "releases": [
+    {
+      "name": "Popcorn",
+      "link": "https://ffm.to/ct_popcorn",
+      "image": "camptactonic.jpg"
+    }
+  ],
   "artistName": "CAMPTACONIC",
-  "image": "camptaconic.jpg",
+  "instagram": "https://www.instagram.com/camptcnc/",
+  "twitter": "https://twitter.com/camptcnc",
+  "spotify": "https://open.spotify.com/artist/4DDZ2T8rETAj6KnLeGnzWw?si=b9C5q0D1SBSgbrgQWBH4xw",
   "website": "",
-  "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019."
+  "image": "camptaconic.jpg"
 }
