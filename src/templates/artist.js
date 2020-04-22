@@ -19,26 +19,24 @@ export default ({ pageContext }) => {
   return (
     <>
       <SEO title="Home" />
-      <Navigation />
       <motion.div
         id={"artist-container"}
         style={{
           height: "auto",
-          padding: "0px 10% 0px 10%",
           backgroundColor: theme.colors.secondary,
         }}
       >
+        <Navigation />
         <motion.div
           id={"artist-content"}
           style={{
             width: "100%",
             height: "auto",
             backgroundColor: theme.colors.secondary,
+            padding: "50px 10% 50px 10%",
           }}
         >
-          <motion.div
-            style={{ height: "auto", paddingTop: 50, textAlign: "left" }}
-          >
+          <motion.div style={{ height: "auto", textAlign: "left" }}>
             <motion.h2
               id={"artist-name"}
               style={{

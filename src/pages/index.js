@@ -17,7 +17,6 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <Navigation />
       <motion.div
         id={"index-container"}
         style={{
@@ -26,6 +25,7 @@ const IndexPage = () => {
           background: theme.colors.secondary,
         }}
       >
+        <Navigation />
         <motion.div
           id={"index-content"}
           style={{

@@ -14,15 +14,14 @@ const ReleasesPage = ({ data }) => {
   return (
     <>
       <SEO title="Releases" />
-      <Navigation />
       <motion.div
         id={"releases-container"}
         style={{
           height: "auto",
-          padding: "0px 10% 0px 10%",
           background: theme.colors.secondary,
         }}
       >
+        <Navigation />
         <motion.div
           id={"releases-content"}
           style={{
@@ -32,8 +31,7 @@ const ReleasesPage = ({ data }) => {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",
-            paddingTop: 50,
-            paddingBottom: 50,
+            padding: "50px 10% 50px 10%",
           }}
         >
           {utils.getReleases(artists).map((artist, index) => {

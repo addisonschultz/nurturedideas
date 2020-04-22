@@ -14,15 +14,14 @@ const ArtistsPage = ({ data }) => {
   return (
     <>
       <SEO title="Artists" />
-      <Navigation />
       <motion.div
         id={"artists-container"}
         style={{
           height: "auto",
-          padding: "0px 10% 0px 10%",
           background: theme.colors.secondary,
         }}
       >
+        <Navigation />
         <motion.div
           id={"artists-content"}
           style={{
@@ -32,8 +31,7 @@ const ArtistsPage = ({ data }) => {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",
-            paddingTop: 50,
-            paddingBottom: 50,
+            padding: "50px 10% 50px 10%",
           }}
         >
           {artists.map((artist, index) => {
