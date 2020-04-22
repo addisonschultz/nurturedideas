@@ -35,6 +35,7 @@ const SocialLink = ({
             height: 116.5,
             justifyContent: "center",
             alignItems: "center",
+            textAlign: "center",
             paddingTop: 50,
           }}
         >
