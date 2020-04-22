@@ -691,6 +691,19 @@ pre tt:after {
     font-size: 100%;
   }
 
+  /* Navigation */
+  #navigation-container {
+    height: 130px !important;
+  }
+  #navigation-left-container {
+    float: none !important;
+    justify-content: center !important;
+  }
+  #navigation-right-container {
+    float: none !important;
+    justify-content: center !important;
+  }
+
   /* Footer */
   #footer-container {
     text-align: center;
@@ -700,5 +713,29 @@ pre tt:after {
   }
   #footer-right-container {
     float: none !important;
+  }
+
+  /* Index Page */
+  #index-content {
+    display: inline-block !important;
+  }
+  #index-right {
+    width: 100% !important;
+  }
+
+  /* Artists Page */
+  #artists-content {
+    justify-content: center !important;
+  }
+  #artist-card-container {
+    margin: 0px 20px 0px 20px;
+  }
+
+  /* Releases Page */
+  #releases-content {
+    justify-content: center !important;
+  }
+  #release-card-container {
+    margin: 0px 20px 0px 20px;
   }
 }
