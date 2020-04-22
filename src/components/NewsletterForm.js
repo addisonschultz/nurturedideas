@@ -31,7 +31,7 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
       variants={variants}
       intial="default"
     >
-      <form name={"Newsletter"}>
+      <form name={"Newsletter"} data-netlify="true">
         <div
           style={{ display: "flex", alignItems: "center", marginBottom: 10 }}
         >
