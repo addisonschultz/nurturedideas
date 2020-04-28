@@ -11,7 +11,7 @@ const ArtistCard = ({ artistName, image, to, spotify, soundcloud }) => {
       <motion.div
         style={{
           position: "relative",
-          height: 340,
+          height: 345,
           width: 300,
           border: `5px solid ${theme.colors.white1}`,
           background: theme.colors.secondary,
@@ -19,14 +19,18 @@ const ArtistCard = ({ artistName, image, to, spotify, soundcloud }) => {
           overflow: "hidden",
         }}
       >
-        <motion.img
-          id={"artist-image"}
-          style={{
-            borderBottom: `5px solid ${theme.colors.white1}`,
-            width: "100%",
-          }}
-          src={image}
-        ></motion.img>
+        <Link to={to}>
+          <motion.img
+            id={"artist-image"}
+            style={{
+              height: 300,
+              width: 300,
+              objectFit: "cover",
+              borderBottom: `5px solid ${theme.colors.white1}`,
+            }}
+            src={image}
+          ></motion.img>
+        </Link>
         <motion.div
           id={"artist-card-first-line"}
           style={{
@@ -52,37 +56,14 @@ const ArtistCard = ({ artistName, image, to, spotify, soundcloud }) => {
           </motion.h5>
         </motion.div>
         <motion.div
-          id={"artist-card-second-line"}
-          style={{
-            position: "absolute",
-            top: -5,
-            right: -5,
-            height: 260,
-            width: 300,
-            border: `5px solid ${theme.colors.white1}`,
-          }}
-        ></motion.div>
-
-        <Link to={to}>
-          <motion.div
-            id={"artist-card-third-line"}
-            style={{
-              position: "absolute",
-              top: -5,
-              right: -5,
-              height: 300,
-              width: 300,
-              border: `5px solid ${theme.colors.white1}`,
-            }}
-          ></motion.div>
-        </Link>
-        <motion.div
           id={"streaming-service-container"}
           style={{
             position: "absolute",
             bottom: 0,
             right: 0,
             display: "flex",
+            width: "100%",
+            justifyContent: "flex-end",
           }}
         >
           <a href={spotify} target={"_blank"} rel="noopener noreferrer">
