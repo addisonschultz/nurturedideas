@@ -18,7 +18,7 @@ const ArtistsPage = ({ data }) => {
         id={"artists-container"}
         style={{
           height: "auto",
-          background: theme.colors.secondary,
+          background: theme.colors.tertiary,
         }}
       >
         <Navigation />
@@ -27,7 +27,7 @@ const ArtistsPage = ({ data }) => {
           style={{
             width: "100%",
             height: "auto",
-            background: theme.colors.secondary,
+            background: theme.colors.tertiary,
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",

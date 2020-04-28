@@ -12,7 +12,7 @@ const ReleaseCard = ({ releaseName, artistName, image, link }) => {
             height: 360,
             width: 300,
             border: `5px solid ${theme.colors.white1}`,
-            background: theme.colors.secondary,
+            background: theme.colors.tertiary,
             margin: "0px 0px 50px 0px",
             overflow: "hidden",
           }}
@@ -21,7 +21,7 @@ const ReleaseCard = ({ releaseName, artistName, image, link }) => {
             id={"release-card-first-line"}
             style={{
               height: 60,
-              background: theme.colors.secondary,
+              background: theme.colors.tertiary,
               borderBottom: `5px solid ${theme.colors.white1}`,
             }}
           >

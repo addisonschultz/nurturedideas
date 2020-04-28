@@ -10,7 +10,7 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
   }
   const buttonVariants = {
     default: {
-      backgroundColor: theme.colors.secondary,
+      backgroundColor: theme.colors.tertiary,
       border: `2px solid ${theme.colors.white0}`,
       color: theme.colors.white0,
       opacity: 1,
@@ -18,7 +18,7 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
     },
     hover: {
       backgroundColor: theme.colors.white0,
-      color: theme.colors.secondary,
+      color: theme.colors.tertiary,
     },
     disabled: { opacity: 0.5, userSelect: "none", cursor: "initial" },
   }

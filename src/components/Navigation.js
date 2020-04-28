@@ -54,7 +54,7 @@ const Navigation = () => {
         id={"navigation-right-container"}
         style={{ float: "right", display: "flex", paddingTop: 20 }}
       >
-        <Link to={"/artists"} activeStyle={{ color: theme.colors.primary }}>
+        <Link to={"/artists"} activeStyle={{ color: theme.colors.tertiary }}>
           <motion.h3
             id={"navigation-artists"}
             className={"navigation-item"}
@@ -67,7 +67,7 @@ const Navigation = () => {
             ARTISTS
           </motion.h3>
         </Link>
-        <Link to={"/releases"} activeStyle={{ color: theme.colors.primary }}>
+        <Link to={"/releases"} activeStyle={{ color: theme.colors.tertiary }}>
           <motion.h3
             id={"navigation-releases"}
             className={"navigation-item"}

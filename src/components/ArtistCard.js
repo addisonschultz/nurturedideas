@@ -14,7 +14,7 @@ const ArtistCard = ({ artistName, image, to, spotify, soundcloud }) => {
           height: 345,
           width: 300,
           border: `5px solid ${theme.colors.white1}`,
-          background: theme.colors.secondary,
+          background: theme.colors.tertiary,
           margin: "0px 0px 50px 0px",
           overflow: "hidden",
         }}
@@ -39,7 +39,7 @@ const ArtistCard = ({ artistName, image, to, spotify, soundcloud }) => {
             right: -5,
             height: 40,
             width: 300,
-            background: theme.colors.secondary,
+            background: theme.colors.tertiary,
             border: `5px solid ${theme.colors.white1}`,
           }}
         >

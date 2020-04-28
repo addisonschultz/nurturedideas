@@ -654,7 +654,7 @@ pre tt:after {
   height: 10px;
   width: 10px;
   background-color: #fff;
-  transform: rotate(-90deg);
+  transform: rotate(-180deg);
   transition: all 0.3s;
 }
 
@@ -664,13 +664,14 @@ pre tt:after {
 }
 
 .checkbox input:checked ~ .overlay {
-  background-color: #1d5e36;
+  background-color: #ffffff;
   transform: rotate(0deg);
   opacity: 1;
 }
 
 .checkbox input:checked ~ .overlay .icon {
   display: block;
+  color: #0d5c3e;
 }
 
 /* Form Button */

@@ -23,7 +23,7 @@ export default ({ pageContext }) => {
         id={"artist-container"}
         style={{
           height: "auto",
-          backgroundColor: theme.colors.secondary,
+          backgroundColor: theme.colors.tertiary,
         }}
       >
         <Navigation />
@@ -32,7 +32,7 @@ export default ({ pageContext }) => {
           style={{
             width: "100%",
             height: "auto",
-            backgroundColor: theme.colors.secondary,
+            backgroundColor: theme.colors.tertiary,
             padding: "50px 10% 50px 10%",
           }}
         >
@@ -41,6 +41,7 @@ export default ({ pageContext }) => {
               id={"artist-name"}
               style={{
                 fontFamily: theme.font.georgia,
+                color: theme.colors.white0,
                 fontWeight: 600,
               }}
             >
@@ -50,6 +51,7 @@ export default ({ pageContext }) => {
               id={"artist-bio"}
               style={{
                 fontFamily: theme.font.georgia,
+                color: theme.colors.white0,
                 fontWeight: 600,
               }}
             >
@@ -58,10 +60,8 @@ export default ({ pageContext }) => {
             <motion.img
               src={artist.image}
               style={{
-                height: 300,
-                width: 300,
+                width: "100%",
                 border: `5px solid ${theme.colors.white1}`,
-                objectFit: "cover",
               }}
             ></motion.img>
             <motion.div

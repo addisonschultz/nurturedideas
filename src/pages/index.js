@@ -4,12 +4,12 @@ import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
-// import logo from "../images/logo.png"
 import spotifyBlack0 from "../svg/spotify-black0.svg"
 import instagramBlack0 from "../svg/instagram-black0.svg"
 import twitterBlack0 from "../svg/twitter-black0.svg"
-import japan from "../video/japan.mp4"
-import HeroVideo from "../components/HeroVideo"
+// import japan from "../video/japan.mp4"
+// import HeroVideo from "../components/HeroVideo"
+import HeroYoutube from "../components/HeroYoutube"
 import NewsletterForm from "../components/NewsletterForm"
 import SocialLink from "../components/SocialLink"
 
@@ -22,7 +22,7 @@ const IndexPage = () => {
         style={{
           height: "auto",
           padding: 0,
-          background: theme.colors.secondary,
+          background: theme.colors.tertiary,
         }}
       >
         <Navigation />
@@ -31,19 +31,19 @@ const IndexPage = () => {
           style={{
             width: "100%",
             height: "auto",
-            background: theme.colors.secondary,
             display: "flex",
           }}
         >
           <motion.div
             id={"index-left video-container"}
             style={{
-              width: "auto",
+              width: "100%",
               height: 700,
               overflow: "hidden",
             }}
           >
-            <HeroVideo src={japan} />
+            {/* <HeroVideo src={japan} /> */}
+            <HeroYoutube />
           </motion.div>
           <motion.div
             id={"index-right"}
