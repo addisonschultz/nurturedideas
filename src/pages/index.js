@@ -112,11 +112,10 @@ const IndexPage = () => {
           >
             <motion.h3
               style={{
-                fontFamily: theme.font.sharpeBlackItalic,
+                fontFamily: theme.font.sharpeBlack,
               }}
             >
-              Nurtured{" "}
-              <span style={{ fontFamily: theme.font.sharpeBlack }}>Ideas</span>
+              Nurtured Ideas
             </motion.h3>
             <motion.p>
               We're a group of artists, creatives, forward-thinking people, a

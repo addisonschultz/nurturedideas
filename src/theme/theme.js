@@ -3,6 +3,7 @@ export const theme = {
     // Main brand colors
     primary: "#1d5e36",
     secondary: "#7aab8c",
+    tertiary: "#0d5c3e",
 
     // Accent colors
     accent1: "#D2AB99",

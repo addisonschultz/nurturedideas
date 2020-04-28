@@ -2,10 +2,10 @@ import React from "react"
 import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
 import { Link } from "gatsby"
-// import bamboo from "../svg/bamboo.svg"
-// import flower from "../svg/flower.svg"
-// import anthurium from "../svg/anthurium.svg"
-// import logo from "../images/logo.png"
+import bamboo from "../svg/bamboo.svg"
+import flower from "../svg/flower.svg"
+import anthurium from "../svg/anthurium.svg"
+import logo from "../images/logo.png"
 import lotus from "../svg/lotus.svg"
 
 const Navigation = () => {
@@ -26,11 +26,12 @@ const Navigation = () => {
           display: "flex",
           alignItems: "center",
           height: "auto",
+          paddingTop: 5,
         }}
       >
         <motion.img
-          src={lotus}
-          style={{ height: 50, marginRight: 10, marginBottom: 0 }}
+          src={logo}
+          style={{ height: 40, marginRight: 10, marginBottom: 0 }}
         ></motion.img>
         <Link to={"/"}>
           <motion.h3
@@ -38,13 +39,12 @@ const Navigation = () => {
             className={"navigation-item"}
             style={{
               color: theme.colors.black0,
-              fontFamily: theme.font.sharpeBlackItalic,
+              fontFamily: theme.font.sharpeBlack,
               fontSize: theme.fontSize[6],
               margin: 0,
             }}
           >
-            Nurtured{" "}
-            <span style={{ fontFamily: theme.font.sharpeBlack }}>Ideas</span>
+            Nurtured Ideas
           </motion.h3>
         </Link>
       </motion.div>
