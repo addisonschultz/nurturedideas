@@ -1,12 +1,32 @@
 {
 "soundcloud": "https://soundcloud.com/camptcnc",
   "facebook": "",
-  "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019.",
+  "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019.  Although the group previously worked together on independent collaborations, the goal of their trips are to write, produce, and engineer an album in seclusion with no strings attached. \n\nAfter deeply exploring new creative avenues and challenges, the group tapped into ideas that reflected each artist, creating a 7-song album in just 5 days. CAMPTACONIC’s VOL 2 pushes the envelope of genre-bending pop music even further than their previous indie release success, VOL 1, with each song touching on different collective influences. \n",
   "releases": [
     {
       "name": "Popcorn",
       "link": "https://ffm.to/ct_popcorn",
-      "image": "camptactonic.jpg"
+      "image": "camptaconic-popcorn-art-updated.jpg"
+    },
+    {
+      "name": "Sweat",
+      "image": "camptaconic-sweat-art-updated.jpg",
+      "link": "https://ffm.to/ct_sweat"
+    },
+    {
+      "name": "VOL. 1",
+      "image": "camptaconic-vol-i-ep-art-10.jpg",
+      "link": "https://smarturl.it/CT_VOL1"
+    },
+    {
+      "name": "Struggle For A Little",
+      "link": "https://smarturl.it/CT_SFAL",
+      "image": "camptaconic-struggle-for-a-little.jpg"
+    },
+    {
+      "name": "Better For You",
+      "image": "camptaconic-better-for-you-01-3000x3000.jpg",
+      "link": "https://smarturl.it/CT_BetterForYou"
     }
   ],
   "artistName": "CAMPTACONIC",
