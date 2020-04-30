@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
               overflow: "hidden",
             }}
           >
-            <HeroYoutube youtubeId={""} />
+            <HeroYoutube youtubeId={metadata.youtubeId} />
           </motion.div>
           <motion.div
             id={"index-right"}
