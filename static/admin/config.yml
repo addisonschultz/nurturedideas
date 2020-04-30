@@ -14,6 +14,18 @@ slug:
   clean_accents: true
 
 collections:
+  # Site Metadata
+  - name: site
+    label: "Site"
+    files:
+      - label: "Metadata"
+        name: "about"
+        file: "src/metadata/site.json"
+        create: true
+        format: json-frontmatter
+        fields:
+          - { label: Bio, name: bio, widget: text }
+          - { label: Youtube URL, name: youtubeUrl, widget: string }
   # Artists
   - name: artists
     label: "Artists"
@@ -77,3 +89,17 @@ collections:
           - { name: name, label: Name, widget: "string" }
           - { name: link, label: Link, widget: "string" }
           - { name: image, label: Image, widget: "image" }
+  # Releases
+  - name: releases
+    label: "Releases"
+    label_singular: "Release"
+    folder: src/releases
+    create: true
+    format: json-frontmatter
+    extension: json
+    slug: "{{releaseName}}"
+    fields:
+      - { name: artistName, label: Artist Name, widget: "string" }
+      - { name: releaseName, label: Release Name, widget: "string" }
+      - { name: link, label: Link, widget: "string" }
+      - { name: image, label: Image, widget: "image" }
