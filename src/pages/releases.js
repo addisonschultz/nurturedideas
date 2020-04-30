@@ -10,6 +10,7 @@ import * as utils from "../utils"
 
 const ReleasesPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
+  const nonArtistReleases = data.allReleasesJson.edges
 
   return (
     <>
@@ -45,6 +46,17 @@ const ReleasesPage = ({ data }) => {
               />
             )
           })}
+          {nonArtistReleases.map((release, index) => {
+            return (
+              <ReleaseCard
+                releaseName={release.node.releaseName}
+                artistName={release.node.artistName}
+                image={release.node.image}
+                link={release.node.link}
+                key={index}
+              />
+            )
+          })}
         </motion.div>
       </motion.div>
       <Footer />
@@ -58,20 +70,21 @@ export const query = graphql`
       edges {
         node {
           artistName
-          bio
-          website
-          facebook
-          id
-          image
-          instagram
           releases {
             image
             link
             name
           }
-          soundcloud
-          spotify
-          twitter
+        }
+      }
+    }
+    allReleasesJson {
+      edges {
+        node {
+          image
+          link
+          releaseName
+          artistName
         }
       }
     }

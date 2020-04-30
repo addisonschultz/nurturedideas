@@ -18,11 +18,25 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // Store src/metadata in filesystem
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/metadata/`,
+      },
+    },
     // Store src/artists in filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/artists/`,
+      },
+    },
+    // Store src/releases in filesystem
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/releases/`,
       },
     },
     // Load google fonts

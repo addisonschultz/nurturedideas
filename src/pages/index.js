@@ -7,13 +7,13 @@ import Footer from "../components/Footer"
 import spotifyBlack0 from "../svg/spotify-black0.svg"
 import instagramBlack0 from "../svg/instagram-black0.svg"
 import twitterBlack0 from "../svg/twitter-black0.svg"
-// import japan from "../video/japan.mp4"
-// import HeroVideo from "../components/HeroVideo"
 import HeroYoutube from "../components/HeroYoutube"
 import NewsletterForm from "../components/NewsletterForm"
 import SocialLink from "../components/SocialLink"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const metadata = data.allMetadataJson.edges[0].node
+
   return (
     <>
       <SEO title="Home" />
@@ -42,8 +42,7 @@ const IndexPage = () => {
               overflow: "hidden",
             }}
           >
-            {/* <HeroVideo src={japan} /> */}
-            <HeroYoutube />
+            <HeroYoutube youtubeId={""} />
           </motion.div>
           <motion.div
             id={"index-right"}
@@ -117,15 +116,8 @@ const IndexPage = () => {
             >
               Nurtured Ideas
             </motion.h3>
-            <motion.p>
-              We're a group of artists, creatives, forward-thinking people, a
-              family.
-            </motion.p>
-            <motion.p>
-              A curation of some of the most promising up and coming artists and
-              producers, we aim to connect you with the people you want to know.
-              Sign up for the newsletter above, or contact us for any business
-              related inquiries.
+            <motion.p style={{ whiteSpace: "pre-line" }}>
+              {metadata.bio}
             </motion.p>
           </motion.div>
         </motion.div>
@@ -134,5 +126,18 @@ const IndexPage = () => {
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    allMetadataJson {
+      edges {
+        node {
+          bio
+          youtubeId
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
