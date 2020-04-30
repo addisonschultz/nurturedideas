@@ -25,7 +25,7 @@ collections:
         format: json-frontmatter
         fields:
           - { label: Bio, name: bio, widget: text }
-          - { label: Youtube URL, name: youtubeUrl, widget: string }
+          - { label: Youtube ID, name: youtubeId, widget: string }
   # Artists
   - name: artists
     label: "Artists"
