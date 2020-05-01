@@ -12,6 +12,8 @@ const ReleasesPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
   const nonArtistReleases = data.allReleasesJson.edges
 
+  const allReleases = utils.getAllReleases(artists, nonArtistReleases)
+
   return (
     <>
       <SEO title="Releases" />
@@ -35,30 +37,20 @@ const ReleasesPage = ({ data }) => {
             padding: "50px 10% 50px 10%",
           }}
         >
-          placeholder
-          {utils.orderReleases(artists, nonArtistReleases)}
-          {/* {utils.orderReleases(artists).map((artist, index) => {
-            return (
-              <ReleaseCard
-                releaseName={artist.release.releaseName}
-                artistName={artist.artistName}
-                image={artist.release.image}
-                link={artist.release.link}
-                key={index}
-              />
-            )
-          })}
-          {nonArtistReleases.map((release, index) => {
-            return (
-              <ReleaseCard
-                releaseName={release.node.releaseName}
-                artistName={release.node.artistName}
-                image={release.node.image}
-                link={release.node.link}
-                key={index}
-              />
-            )
-          })} */}
+          {allReleases
+            .sort((a, b) => b.rleaseDate - a.rleaseDate)
+            .map((release, index) => {
+              return (
+                <ReleaseCard
+                  releaseName={release.releaseName}
+                  releaseDate={release.releaseDate}
+                  artistName={release.artistName}
+                  image={release.image}
+                  link={release.link}
+                  key={index}
+                />
+              )
+            })}
         </motion.div>
       </motion.div>
       <Footer />
@@ -76,6 +68,7 @@ export const query = graphql`
             image
             link
             releaseName
+            releaseDate
           }
         }
       }
@@ -86,6 +79,7 @@ export const query = graphql`
           image
           link
           releaseName
+          releaseDate
           artistName
         }
       }

@@ -18,6 +18,7 @@ exports.createPages = async function({ actions, graphql }) {
               image
               link
               releaseName
+              releaseDate
             }
             soundcloud
             spotify

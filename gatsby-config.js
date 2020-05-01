@@ -39,13 +39,6 @@ module.exports = {
         path: `./src/releases/`,
       },
     },
-    // Load google fonts
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [``],
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

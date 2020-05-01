@@ -2,16 +2,12 @@ const getArtistSlug = artistName => {
   return artistName.replace(/ /g, "-").toLowerCase()
 }
 
-const orderReleases = (artists, nonLabelReleases) => {
+const getAllReleases = (artists, nonLabelReleases) => {
   let releases = []
 
-  console.log("ARTISTS", artists)
-  console.log("nonArtistReleases", nonLabelReleases)
-
   nonLabelReleases.map((release, index) => {
-    console.log(release)
-
     releases.push({
+      index: index,
       artistName: release.node.artistName,
       releaseName: release.node.releaseName,
       releaseDate: release.node.releaseDate,
@@ -20,22 +16,22 @@ const orderReleases = (artists, nonLabelReleases) => {
     })
   })
 
-  // artists.map((artist, artistIndex) => {
-  //   artist.node.releases &&
-  //     artist.node.releases.map((release, releaseIndex) =>
-  //       releases.push({
-  //         release,
-  //         artistName: artist.node.artistName,
-  //         artistId: artistIndex,
-  //         releaseId: releaseIndex,
-  //       })
-  //     )
-  // })
+  artists.map(artist => {
+    artist.node.releases &&
+      artist.node.releases.map((release, releaseIndex) =>
+        releases.push({
+          index: releaseIndex,
+          artistName: artist.node.artistName,
+          releaseName: release.releaseName,
+          releaseDate: release.releaseDate,
+          image: release.image,
+          link: release.link,
+        })
+      )
+  })
 
-  console.log("TOTAL RELEASES", releases)
-
-  // return releases
+  return releases
 }
 
 exports.getArtistSlug = getArtistSlug
-exports.orderReleases = orderReleases
+exports.getAllReleases = getAllReleases
