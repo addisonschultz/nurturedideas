@@ -6,12 +6,16 @@
     {
       "name": "Take It Back",
       "link": "https://ffm.to/takeitback",
-      "image": "single-art-take-it-back.png"
+      "image": "single-art-take-it-back.png",
+      "releaseDate": "2020-05-01T17:24:33.398Z",
+      "releaseName": "Take It Back"
     },
     {
       "name": "Utopia",
       "link": "https://ffm.to/utopia_ep",
-      "image": "album-art-utopia.png"
+      "image": "album-art-utopia.png",
+      "releaseDate": "2020-05-01T17:24:33.411Z",
+      "releaseName": "Utopia"
     }
   ],
   "artistName": "Nick AM",
