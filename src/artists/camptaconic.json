@@ -6,27 +6,37 @@
     {
       "name": "Popcorn",
       "link": "https://ffm.to/ct_popcorn",
-      "image": "camptaconic-popcorn-art-updated.jpg"
+      "image": "camptaconic-popcorn-art-updated.jpg",
+      "releaseDate": "2020-05-01T17:23:29.062Z",
+      "releaseName": "Popcorn"
     },
     {
       "name": "Sweat",
       "image": "camptaconic-sweat-art-updated.jpg",
-      "link": "https://ffm.to/ct_sweat"
+      "link": "https://ffm.to/ct_sweat",
+      "releaseDate": "2020-05-01T17:23:29.081Z",
+      "releaseName": "Sweat"
     },
     {
       "name": "VOL. 1",
       "image": "camptaconic-vol-i-ep-art-10.jpg",
-      "link": "https://smarturl.it/CT_VOL1"
+      "link": "https://smarturl.it/CT_VOL1",
+      "releaseDate": "2020-05-01T17:23:29.099Z",
+      "releaseName": "VOL. 1"
     },
     {
       "name": "Struggle For A Little",
       "link": "https://smarturl.it/CT_SFAL",
-      "image": "camptaconic-struggle-for-a-little.jpg"
+      "image": "camptaconic-struggle-for-a-little.jpg",
+      "releaseDate": "2020-05-01T17:23:29.116Z",
+      "releaseName": "Struggle For A Little"
     },
     {
       "name": "Better For You",
       "image": "camptaconic-better-for-you-01-3000x3000.jpg",
-      "link": "https://smarturl.it/CT_BetterForYou"
+      "link": "https://smarturl.it/CT_BetterForYou",
+      "releaseDate": "2020-05-01T17:23:29.136Z",
+      "releaseName": "Better For You"
     }
   ],
   "artistName": "CAMPTACONIC",
