@@ -1,42 +1,37 @@
 {
-"soundcloud": "https://soundcloud.com/camptcnc",
+  "soundcloud": "https://soundcloud.com/camptcnc",
   "facebook": "",
   "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019.  Although the group previously worked together on independent collaborations, the goal of their trips are to write, produce, and engineer an album in seclusion with no strings attached. \n\nAfter deeply exploring new creative avenues and challenges, the group tapped into ideas that reflected each artist, creating a 7-song album in just 5 days. CAMPTACONIC’s VOL 2 pushes the envelope of genre-bending pop music even further than their previous indie release success, VOL 1, with each song touching on different collective influences. \n",
   "releases": [
     {
-      "name": "Popcorn",
+      "releaseName": "Popcorn",
       "link": "https://ffm.to/ct_popcorn",
       "image": "camptaconic-popcorn-art-updated.jpg",
-      "releaseDate": "2020-05-01T17:23:29.062Z",
-      "releaseName": "Popcorn"
+      "releaseDate": "2020-05-01T17:23:29.062Z"
     },
     {
-      "name": "Sweat",
+      "releaseName": "Sweat",
       "image": "camptaconic-sweat-art-updated.jpg",
       "link": "https://ffm.to/ct_sweat",
-      "releaseDate": "2020-05-01T17:23:29.081Z",
-      "releaseName": "Sweat"
+      "releaseDate": "2020-05-01T17:23:29.081Z"
     },
     {
-      "name": "VOL. 1",
+      "releaseName": "VOL. 1",
       "image": "camptaconic-vol-i-ep-art-10.jpg",
       "link": "https://smarturl.it/CT_VOL1",
-      "releaseDate": "2020-05-01T17:23:29.099Z",
-      "releaseName": "VOL. 1"
+      "releaseDate": "2020-05-01T17:23:29.099Z"
     },
     {
-      "name": "Struggle For A Little",
+      "releaseName": "Struggle For A Little",
       "link": "https://smarturl.it/CT_SFAL",
       "image": "camptaconic-struggle-for-a-little.jpg",
-      "releaseDate": "2020-05-01T17:23:29.116Z",
-      "releaseName": "Struggle For A Little"
+      "releaseDate": "2020-05-01T17:23:29.116Z"
     },
     {
-      "name": "Better For You",
+      "releaseName": "Better For You",
       "image": "camptaconic-better-for-you-01-3000x3000.jpg",
       "link": "https://smarturl.it/CT_BetterForYou",
-      "releaseDate": "2020-05-01T17:23:29.136Z",
-      "releaseName": "Better For You"
+      "releaseDate": "2020-05-01T17:23:29.136Z"
     }
   ],
   "artistName": "CAMPTACONIC",

@@ -68,7 +68,7 @@ export const query = graphql`
           releases {
             image
             link
-            name
+            releaseName
           }
           soundcloud
           spotify

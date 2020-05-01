@@ -2,11 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
 import { Link } from "gatsby"
-import bamboo from "../svg/bamboo.svg"
-import flower from "../svg/flower.svg"
-import anthurium from "../svg/anthurium.svg"
 import logo from "../images/logo.png"
-import lotus from "../svg/lotus.svg"
 
 const Navigation = () => {
   return (

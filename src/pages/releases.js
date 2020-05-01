@@ -35,10 +35,12 @@ const ReleasesPage = ({ data }) => {
             padding: "50px 10% 50px 10%",
           }}
         >
-          {utils.getReleases(artists).map((artist, index) => {
+          placeholder
+          {utils.orderReleases(artists, nonArtistReleases)}
+          {/* {utils.orderReleases(artists).map((artist, index) => {
             return (
               <ReleaseCard
-                releaseName={artist.release.name}
+                releaseName={artist.release.releaseName}
                 artistName={artist.artistName}
                 image={artist.release.image}
                 link={artist.release.link}
@@ -56,7 +58,7 @@ const ReleasesPage = ({ data }) => {
                 key={index}
               />
             )
-          })}
+          })} */}
         </motion.div>
       </motion.div>
       <Footer />
@@ -73,7 +75,7 @@ export const query = graphql`
           releases {
             image
             link
-            name
+            releaseName
           }
         }
       }

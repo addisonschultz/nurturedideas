@@ -15,6 +15,7 @@ const HeroYoutube = ({ youtubeId }) => {
         allowfullscreen
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
+        title="hero-youtube"
       ></iframe>
     </motion.div>
   )
