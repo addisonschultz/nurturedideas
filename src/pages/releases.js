@@ -8,11 +8,24 @@ import ReleaseCard from "../components/ReleaseCard"
 import { theme } from "../theme/theme"
 import * as utils from "../utils"
 
+const Moment = require("moment")
+
 const ReleasesPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
   const nonArtistReleases = data.allReleasesJson.edges
 
   const allReleases = utils.getAllReleases(artists, nonArtistReleases)
+
+  // console.log();
+
+  console.log(
+    "BIG",
+    allReleases.sort(
+      (a, b) =>
+        new Moment(b.rleaseDate).format("LLL") -
+        new Moment(a.rleaseDate).format("LLL")
+    )
+  )
 
   return (
     <>
@@ -38,8 +51,17 @@ const ReleasesPage = ({ data }) => {
           }}
         >
           {allReleases
-            .sort((a, b) => b.rleaseDate - a.rleaseDate)
+            // .sort((a, b) => b.rleaseDate - a.rleaseDate)
+            .sort(
+              (a, b) =>
+                new Moment(b.rleaseDate).format("LLL") -
+                new Moment(a.rleaseDate).format("LLL")
+            )
             .map((release, index) => {
+              // console.log(
+              //   new Moment(release.releaseDate).format("MMMM DD, YYYY")
+              // )
+
               return (
                 <ReleaseCard
                   // releaseName={release.releaseName}
