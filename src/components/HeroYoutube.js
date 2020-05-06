@@ -2,8 +2,6 @@ import React from "react"
 import { motion } from "framer-motion"
 
 const HeroYoutube = ({ youtubeId }) => {
-  console.log(youtubeId)
-
   return (
     <motion.div id={"hero-video"}>
       <iframe
