@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  # name: github
+  # name: git-gateway
+  name: github
   repo: addisonschultz/nurturedideas
   branch: master
 
@@ -88,7 +88,14 @@ collections:
         widget: "list"
         fields:
           - { name: releaseName, label: Name, widget: "string" }
-          - { name: releaseDate, label: Release Date, widget: "date" }
+          - {
+              name: releaseDate,
+              label: Release Date,
+              widget: "datetime",
+              dateFormat: "DD.MM.YYYY",
+              format: "LLL",
+              timeFormat: false,
+            }
           - { name: link, label: Link, widget: "string" }
           - { name: image, label: Image, widget: "image" }
   # Releases
@@ -101,8 +108,15 @@ collections:
     extension: json
     slug: "{{releaseName}}"
     fields:
-      - { name: artistName, label: Artist Name, widget: "string" }
       - { name: releaseName, label: Release Name, widget: "string" }
-      - { name: releaseDate, label: Release Date, widget: "date" }
+      - { name: artistName, label: Artist Name, widget: "string" }
+      - {
+          name: releaseDate,
+          label: Release Date,
+          widget: "datetime",
+          dateFormat: "DD.MM.YYYY",
+          format: "LLL",
+          timeFormat: false,
+        }
       - { name: link, label: Link, widget: "string" }
       - { name: image, label: Image, widget: "image" }

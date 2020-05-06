@@ -42,7 +42,8 @@ const ReleasesPage = ({ data }) => {
             .map((release, index) => {
               return (
                 <ReleaseCard
-                  releaseName={release.releaseName}
+                  // releaseName={release.releaseName}
+                  releaseName={release.releaseDate}
                   releaseDate={release.releaseDate}
                   artistName={release.artistName}
                   image={release.image}
