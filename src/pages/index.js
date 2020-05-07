@@ -15,8 +15,6 @@ import SocialLink from "../components/SocialLink"
 const IndexPage = ({ data }) => {
   const metadata = data.allMetadataJson.edges[0].node
 
-  console.log(metadata)
-
   return (
     <>
       <SEO title="Home" />
