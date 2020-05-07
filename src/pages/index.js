@@ -8,11 +8,14 @@ import spotifyBlack0 from "../svg/spotify-black0.svg"
 import instagramBlack0 from "../svg/instagram-black0.svg"
 import twitterBlack0 from "../svg/twitter-black0.svg"
 import HeroYoutube from "../components/HeroYoutube"
+import HeroVideo from "../components/HeroVideo"
 import NewsletterForm from "../components/NewsletterForm"
 import SocialLink from "../components/SocialLink"
 
 const IndexPage = ({ data }) => {
   const metadata = data.allMetadataJson.edges[0].node
+
+  console.log(metadata)
 
   return (
     <>
@@ -42,7 +45,11 @@ const IndexPage = ({ data }) => {
               overflow: "hidden",
             }}
           >
-            <HeroYoutube youtubeId={metadata.youtubeId} />
+            {metadata.heroContentType === "file" ? (
+              <HeroVideo src={metadata.heroVideo} />
+            ) : (
+              <HeroYoutube youtubeId={metadata.youtubeId} />
+            )}
           </motion.div>
           <motion.div
             id={"index-right"}
@@ -134,6 +141,8 @@ export const query = graphql`
         node {
           bio
           youtubeId
+          heroContentType
+          heroVideo
         }
       }
     }
