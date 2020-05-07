@@ -73,7 +73,12 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
       {success ? (
         <div>Thanks! We'll be in contact soon.</div>
       ) : (
-        <form name={"Newsletter"} data-netlify="true">
+        <form
+          name={"Newsletter"}
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+        >
           <div
             style={{ display: "flex", alignItems: "center", marginBottom: 10 }}
           >
@@ -149,6 +154,7 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
           </div>
           <motion.button
             id={"newsletter-submit-button"}
+            type="submit"
             variants={buttonVariants}
             initial={"default"}
             whileHover={checkmark ? "hover" : "disabled"}
