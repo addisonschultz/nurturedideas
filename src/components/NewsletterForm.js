@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
+import { Link } from "gatsby"
 
 const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
   const variants = {
@@ -71,7 +72,17 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
       intial="default"
     >
       {success ? (
-        <div>Thanks! We'll be in contact soon.</div>
+        <div>
+          <motion.h5
+            style={{
+              fontFamily: theme.font.sharpeBlack,
+              color: theme.colors.white0,
+              textAlign: "left",
+            }}
+          >
+            Thanks for subscribing!
+          </motion.h5>
+        </div>
       ) : (
         <form
           name={"Newsletter"}
@@ -151,7 +162,10 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
                 paddingLeft: theme.spacing[6],
               }}
             >
-              I accept the terms and conditions
+              I accept the{" "}
+              <Link to={"/terms"} style={{ color: theme.colors.white1 }}>
+                terms and conditions
+              </Link>
             </motion.h3>
           </div>
           <motion.button

@@ -739,4 +739,9 @@ pre tt:after {
   #release-card-container {
     margin: 0px 20px 0px 20px;
   }
+
+  /* Terms Page */
+  #terms-and-conditions {
+    height: 1150px !important;
+  }
 }
