@@ -26,7 +26,14 @@ collections:
         format: json-frontmatter
         fields:
           - { label: Bio, name: bio, widget: text }
+          - {
+              label: Content Type,
+              name: heroContentType,
+              widget: select,
+              options: ["youtube", "file"],
+            }
           - { label: Youtube ID, name: youtubeId, widget: string }
+          - { label: Hero Video, name: heroVideo, widget: file }
   # Artists
   - name: artists
     label: "Artists"
