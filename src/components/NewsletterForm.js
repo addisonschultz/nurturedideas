@@ -95,6 +95,7 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
               className={"newsletter-input"}
               placeholder={namePlaceholder}
               onChange={handleChange}
+              name={"fullName"}
             ></motion.input>
           </div>
           <div
@@ -113,6 +114,7 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
               className={"newsletter-input"}
               placeholder={emailPlaceholder}
               onChange={handleChange}
+              name={"email"}
             ></motion.input>
           </div>
           <div
