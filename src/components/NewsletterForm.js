@@ -131,12 +131,12 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
           <div
             style={{ float: "left", position: "relative", marginBottom: 20 }}
           >
-            <label class="checkbox">
+            <label className="checkbox">
               <input
                 type="checkbox"
                 onChange={() => setCheckmark(!checkmark)}
               />
-              <span class="overlay">
+              <span className="overlay">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="10"
@@ -144,9 +144,9 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="icon"
                 >
                   <polyline points="20 6 9 17 4 12" />

@@ -622,6 +622,14 @@ pre tt:after {
   content: "";
 }
 
+#hero-video {
+  margin-top: -210px;
+}
+
+#index-left {
+  width: 100% !important;
+}
+
 /* Form inputs */
 
 .newsletter-input {
@@ -722,6 +730,18 @@ pre tt:after {
   }
   #index-right {
     width: 100% !important;
+  }
+
+  #index-left {
+    width: 100% !important;
+  }
+
+  #hero-video {
+    margin-top: 0px;
+  }
+
+  #video {
+    margin-top: 0px !important;
   }
 
   /* Artists Page */

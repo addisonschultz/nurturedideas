@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
           <motion.div
             id={"index-left video-container"}
             style={{
-              width: "100%",
+              width: metadata.heroContentType === "file" ? "inherit" : "100%",
               height: 700,
               overflow: "hidden",
             }}
@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
           <motion.div
             id={"index-right"}
             style={{
-              width: "75%",
+              width: "100%",
               height: "100%",
             }}
           >
