@@ -36,10 +36,11 @@ const IndexPage = ({ data }) => {
           }}
         >
           <motion.div
-            id={"index-left video-container"}
+            id={`index-left ${
+              metadata.heroContentType === "file" ? "file" : "youtube"
+            }`}
             style={{
-              width: metadata.heroContentType === "file" ? "inherit" : "100%",
-              height: 700,
+              marginBottom: -7,
               overflow: "hidden",
             }}
           >
@@ -53,7 +54,6 @@ const IndexPage = ({ data }) => {
             id={"index-right"}
             style={{
               width: "100%",
-              height: "100%",
             }}
           >
             <motion.div
@@ -77,30 +77,28 @@ const IndexPage = ({ data }) => {
             </motion.div>
             <motion.div
               id={"index-right-bottom"}
-              style={{ height: "50%", background: theme.colors.white0 }}
+              style={{ background: theme.colors.white0 }}
             >
-              <motion.div style={{ height: 350 }}>
-                <SocialLink
-                  iconSrc={spotifyBlack0}
-                  background={theme.colors.white1}
-                  text={"In Rotation"}
-                  href={
-                    "https://open.spotify.com/playlist/6IVeBCYTq0CXH3BsmtxaUq?si=_vAluEcbTmq6GLcAP1oIhw"
-                  }
-                />
-                <SocialLink
-                  iconSrc={instagramBlack0}
-                  background={theme.colors.white2}
-                  text={"@nurturedideas"}
-                  href={"https://www.instagram.com/nurturedideas/"}
-                />
-                <SocialLink
-                  iconSrc={twitterBlack0}
-                  background={theme.colors.white3}
-                  text={"@nurturedideas"}
-                  href={"https://twitter.com/NurturedIdeas"}
-                />
-              </motion.div>
+              <SocialLink
+                iconSrc={spotifyBlack0}
+                background={theme.colors.white1}
+                text={"In Rotation"}
+                href={
+                  "https://open.spotify.com/playlist/6IVeBCYTq0CXH3BsmtxaUq?si=_vAluEcbTmq6GLcAP1oIhw"
+                }
+              />
+              <SocialLink
+                iconSrc={instagramBlack0}
+                background={theme.colors.white2}
+                text={"@nurturedideas"}
+                href={"https://www.instagram.com/nurturedideas/"}
+              />
+              <SocialLink
+                iconSrc={twitterBlack0}
+                background={theme.colors.white3}
+                text={"@nurturedideas"}
+                href={"https://twitter.com/NurturedIdeas"}
+              />
             </motion.div>
           </motion.div>
         </motion.div>

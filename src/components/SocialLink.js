@@ -25,38 +25,46 @@ const SocialLink = ({
 
   return (
     <>
-      <a href={href} target={"_blank"} rel="noopener noreferrer">
+      <a
+        href={href}
+        target={"_blank"}
+        rel="noopener noreferrer"
+        style={{ height: "100%" }}
+      >
         <motion.div
           id={"social-link"}
           variants={variants}
           initial={"default"}
           whileHover={"hover"}
           style={{
-            height: 116.5,
+            height: "100%",
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
-            paddingTop: 50,
+            display: "flex",
+            flexDirection: "column",
           }}
         >
-          <motion.img
-            src={iconSrc}
-            style={{ height: 20, margin: "auto auto" }}
-          ></motion.img>
-          <AnimatePresence>
-            <motion.h5
-              variants={textVariants}
-              initial={"default"}
-              style={{
-                color: theme.colors.black0,
-                lineHeight: 1,
-                fontFamily: theme.font.sharpeBlack,
-                margin: "auto auto",
-              }}
-            >
-              {text}
-            </motion.h5>
-          </AnimatePresence>
+          <div style={{ margin: "auto auto" }}>
+            <motion.img
+              src={iconSrc}
+              style={{ height: 20, marginBottom: 10 }}
+            ></motion.img>
+            <AnimatePresence>
+              <motion.h5
+                variants={textVariants}
+                initial={"default"}
+                style={{
+                  color: theme.colors.black0,
+                  lineHeight: 1,
+                  fontFamily: theme.font.sharpeBlack,
+                  marginBottom: 0,
+                }}
+              >
+                {text}
+              </motion.h5>
+            </AnimatePresence>
+          </div>
         </motion.div>
       </a>
     </>

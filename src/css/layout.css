@@ -622,12 +622,24 @@ pre tt:after {
   content: "";
 }
 
-#hero-video {
-  margin-top: -210px;
+#file {
+  width: 100% !important;
 }
 
-#index-left {
+#youtube {
   width: 100% !important;
+}
+
+#index-right {
+  display: flex;
+  flex-direction: column;
+}
+
+#index-right-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* Form inputs */
@@ -730,6 +742,16 @@ pre tt:after {
   }
   #index-right {
     width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #index-right-bottom {
+    height: 400px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   #index-left {
