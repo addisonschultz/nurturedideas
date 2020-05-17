@@ -40,8 +40,9 @@ const IndexPage = ({ data }) => {
               metadata.heroContentType === "file" ? "file" : "youtube"
             }`}
             style={{
-              marginBottom: -7,
+              marginBottom: metadata.heroContentType === "file" ? -7 : -32,
               overflow: "hidden",
+              width: "100%",
             }}
           >
             {metadata.heroContentType === "file" ? (
