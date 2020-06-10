@@ -36,7 +36,6 @@ const Navigation = () => {
             style={{
               color: theme.colors.black0,
               fontFamily: theme.font.sharpeBlack,
-              fontSize: theme.fontSize[6],
               margin: 0,
             }}
           >
