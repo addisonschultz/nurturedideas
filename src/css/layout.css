@@ -700,6 +700,14 @@ pre tt:after {
   outline: none;
 }
 
+#social-link {
+  height: 100%;
+}
+
+#social-link-container {
+  height: 100%;
+}
+
 .artist-social-link {
   height: 20px;
   width: 20px;
@@ -764,6 +772,21 @@ pre tt:after {
 
   #video {
     margin-top: 0px !important;
+  }
+
+  #social-link {
+    height: 200px;
+  }
+
+  #social-link-container {
+    height: 100%;
+  }
+  #description {
+    margin-top: 800px;
+  }
+
+  #footer-container {
+    margin-bottom: 100px;
   }
 
   /* Artists Page */

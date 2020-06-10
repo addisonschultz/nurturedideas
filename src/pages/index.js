@@ -104,6 +104,7 @@ const IndexPage = ({ data }) => {
           </motion.div>
         </motion.div>
         <motion.div
+          id={"description"}
           style={{
             height: 400,
             padding: "0px 10% 0px 10%",

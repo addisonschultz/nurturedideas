@@ -27,6 +27,7 @@ const SocialLink = ({
     <>
       <a
         href={href}
+        id={"social-link-container"}
         target={"_blank"}
         rel="noopener noreferrer"
         style={{ height: "100%" }}
@@ -37,12 +38,12 @@ const SocialLink = ({
           initial={"default"}
           whileHover={"hover"}
           style={{
-            height: "100%",
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
+            height: "100%",
           }}
         >
           <div style={{ margin: "auto auto" }}>
