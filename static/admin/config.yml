@@ -7,8 +7,8 @@ backend:
 media_folder: static
 public_folder: ./
 
-site_url: https://nurtured-ideas.netlify.com
-display_url: https://nurtured-ideas.netlify.com
+site_url: https://nurtured-ideas.com
+display_url: https://nurtured-ideas.com
 
 slug:
   encoding: "ascii"
