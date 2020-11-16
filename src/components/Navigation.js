@@ -70,7 +70,7 @@ const Navigation = () => {
               fontFamily: theme.font.default,
               fontSize: theme.fontSize[4],
               fontWeight: 900,
-              paddingLeft: 10,
+              paddingLeft: 20,
             }}
           >
             RELEASES
