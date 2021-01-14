@@ -1,9 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import { MagicMotion } from "framer-motion"
 
 import "../../css/layout.css"
 import "../../css/typography.css"
+import "../../css/desktop.css"
+import "../../css/mobile.css"
 
 const Layout = ({ children }) => {
   return (
@@ -16,9 +17,7 @@ const Layout = ({ children }) => {
         textAlign: "center",
       }}
     >
-      {/* <MagicMotion> */}
       <main>{children}</main>
-      {/* </MagicMotion> */}
     </div>
   )
 }

@@ -1,9 +1,13 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { theme } from "../theme/theme"
 import { Link } from "gatsby"
+
+import { theme } from "../theme/theme"
+
 import spotifyWhite1 from "../svg/spotify-white1.svg"
 import soundcloudWhite1 from "../svg/soundcloud-white1.svg"
+
+import "./artist-card.css"
 
 const ArtistCard = ({ artistName, image, to, spotify, soundcloud }) => {
   return (
@@ -15,7 +19,7 @@ const ArtistCard = ({ artistName, image, to, spotify, soundcloud }) => {
           width: 300,
           border: `5px solid ${theme.colors.white1}`,
           background: theme.colors.tertiary,
-          margin: "0px 0px 50px 0px",
+          margin: "0px 0px 00px 0px",
           overflow: "hidden",
         }}
       >

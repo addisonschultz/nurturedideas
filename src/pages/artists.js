@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
-import ArtistCard from "../components/ArtistCard"
+import ArtistCard from "../ArtistCard/ArtistCard"
 import { theme } from "../theme/theme"
 import * as utils from "../utils"
 
@@ -25,13 +25,7 @@ const ArtistsPage = ({ data }) => {
         <motion.div
           id={"artists-content"}
           style={{
-            width: "100%",
-            height: "auto",
             background: theme.colors.tertiary,
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            padding: "50px 10% 50px 10%",
           }}
         >
           {artists.map((artist, index) => {
