@@ -99,7 +99,7 @@ collections:
         widget: "list"
         fields:
           - { name: releaseName, label: Name, widget: "string" }
-          - { name: releaseDescription, label: Release Description, widget: "text" }
+          - { name: releaseDescription, label: Release Description, widget: "text", required: false, default: "" }
           - {
               name: releaseDate,
               label: Release Date,
@@ -108,7 +108,7 @@ collections:
               format: "DD.MM.YYYY",
               timeFormat: false,
             }
-          - { name: preOrderLink, label: Pre-Order Link, widget: "string" }
+          - { name: preOrderLink, label: Pre-Order Link, widget: "string", required: false, default: "" }
           - { name: link, label: Link, widget: "string" }
           - { name: image, label: Image, widget: "image" }
           - name: trackListing
@@ -117,7 +117,7 @@ collections:
             widget: "list"
             fields:
               - { name: trackName, label: Track Name, widget: "string" }
-              - { name: trackDuration, label: Track Duration, widget: "string" }
+              - { name: trackDuration, label: Track Duration, widget: "string", hint: "ex. 3:05" }
   # Releases
   - name: releases
     label: "Releases"
@@ -131,7 +131,7 @@ collections:
     slug: "{{releaseName}}"
     fields:
       - { name: releaseName, label: Release Name, widget: "string" }
-      - { name: releaseDescription, label: Release Description, widget: "text" }
+      - { name: releaseDescription, label: Release Description, widget: "text", required: false, default: "" }
       - { name: artistName, label: Artist Name, widget: "string" }
       - {
           name: releaseDate,
@@ -141,7 +141,7 @@ collections:
           format: "DD.MM.YYYY",
           timeFormat: false,
         }
-      - { name: preOrderLink, label: Pre-Order Link, widget: "string" }
+      - { name: preOrderLink, label: Pre-Order Link, widget: "string", required: false, default: "" }
       - { name: link, label: Link, widget: "string" }
       - { name: image, label: Image, widget: "image" }
       - name: trackListing
@@ -150,4 +150,4 @@ collections:
         widget: "list"
         fields:
           - { name: trackName, label: Track Name, widget: "string" }
-          - { name: trackDuration, label: Track Duration, widget: "string" }
+          - { name: trackDuration, label: Track Duration, widget: "string", hint: "ex. 3:05" }
