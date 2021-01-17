@@ -11,11 +11,9 @@ const Layout = ({ children }) => {
     <div
       style={{
         height: "100vh",
-        backgroundColor: "red",
+        backgroundColor: "#fff",
         textAlign: "center",
         position: "relative",
-        // display: "flex",
-        // flexDirection: "column",
       }}
     >
       <main>

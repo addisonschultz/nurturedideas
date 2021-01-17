@@ -1,4 +1,40 @@
 #navigation-container {
   height: 80px;
   max-width: 1280px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px;
+}
+
+#navigation-header-container {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+#navigation-logo {
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+#navigation-header {
+  color: #000;
+  font-family: "Sharpe Black";
+  margin: 0px;
+}
+
+#navigation-links {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation-item {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0px 20px;
 }
