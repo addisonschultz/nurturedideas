@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
-  # name: github
+  # name: git-gateway
+  name: github
   repo: addisonschultz/nurturedideas
-  branch: master
+  branch: next
 
 media_folder: static
 public_folder: ./
@@ -23,6 +23,8 @@ collections:
         name: "about"
         file: "src/metadata/site.json"
         create: true
+        editor:
+          preview: false
         format: json-frontmatter
         fields:
           - { label: Bio, name: bio, widget: text }
@@ -40,6 +42,8 @@ collections:
     label_singular: "Artist"
     folder: src/artists
     create: true
+    editor:
+      preview: false
     format: json-frontmatter
     extension: json
     slug: "{{artistName}}"
@@ -95,6 +99,7 @@ collections:
         widget: "list"
         fields:
           - { name: releaseName, label: Name, widget: "string" }
+          - { name: releaseDescription, label: Release Description, widget: "text" }
           - {
               name: releaseDate,
               label: Release Date,
@@ -103,19 +108,30 @@ collections:
               format: "DD.MM.YYYY",
               timeFormat: false,
             }
+          - { name: preOrderLink, label: Pre-Order Link, widget: "string" }
           - { name: link, label: Link, widget: "string" }
           - { name: image, label: Image, widget: "image" }
+          - name: trackListing
+            label: Track Listing
+            label_singular: Track
+            widget: "list"
+            fields:
+              - { name: trackName, label: Track Name, widget: "string" }
+              - { name: trackDuration, label: Track Duration, widget: "string" }
   # Releases
   - name: releases
     label: "Releases"
     label_singular: "Release"
     folder: src/releases
     create: true
+    editor:
+      preview: false
     format: json-frontmatter
     extension: json
     slug: "{{releaseName}}"
     fields:
       - { name: releaseName, label: Release Name, widget: "string" }
+      - { name: releaseDescription, label: Release Description, widget: "text" }
       - { name: artistName, label: Artist Name, widget: "string" }
       - {
           name: releaseDate,
@@ -125,5 +141,13 @@ collections:
           format: "DD.MM.YYYY",
           timeFormat: false,
         }
+      - { name: preOrderLink, label: Pre-Order Link, widget: "string" }
       - { name: link, label: Link, widget: "string" }
       - { name: image, label: Image, widget: "image" }
+      - name: trackListing
+        label: Track Listing
+        label_singular: Track
+        widget: "list"
+        fields:
+          - { name: trackName, label: Track Name, widget: "string" }
+          - { name: trackDuration, label: Track Duration, widget: "string" }

@@ -1,7 +1,7 @@
-// import getArtistSlug from "./src/utils"
 const utils = require("./src/utils")
 
 exports.createPages = async function({ actions, graphql }) {
+  // Query for all data
   const { data } = await graphql(`
     query GetAllArtists {
       allArtistsJson {
@@ -28,6 +28,8 @@ exports.createPages = async function({ actions, graphql }) {
       }
     }
   `)
+
+  // Create all artist pages
   data.allArtistsJson.edges.forEach(({ node }) => {
     const slug = utils.getArtistSlug(node.artistName)
     actions.createPage({
@@ -36,4 +38,6 @@ exports.createPages = async function({ actions, graphql }) {
       context: { artistData: node, artistImage: node.image },
     })
   })
+
+  // Create all release pages
 }
