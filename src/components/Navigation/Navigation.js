@@ -21,13 +21,13 @@ const Navigation = () => {
         </Link>
       </motion.div>
       <motion.div id={"navigation-links"}>
-        <Link to={"/artists"} activeStyle={{ color: theme.colors.tertiary }}>
+        <Link to={"/artists"} activeClassName={"navigation-active"}>
           <motion.h3 className={"navigation-item"}>Artists</motion.h3>
         </Link>
-        <Link to={"/releases"} activeStyle={{ color: theme.colors.tertiary }}>
+        <Link to={"/releases"} activeClassName={"navigation-active"}>
           <motion.h3 className={"navigation-item"}>Releases</motion.h3>
         </Link>
-        <Link to={"/resources"} activeStyle={{ color: theme.colors.tertiary }}>
+        <Link to={"/resources"} activeClassName={"navigation-active"}>
           <motion.h3 className={"navigation-item"}>Resources</motion.h3>
         </Link>
       </motion.div>

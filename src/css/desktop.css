@@ -41,7 +41,7 @@
 
 #bio {
   grid-area: bio;
-  padding: 100px;
+  padding: 100px 50px;
   text-align: left;
 }
 

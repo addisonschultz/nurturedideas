@@ -6,7 +6,6 @@ import Img from "gatsby-image"
 import "./release-card.css"
 
 import * as utils from "../../utils"
-import { theme } from "../../theme/theme"
 
 const ReleaseCard = ({ release }) => {
   const image = release.sharpImage.node
