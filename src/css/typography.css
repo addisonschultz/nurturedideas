@@ -57,3 +57,12 @@
   font-family: "Sharpe Black Italic";
   src: url("../fonts/Sharpe-BlackItalic.woff");
 }
+
+.header {
+  font-family: "Sharpe Black";
+  font-size: 32px;
+  margin: 0;
+}
+
+.paragraph {
+}

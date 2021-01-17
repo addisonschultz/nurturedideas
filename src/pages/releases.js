@@ -13,15 +13,30 @@ import * as utils from "../utils"
 const ReleasesPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
   const nonArtistReleases = data.allReleasesJson.edges
-
+  const allImages = data.allFile.edges
   const allReleases = utils.getAllReleases(artists, nonArtistReleases)
+
+  // Reduce releases to include sharp images
+  const allReleasesAndImages = allReleases.reduce((prev, curr) => {
+    const sharpImage = allImages.find(image => {
+      return image.node.relativePath === curr.image
+    })
+    return [
+      ...prev,
+      {
+        ...curr,
+        sharpImage: sharpImage,
+      },
+    ]
+  }, [])
 
   return (
     <>
       <SEO title="Releases" />
       <Navigation />
+      <motion.h3 className={"releases-header header"}>Releases</motion.h3>
       <motion.div id={"releases-container"}>
-        {allReleases
+        {allReleasesAndImages
           .sort((a, b) => {
             return (
               moment(b.releaseDate, "DD.MM.YYYY") -
@@ -29,16 +44,7 @@ const ReleasesPage = ({ data }) => {
             )
           })
           .map((release, index) => {
-            return (
-              <ReleaseCard
-                releaseName={release.releaseName}
-                releaseDate={release.releaseDate}
-                artistName={release.artistName}
-                image={release.image}
-                link={release.link}
-                key={index}
-              />
-            )
+            return <ReleaseCard release={release} key={index} />
           })}
       </motion.div>
       <Footer />
@@ -81,6 +87,18 @@ export const query = graphql`
             trackDuration
             trackName
           }
+        }
+      }
+    }
+    allFile(filter: { internal: { mediaType: { regex: "images/" } } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          relativePath
         }
       }
     }

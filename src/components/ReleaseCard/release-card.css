@@ -3,3 +3,21 @@
   width: 100%;
   background-color: #0d5c3e;
 }
+
+.release-card-release-name {
+  font-family: "Georgia";
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  margin: 0px;
+  padding: 10px 0px 0px 8px;
+}
+.release-card-artist-name {
+  font-family: "Georgia";
+  font-size: 12px;
+  color: #eee;
+  text-align: left;
+  margin: 0px;
+  padding: 0px 0px 10px 8px;
+}

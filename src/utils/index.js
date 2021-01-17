@@ -12,9 +12,8 @@ const getUrlSlug = artistName => {
 const getAllReleases = (artists, nonLabelReleases) => {
   let releases = []
 
-  nonLabelReleases.map((release, index) => {
+  nonLabelReleases.map(release => {
     releases.push({
-      index: index,
       artistName: release.node.artistName,
       releaseName: release.node.releaseName,
       releaseDate: release.node.releaseDate,

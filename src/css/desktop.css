@@ -123,9 +123,13 @@
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   column-gap: 20px;
   row-gap: 20px;
+}
+
+.artists-header {
+  text-align: left;
+  margin-top: 10px;
 }
 
 /* 
@@ -142,7 +146,11 @@
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   column-gap: 20px;
   row-gap: 20px;
+}
+
+.releases-header {
+  text-align: left;
+  margin-top: 10px;
 }

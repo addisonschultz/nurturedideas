@@ -29,6 +29,7 @@ const ArtistsPage = ({ data }) => {
     <>
       <SEO title="Artists" />
       <Navigation />
+      <motion.h3 className={"artists-header header"}>Artists</motion.h3>
       <motion.div id={"artists-container"}>
         {allArtistsAndImages.map((artist, index) => {
           return <ArtistCard artist={artist} key={index} />

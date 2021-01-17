@@ -13,7 +13,6 @@ const TermsPage = () => (
       style={{
         height: "auto",
         padding: 0,
-        background: theme.colors.secondary,
       }}
     >
       <Navigation />
