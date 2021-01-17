@@ -18,17 +18,29 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    /**
+     * Add all images from static to the filesystem
+     */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `staticImages`,
+        path: `${__dirname}/static`,
+      },
+    },
     // Store src/metadata in filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/metadata/`,
+        name: "metadata",
+        path: `./src/metadata/site.json`,
       },
     },
     // Store src/artists in filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: "artists",
         path: `./src/artists/`,
       },
     },
@@ -36,6 +48,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: "releases",
         path: `./src/releases/`,
       },
     },

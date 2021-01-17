@@ -11,13 +11,16 @@ const Layout = ({ children }) => {
     <div
       style={{
         height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: "#fff",
+        backgroundColor: "red",
         textAlign: "center",
+        position: "relative",
+        // display: "flex",
+        // flexDirection: "column",
       }}
     >
-      <main>{children}</main>
+      <main>
+        <div id={"page-container"}>{children}</div>
+      </main>
     </div>
   )
 }

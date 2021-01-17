@@ -1,18 +1,15 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { theme } from "../theme/theme"
+import { theme } from "../../theme/theme"
 import { Link } from "gatsby"
-import logo from "../images/logo.png"
+import logo from "../../images/logo.png"
+import "./navigation.css"
 
 const Navigation = () => {
   return (
     <motion.div
       id={"navigation-container"}
-      style={{
-        background: theme.colors.white0,
-        height: 80,
-        padding: "15px 10% 0px 10%",
-      }}
+      style={{ background: theme.colors.white0 }}
     >
       {/* Navigation Left Items */}
       <motion.div

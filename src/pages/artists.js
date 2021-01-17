@@ -1,46 +1,38 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { motion } from "framer-motion"
+
 import SEO from "../components/layout/seo"
-import Navigation from "../components/Navigation"
+import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer"
-import ArtistCard from "../ArtistCard/ArtistCard"
-import { theme } from "../theme/theme"
-import * as utils from "../utils"
+import ArtistCard from "../components/ArtistCard/ArtistCard"
 
 const ArtistsPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
+  const allImages = data.allFile.edges
+
+  // Reduce artists to include sharp images
+  const allArtistsAndImages = artists.reduce((prev, curr) => {
+    const sharpImage = allImages.find(image => {
+      return image.node.relativePath === curr.node.image
+    })
+    return [
+      ...prev,
+      {
+        ...curr,
+        sharpImage: sharpImage,
+      },
+    ]
+  }, [])
 
   return (
     <>
       <SEO title="Artists" />
-      <motion.div
-        id={"artists-container"}
-        style={{
-          height: "auto",
-          background: theme.colors.tertiary,
-        }}
-      >
-        <Navigation />
-        <motion.div
-          id={"artists-content"}
-          style={{
-            background: theme.colors.tertiary,
-          }}
-        >
-          {artists.map((artist, index) => {
-            return (
-              <ArtistCard
-                to={`/${utils.getArtistSlug(artist.node.artistName)}`}
-                spotify={artist.node.spotify}
-                soundcloud={artist.node.soundcloud}
-                artistName={artist.node.artistName}
-                image={artist.node.image}
-                key={index}
-              />
-            )
-          })}
-        </motion.div>
+      <Navigation />
+      <motion.div id={"artists-container"}>
+        {allArtistsAndImages.map((artist, index) => {
+          return <ArtistCard artist={artist} key={index} />
+        })}
       </motion.div>
       <Footer />
     </>
@@ -68,6 +60,18 @@ export const query = graphql`
           soundcloud
           spotify
           twitter
+        }
+      }
+    }
+    allFile(filter: { internal: { mediaType: { regex: "images/" } } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          relativePath
         }
       }
     }
