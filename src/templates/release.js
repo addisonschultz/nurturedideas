@@ -3,7 +3,7 @@ import SEO from "../components/layout/seo"
 import { motion } from "framer-motion"
 import { theme } from "../theme/theme"
 import Navigation from "../components/Navigation/Navigation"
-import Footer from "../components/Footer"
+import Footer from "../components/Footer/Footer"
 
 export default ({ pageContext }) => {
   return (

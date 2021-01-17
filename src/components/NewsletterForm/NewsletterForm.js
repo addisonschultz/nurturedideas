@@ -1,7 +1,9 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { theme } from "../theme/theme"
+import { theme } from "../../theme/theme"
 import { Link } from "gatsby"
+
+import "./newsletter-form.css"
 
 const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
   const variants = {

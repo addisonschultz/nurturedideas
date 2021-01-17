@@ -17,96 +17,32 @@
 
 */
 
-#file {
-  width: 100% !important;
-}
-
-#youtube {
-  width: 100% !important;
-}
-
-#index-right {
-  display: flex;
-  flex-direction: column;
-}
-
-#index-right-bottom {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-/* Form inputs */
-
-.newsletter-input {
+#index-container {
+  height: auto;
   width: 100%;
-  background: transparent;
-  border: none;
-  color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 600px 350px auto;
+  grid-template-areas:
+    "hero-video hero-video"
+    "social-links newsletter-form"
+    "bio bio";
 }
 
-.newsletter-input:focus {
-  outline: none;
+#social-links {
+  grid-area: social-links;
 }
 
-#newsletter-checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+#newsletter-form {
+  background-color: #0d5c3e;
+  grid-area: newsletter-form;
+  padding: 25px 50px 50px 50px;
 }
 
-/* Form Checkbox */
-.checkbox input {
-  position: absolute;
-  opacity: 0;
-}
-
-.checkbox .overlay {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 10px;
-  width: 10px;
-  background-color: #fff;
-  transform: rotate(-180deg);
-  transition: all 0.3s;
-}
-
-.checkbox .overlay .icon {
-  color: white;
-  display: none;
-}
-
-.checkbox input:checked ~ .overlay {
-  background-color: #ffffff;
-  transform: rotate(0deg);
-  opacity: 1;
-}
-
-.checkbox input:checked ~ .overlay .icon {
-  display: block;
-  color: #0d5c3e;
-}
-
-/* Form Button */
-
-#newsletter-submit-button {
-  outline: none;
-}
-
-#social-link {
-  height: 100%;
-}
-
-#social-link-container {
-  height: 100%;
-}
-
-.artist-social-link {
-  height: 20px;
-  width: 20px;
-  margin: 10px;
+#bio {
+  grid-area: bio;
+  padding: 100px;
+  text-align: left;
 }
 
 /* 
@@ -154,3 +90,21 @@
   text-align: left;
   margin-top: 10px;
 }
+
+/* 
+
+  Artist Template
+
+*/
+
+.artist-social-link {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+}
+
+/* 
+
+  Release Template
+
+*/

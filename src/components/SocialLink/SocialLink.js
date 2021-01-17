@@ -1,6 +1,8 @@
 import React from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { theme } from "../theme/theme"
+import { theme } from "../../theme/theme"
+
+import "./social-link.css"
 
 const SocialLink = ({
   iconSrc,
@@ -25,26 +27,12 @@ const SocialLink = ({
 
   return (
     <>
-      <a
-        href={href}
-        id={"social-link-container"}
-        target={"_blank"}
-        rel="noopener noreferrer"
-        style={{ height: "100%" }}
-      >
+      <a href={href} target={"_blank"} rel="noopener noreferrer">
         <motion.div
           id={"social-link"}
           variants={variants}
           initial={"default"}
           whileHover={"hover"}
-          style={{
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            height: "100%",
-          }}
         >
           <div style={{ margin: "auto auto" }}>
             <motion.img

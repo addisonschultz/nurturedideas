@@ -5,7 +5,7 @@ import moment from "moment"
 
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
-import Footer from "../components/Footer"
+import Footer from "../components/Footer/Footer"
 import ReleaseCard from "../components/ReleaseCard/ReleaseCard"
 
 import * as utils from "../utils"

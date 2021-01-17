@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
-import Footer from "../components/Footer"
+import Footer from "../components/Footer/Footer"
 import ArtistCard from "../components/ArtistCard/ArtistCard"
 
 const ArtistsPage = ({ data }) => {
