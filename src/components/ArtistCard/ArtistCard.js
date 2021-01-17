@@ -16,7 +16,7 @@ const ArtistCard = ({ artist }) => {
 
   return (
     <motion.div id={"artist-card-container"}>
-      <Link to={`/${utils.getArtistSlug(artistData.artistName)}`}>
+      <Link to={`/${utils.getUrlSlug(artistData.artistName)}`}>
         <Img
           fluid={image.childImageSharp.fluid}
           style={{ height: "200px", maxHeight: "200px" }}

@@ -53,9 +53,15 @@ export const query = graphql`
           instagram
           releases {
             image
-            link
             releaseName
+            link
+            preOrderLink
+            releaseDescription
             releaseDate
+            trackListing {
+              trackDuration
+              trackName
+            }
           }
           soundcloud
           spotify

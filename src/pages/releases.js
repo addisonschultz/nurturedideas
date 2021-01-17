@@ -54,9 +54,15 @@ export const query = graphql`
           artistName
           releases {
             image
-            link
             releaseName
+            link
+            preOrderLink
+            releaseDescription
             releaseDate
+            trackListing {
+              trackDuration
+              trackName
+            }
           }
         }
       }
@@ -64,11 +70,17 @@ export const query = graphql`
     allReleasesJson {
       edges {
         node {
-          image
-          link
-          releaseName
-          releaseDate
           artistName
+          image
+          releaseName
+          link
+          preOrderLink
+          releaseDescription
+          releaseDate
+          trackListing {
+            trackDuration
+            trackName
+          }
         }
       }
     }
