@@ -29,6 +29,8 @@ exports.createPages = async function({ actions, graphql }) {
             soundcloud
             spotify
             twitter
+            appleMusic
+            tiktok
           }
         }
       }
