@@ -12,9 +12,17 @@ import instagramWhite1 from "../svg/instagram-white1.svg"
 import soundcloudWhite1 from "../svg/soundcloud-white1.svg"
 import spotifyWhite1 from "../svg/spotify-white1.svg"
 import twitterWhite1 from "../svg/twitter-white1.svg"
+import appleWhite1 from "../svg/apple-white1.svg"
+import tiktokWhite1 from "../svg/tiktok-white1.svg"
 
 export default ({ pageContext, data }) => {
   const artist = pageContext.artistData
+
+  function isEmpty(str) {
+    return !str || 0 === str.length
+  }
+
+  console.log(artist)
 
   return (
     <>
@@ -29,7 +37,7 @@ export default ({ pageContext, data }) => {
           <motion.h2 id={"artist-name"}>{artist.artistName}</motion.h2>
           <motion.h5 id={"artist-bio"}>{artist.bio}</motion.h5>
           <motion.div id={"artist-template-links"}>
-            {artist.website !== "" && (
+            {!isEmpty(artist.website) && (
               <a
                 href={artist.website}
                 target={"_blank"}
@@ -41,7 +49,7 @@ export default ({ pageContext, data }) => {
                 ></motion.img>
               </a>
             )}
-            {artist.facebook !== "" && (
+            {!isEmpty(artist.facebook) && (
               <a
                 href={artist.facebook}
                 target={"_blank"}
@@ -53,7 +61,7 @@ export default ({ pageContext, data }) => {
                 ></motion.img>
               </a>
             )}
-            {artist.instagram !== "" && (
+            {!isEmpty(artist.instagram) && (
               <a
                 href={artist.instagram}
                 target={"_blank"}
@@ -65,7 +73,7 @@ export default ({ pageContext, data }) => {
                 ></motion.img>
               </a>
             )}
-            {artist.twitter !== "" && (
+            {!isEmpty(artist.twitter) && (
               <a
                 href={artist.twitter}
                 target={"_blank"}
@@ -77,7 +85,7 @@ export default ({ pageContext, data }) => {
                 ></motion.img>
               </a>
             )}
-            {artist.spotify !== "" && (
+            {!isEmpty(artist.spotify) && (
               <a
                 href={artist.spotify}
                 target={"_blank"}
@@ -89,7 +97,7 @@ export default ({ pageContext, data }) => {
                 ></motion.img>
               </a>
             )}
-            {artist.soundcloud !== "" && (
+            {!isEmpty(artist.soundcloud) && (
               <a
                 href={artist.soundcloud}
                 target={"_blank"}
@@ -97,6 +105,30 @@ export default ({ pageContext, data }) => {
               >
                 <motion.img
                   src={soundcloudWhite1}
+                  className={"artist-social-link"}
+                ></motion.img>
+              </a>
+            )}
+            {!isEmpty(artist.appleMusic) && (
+              <a
+                href={artist.appleMusic}
+                target={"_blank"}
+                rel="noopener noreferrer"
+              >
+                <motion.img
+                  src={appleWhite1}
+                  className={"artist-social-link"}
+                ></motion.img>
+              </a>
+            )}
+            {!isEmpty(artist.tiktok) && (
+              <a
+                href={artist.tiktok}
+                target={"_blank"}
+                rel="noopener noreferrer"
+              >
+                <motion.img
+                  src={tiktokWhite1}
                   className={"artist-social-link"}
                 ></motion.img>
               </a>
