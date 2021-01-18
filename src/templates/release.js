@@ -20,20 +20,21 @@ export default ({ pageContext, data }) => {
       <motion.div id={"release-template-container"}>
         <Img fluid={data.releaseImage.childImageSharp.fluid}></Img>
         <motion.div id={"release-template-details"}>
-          <motion.h2 id={"release-name"}>{release.releaseName}</motion.h2>
-          <motion.h5 id={"release-artist"}>{release.artistName}</motion.h5>
-          <motion.h5 id={"release-description"}>
-            {release.releaseDescription}
-          </motion.h5>
-        </motion.div>
-        {hasTracks ? (
-          <motion.div id={"release-tracks"}>
-            {release.trackListing.map((track, index) => {
-              return <TrackRow track={track} key={index} index={index} />
-            })}
+          <motion.div>
+            <motion.h2 id={"release-name"}>{release.releaseName}</motion.h2>
+            <motion.h5 id={"release-artist"}>{release.artistName}</motion.h5>
+            <motion.h5 id={"release-description"}>
+              {release.releaseDescription}
+            </motion.h5>
           </motion.div>
-        ) : null}
-        <motion.div id={"release-options"}></motion.div>
+          {hasTracks ? (
+            <motion.div id={"release-tracks"}>
+              {release.trackListing.map((track, index) => {
+                return <TrackRow track={track} key={index} index={index} />
+              })}
+            </motion.div>
+          ) : null}
+        </motion.div>
       </motion.div>
       <Footer />
     </>

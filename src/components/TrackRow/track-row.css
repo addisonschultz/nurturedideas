@@ -8,9 +8,14 @@
 }
 
 #track-title {
+  font-family: Georgia;
+  font-weight: 600;
   line-height: 60px;
+  color: #000;
+  letter-spacing: -0.2px;
   margin: 0px;
   padding-left: 20px;
+  user-select: none;
 }
 
 #track-duration {
@@ -18,4 +23,5 @@
   margin: 0px;
   padding-right: 20px;
   justify-self: end;
+  user-select: none;
 }
