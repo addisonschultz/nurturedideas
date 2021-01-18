@@ -1,0 +1,5 @@
+#articles-section-container {
+  grid-area: resources-content;
+  height: 500px;
+  background-color: aqua;
+}

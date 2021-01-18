@@ -93,6 +93,38 @@
 
 /* 
 
+  Resources Page CSS
+
+*/
+
+#resources-container {
+  height: auto;
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px 0px 60px 0px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto;
+  grid-template-areas:
+    "selector"
+    "resources-content";
+}
+
+#resources-selector-container {
+  display: flex;
+  grid-area: selector;
+}
+
+#resources-selector-container h3 {
+  height: 80px;
+  line-height: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* 
+
   Artist Template CSS
 
 */
