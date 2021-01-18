@@ -42,3 +42,7 @@
   margin: 0px;
   color: #fff;
 }
+
+/* Smaller screen styles */
+@media only screen and (max-width: 900px) {
+}

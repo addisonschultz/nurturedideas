@@ -21,6 +21,7 @@
 .checkbox input {
   position: absolute;
   opacity: 0;
+  cursor: pointer;
 }
 
 .checkbox .overlay {
@@ -39,12 +40,14 @@
   display: none;
   height: 10px;
   width: 10px;
+  cursor: pointer;
 }
 
 .checkbox input:checked ~ .overlay {
   background-color: #ffffff;
   transform: rotate(0deg);
   opacity: 1;
+  cursor: pointer;
 }
 
 .checkbox input:checked ~ .overlay .icon {

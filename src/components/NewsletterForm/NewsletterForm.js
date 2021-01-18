@@ -131,9 +131,13 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
             ></motion.input>
           </div>
           <div
-            style={{ float: "left", position: "relative", marginBottom: 20 }}
+            style={{
+              float: "left",
+              position: "relative",
+              marginBottom: 20,
+            }}
           >
-            <label className="checkbox">
+            <label className="checkbox" style={{ cursor: "pointer" }}>
               <input
                 type="checkbox"
                 onChange={() => setCheckmark(!checkmark)}
