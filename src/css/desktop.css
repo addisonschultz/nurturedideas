@@ -136,13 +136,20 @@
 */
 
 #release-template-container {
-  background-color: #0d5c3e;
+  background-color: #fff;
+  margin: 20px 0px 60px 0px;
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 20px 0px 60px 0px;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "release-image release-details"
+    "release-tracks release-options";
 }
 
 #release-template-details {
+  grid-area: release-details;
+
+  background-color: #0d5c3e;
   text-align: left;
   padding: 30px;
 }
@@ -151,12 +158,26 @@
   font-family: Georgia;
   font-weight: 600;
   color: white;
+  margin-bottom: 5px;
 }
 
 #release-artist {
   font-family: Georgia;
   font-weight: 600;
-  color: white;
+  color: #eee;
+}
+
+#release-tracks {
+  height: 400px;
+  grid-area: release-tracks;
+  background-color: #fff;
+  padding-top: 20px;
+}
+
+#release-options {
+  height: 400px;
+  grid-area: release-options;
+  background-color: #fff;
 }
 
 /* 

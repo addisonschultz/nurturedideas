@@ -5,11 +5,13 @@ import Img from "gatsby-image"
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
+import TrackRow from "../components/TrackRow/TrackRow"
 
 export default ({ pageContext, data }) => {
   const release = pageContext.releaseData
 
-  console.log(release)
+  const hasTracks =
+    release.trackListing !== null && release.trackListing.length > 0
 
   return (
     <>
@@ -24,6 +26,14 @@ export default ({ pageContext, data }) => {
             {release.releaseDescription}
           </motion.h5>
         </motion.div>
+        {hasTracks ? (
+          <motion.div id={"release-tracks"}>
+            {release.trackListing.map((track, index) => {
+              return <TrackRow track={track} key={index} index={index} />
+            })}
+          </motion.div>
+        ) : null}
+        <motion.div id={"release-options"}></motion.div>
       </motion.div>
       <Footer />
     </>
