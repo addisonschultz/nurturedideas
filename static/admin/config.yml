@@ -98,6 +98,7 @@ collections:
         fields:
           - { name: releaseName, label: Name, widget: "string" }
           - { name: releaseDescription, label: Release Description, widget: "text", required: false, default: "" }
+          - { name: image, label: Image, widget: "image" }
           - {
               name: releaseDate,
               label: Release Date,
@@ -108,7 +109,6 @@ collections:
             }
           - { name: preOrderLink, label: Pre-Order Link, widget: "string", required: false, default: "" }
           - { name: link, label: Link, widget: "string" }
-          - { name: image, label: Image, widget: "image" }
           - name: trackListing
             label: Track Listing
             label_singular: Track
