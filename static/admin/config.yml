@@ -18,24 +18,22 @@ collections:
   # Site Metadata
   - name: site
     label: "Site"
+    editor:
+      preview: false
     files:
       - label: "Metadata"
         name: "about"
         file: "src/metadata/site.json"
         create: true
-        editor:
-          preview: false
         format: json-frontmatter
         fields:
           - { label: Bio, name: bio, widget: text }
-          - {
-              label: Content Type,
-              name: heroContentType,
-              widget: select,
-              options: ["youtube", "file"],
-            }
-          - { label: Youtube ID, name: youtubeId, widget: string }
-          - { label: Hero Video, name: heroVideo, widget: file }
+          - name: heroYoutubeVideos
+            label: Hero Youtube Videos
+            label_singular: Video
+            widget: "list"
+            fields:
+              - { name: youtubeId, label: Youtube ID, widget: "string", hint: "Just the Youtube ID (eg. QB6P6soNmys)" }
   # Artists
   - name: artists
     label: "Artists"
