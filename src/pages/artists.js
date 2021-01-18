@@ -25,15 +25,19 @@ const ArtistsPage = ({ data }) => {
     ]
   }, [])
 
+  console.log(allArtistsAndImages)
+
   return (
     <>
       <SEO title="Artists" />
       <Navigation />
       <motion.h3 className={"artists-header header"}>Artists</motion.h3>
       <motion.div id={"artists-container"}>
-        {allArtistsAndImages.map((artist, index) => {
-          return <ArtistCard artist={artist} key={index} />
-        })}
+        {allArtistsAndImages
+          .sort((a, b) => a.node.artistName.localeCompare(b.node.artistName))
+          .map((artist, index) => {
+            return <ArtistCard artist={artist} key={index} />
+          })}
       </motion.div>
       <Footer />
     </>
