@@ -1,96 +1,15 @@
 /* Smaller screen styles */
 @media only screen and (max-width: 900px) {
-  html {
-    font-size: 100%;
-  }
-
-  /* Navigation */
-  #navigation-container {
-    height: 130px !important;
-  }
-  #navigation-left-container {
-    float: none !important;
-    justify-content: center !important;
-  }
-  #navigation-right-container {
-    float: none !important;
-    justify-content: center !important;
-  }
-
-  /* Footer */
-  #footer-container {
-    text-align: center;
-  }
-  #footer-left-container {
-    float: none !important;
-  }
-  #footer-right-container {
-    float: none !important;
-  }
-
-  /* Index Page */
-  #index-content {
-    display: inline-block !important;
-  }
-  #index-right {
-    width: 100% !important;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #index-right-bottom {
-    height: 400px;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  #index-left {
-    width: 100% !important;
-  }
-
-  #hero-video {
-    margin-top: 0px;
-  }
-
-  #video {
-    margin-top: 0px !important;
-  }
-
-  #social-link {
-    height: 200px;
-  }
-
-  #social-link-container {
-    height: 100%;
-  }
-  #description {
-    margin-top: 800px;
-  }
-
-  #footer-container {
-    margin-bottom: 100px;
-  }
-
-  /* Artists Page */
-  #artists-content {
-    justify-content: center !important;
-  }
-  #artist-card-container {
-    margin: 0px 20px 0px 20px;
-  }
-
-  /* Releases Page */
-  #releases-content {
-    justify-content: center !important;
-  }
-  #release-card-container {
-    margin: 0px 20px 0px 20px;
-  }
-
-  /* Terms Page */
-  #terms-and-conditions {
-    height: 1150px !important;
+  #index-container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 350px 350px auto;
+    grid-template-areas:
+      "hero-video"
+      "newsletter-form"
+      "social-links"
+      "bio";
   }
 }

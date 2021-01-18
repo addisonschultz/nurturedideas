@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <motion.div id={"footer-container"}>
       {/* Footer Left Items */}
-      <motion.div id={"footer-left-container"} style={{ float: "left" }}>
+      <motion.div id={"footer-left-container"}>
         <motion.h3
           id={"footer-copyright"}
           className={"footer-item"}
@@ -27,7 +27,7 @@ const Footer = () => {
       </motion.div>
 
       {/* Footer Right Items */}
-      <motion.div id={"footer-right-container"} style={{ float: "right" }}>
+      <motion.div id={"footer-right-container"}>
         <motion.h3
           id={"footer-contact"}
           className={"footer-item"}
