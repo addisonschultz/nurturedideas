@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => {
               paddingTop: theme.spacing[6],
             }}
           >
-            Stay in touch
+            Sign up for our Monthly Newsletter
           </motion.h2>
           <NewsletterForm namePlaceholder={"Name"} emailPlaceholder={"Email"} />
         </motion.div>
