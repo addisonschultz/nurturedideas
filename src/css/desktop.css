@@ -153,6 +153,18 @@
   grid-template-rows: 60% 40%;
 }
 
+#release-template-pre-order {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  font-family: Georgia;
+  font-weight: 600;
+  color: #ededed;
+}
+
 #release-name {
   font-family: Georgia;
   font-weight: 600;
@@ -162,6 +174,13 @@
 }
 
 #release-artist {
+  font-family: Georgia;
+  font-weight: 600;
+  color: #ededed;
+  padding: 0px 30px;
+}
+
+#release-date {
   font-family: Georgia;
   font-weight: 600;
   color: #ededed;

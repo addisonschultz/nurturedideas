@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import Img from "gatsby-image"
+import moment from "moment"
 
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
@@ -13,7 +14,13 @@ export default ({ pageContext, data }) => {
   const hasTracks =
     release.trackListing !== null && release.trackListing.length > 0
 
-  console.log(pageContext)
+  const now = moment()
+  const releaseDate = moment(release.releaseDate, "DD.MM.YYYY")
+  const preOrder = releaseDate.isAfter(now)
+
+  const releaseDateFormatted = moment(release.releaseDate, "DD.MM.YYYY").format(
+    "DD.MM.YYYY"
+  )
 
   return (
     <>
@@ -29,10 +36,18 @@ export default ({ pageContext, data }) => {
         </a>
         <motion.div id={"release-template-details"}>
           <motion.div>
+            {preOrder ? (
+              <a href={release.preOrderLink} targe={"_blank"}>
+                <div id={"release-template-pre-order"}>PRE ORDER NOW</div>
+              </a>
+            ) : null}
             <motion.h2 id={"release-name"}>{release.releaseName}</motion.h2>
             <motion.h5 id={"release-artist"}>{release.artistName}</motion.h5>
             <motion.h5 id={"release-description"}>
               {release.releaseDescription}
+            </motion.h5>
+            <motion.h5 id={"release-date"}>
+              Release Date: {releaseDateFormatted}
             </motion.h5>
           </motion.div>
           {hasTracks ? (
