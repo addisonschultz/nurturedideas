@@ -13,12 +13,20 @@ export default ({ pageContext, data }) => {
   const hasTracks =
     release.trackListing !== null && release.trackListing.length > 0
 
+  console.log(pageContext)
+
   return (
     <>
       <SEO title="Home" />
       <Navigation />
       <motion.div id={"release-template-container"}>
-        <Img fluid={data.releaseImage.childImageSharp.fluid}></Img>
+        <a
+          href={pageContext.releaseData.link}
+          target={"_blank"}
+          id={"release-template-image"}
+        >
+          <Img fluid={data.releaseImage.childImageSharp.fluid}></Img>
+        </a>
         <motion.div id={"release-template-details"}>
           <motion.div>
             <motion.h2 id={"release-name"}>{release.releaseName}</motion.h2>

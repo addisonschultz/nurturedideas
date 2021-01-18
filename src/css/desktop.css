@@ -121,6 +121,7 @@
   font-weight: 500;
   letter-spacing: -0.2px;
   line-height: 20px;
+  white-space: pre-line;
 }
 
 .artist-social-link {
@@ -149,7 +150,7 @@
   background-color: #0d5c3e;
   text-align: left;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 60% 40%;
 }
 
 #release-name {
@@ -174,11 +175,13 @@
   font-weight: 500;
   letter-spacing: -0.2px;
   line-height: 20px;
+  white-space: pre-line;
 }
 
 #release-tracks {
-  height: auto;
+  height: 100%;
   background-color: #fff;
+  overflow-y: scroll;
 }
 
 /* 
