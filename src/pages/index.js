@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
-import HeroYoutube from "../components/Hero/HeroYoutube"
+import HeroCarousel from "../components/Hero/HeroCarousel"
 import NewsletterForm from "../components/NewsletterForm/NewsletterForm"
 import SocialLink from "../components/SocialLink/SocialLink"
 
@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Navigation />
       <motion.div id={"index-container"}>
-        <HeroYoutube youtubeId={metadata.youtubeId} />
+        <HeroCarousel videos={metadata.youtubeId} />
 
         <motion.div id={"social-links"}>
           <SocialLink
