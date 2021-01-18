@@ -2,8 +2,6 @@ import React from "react"
 import { motion } from "framer-motion"
 import Img from "gatsby-image"
 
-import { theme } from "../theme/theme"
-
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
@@ -18,8 +16,6 @@ import twitterWhite1 from "../svg/twitter-white1.svg"
 export default ({ pageContext, data }) => {
   const artist = pageContext.artistData
 
-  console.log(data)
-
   return (
     <>
       <SEO title="Home" />
@@ -30,25 +26,8 @@ export default ({ pageContext, data }) => {
           id={"artist-template-image"}
         ></Img>
         <motion.div id={"artist-template-details"}>
-          <motion.h2
-            id={"artist-name"}
-            style={{
-              fontFamily: theme.font.georgia,
-              color: theme.colors.white0,
-              fontWeight: 600,
-            }}
-          >
-            {artist.artistName}
-          </motion.h2>
-          <motion.h5
-            id={"artist-bio"}
-            style={{
-              fontFamily: theme.font.georgia,
-              color: theme.colors.white0,
-            }}
-          >
-            {artist.bio}
-          </motion.h5>
+          <motion.h2 id={"artist-name"}>{artist.artistName}</motion.h2>
+          <motion.h5 id={"artist-bio"}>{artist.bio}</motion.h5>
           <motion.div id={"artist-template-links"}>
             {artist.website !== "" && (
               <a
@@ -132,7 +111,7 @@ export default ({ pageContext, data }) => {
 }
 
 export const data = graphql`
-  query ProductImages($artistImage: String!) {
+  query ArtistImage($artistImage: String!) {
     artistImage: file(relativePath: { eq: $artistImage }) {
       id
       childImageSharp {
