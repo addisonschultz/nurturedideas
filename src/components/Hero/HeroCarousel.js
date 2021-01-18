@@ -5,11 +5,9 @@ import { wrap } from "popmotion"
 import HeroYoutube from "./HeroYoutube"
 
 const HeroCarousel = ({ videos }) => {
-  const array = ["PdppVYFncuU", "QB6P6soNmys", "otPB54Wxf5c"]
-
   const [[page, direction], setPage] = useState([0, 0])
 
-  const videoIndex = wrap(0, array.length, page)
+  const videoIndex = wrap(0, videos.length, page)
 
   const paginate = newDirection => {
     setPage([page + newDirection, newDirection])
@@ -47,22 +45,16 @@ const HeroCarousel = ({ videos }) => {
   return (
     <motion.div id={"hero-carousel-container"}>
       <AnimatePresence initial={false} custom={direction}>
-        {array.map((video, index) => {
-          return (
-            <HeroYoutube
-              youtubeId={array[videoIndex]}
-              variants={carouselVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              key={page + index}
-              // key={video}
-              custom={direction}
-              index={index}
-              transition={transition}
-            />
-          )
-        })}
+        <HeroYoutube
+          youtubeId={videos[videoIndex].youtubeId}
+          variants={carouselVariants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          key={page}
+          custom={direction}
+          transition={transition}
+        />
       </AnimatePresence>
       <motion.div id={"carousel-controls"}>
         <motion.div

@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Navigation />
       <motion.div id={"index-container"}>
-        <HeroCarousel videos={metadata.youtubeId} />
+        <HeroCarousel videos={metadata.heroYoutubeVideos} />
 
         <motion.div id={"social-links"}>
           <SocialLink
@@ -81,9 +81,9 @@ export const query = graphql`
       edges {
         node {
           bio
-          youtubeId
-          heroContentType
-          heroVideo
+          heroYoutubeVideos {
+            youtubeId
+          }
         }
       }
     }
