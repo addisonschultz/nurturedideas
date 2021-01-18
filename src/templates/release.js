@@ -10,7 +10,7 @@ export default ({ pageContext }) => {
     <>
       <SEO title="Home" />
       <motion.div
-        id={"release-container"}
+        id={"release-template-container"}
         style={{
           height: "auto",
           backgroundColor: theme.colors.tertiary,
