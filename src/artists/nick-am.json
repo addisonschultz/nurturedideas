@@ -1,5 +1,5 @@
 {
-  "soundcloud": "https://soundcloud.com/nickam",
+"soundcloud": "https://soundcloud.com/nickam",
   "facebook": "https://www.facebook.com/nickam",
   "bio": "Nick AM is Nick Momeni. Born in Manhattan to Iranian immigrants, Momeni’s artistry marries family heritage and contemporary influence. Following the Iranian revolution in the 1980’s, Momeni’s grandfather started a new life in New York City, selling Persian rugs and establishing the family business that still lives on today. \n\nMomeni’s love of house and electronic music was born from familial influence as well. His parents would often bring home mix CD’s from their travels, exposing him to Western pop and dance music and eventually spurring his obsession for house music with a mix brought from San Tropez. Momeni has chased electronic music ever since— coming of age in New York’s underground club scene and learning to produce through friends.",
   "releases": [
@@ -7,7 +7,17 @@
       "releaseName": "Take It Back",
       "link": "https://ffm.to/takeitback",
       "image": "single-art-take-it-back.jpg",
-      "releaseDate": "03.03.2020"
+      "releaseDate": "03.03.2020",
+      "trackListing": [
+        {
+          "trackName": "Take it Back",
+          "trackDuration": "4:05"
+        },
+        {
+          "trackName": "Take it Back - Club Edit",
+          "trackDuration": "4:51"
+        }
+      ]
     },
     {
       "releaseName": "Utopia",
