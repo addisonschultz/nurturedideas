@@ -1,0 +1,62 @@
+/* Form inputs */
+
+.newsletter-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+#newsletter-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Form Checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  transform: rotate(-180deg);
+  transition: all 0.3s;
+}
+
+.checkbox .overlay .icon {
+  color: white;
+  display: none;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+}
+
+.checkbox input:checked ~ .overlay {
+  background-color: #ffffff;
+  transform: rotate(0deg);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.checkbox input:checked ~ .overlay .icon {
+  display: block;
+  color: #0d5c3e;
+}
+
+/* Form Button */
+
+#newsletter-submit-button {
+  outline: none;
+}

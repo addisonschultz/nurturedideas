@@ -1,63 +1,51 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { motion } from "framer-motion"
-import SEO from "../components/layout/seo"
-import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
-import ReleaseCard from "../components/ReleaseCard"
-import { theme } from "../theme/theme"
-import * as utils from "../utils"
 import moment from "moment"
+
+import SEO from "../components/layout/seo"
+import Navigation from "../components/Navigation/Navigation"
+import Footer from "../components/Footer/Footer"
+import ReleaseCard from "../components/ReleaseCard/ReleaseCard"
+
+import * as utils from "../utils"
 
 const ReleasesPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
   const nonArtistReleases = data.allReleasesJson.edges
-
+  const allImages = data.allFile.edges
   const allReleases = utils.getAllReleases(artists, nonArtistReleases)
+
+  // Reduce releases to include sharp images
+  const allReleasesAndImages = allReleases.reduce((prev, curr) => {
+    const sharpImage = allImages.find(image => {
+      return image.node.relativePath === curr.image
+    })
+    return [
+      ...prev,
+      {
+        ...curr,
+        sharpImage: sharpImage,
+      },
+    ]
+  }, [])
 
   return (
     <>
       <SEO title="Releases" />
-      <motion.div
-        id={"releases-container"}
-        style={{
-          height: "auto",
-          background: theme.colors.tertiary,
-        }}
-      >
-        <Navigation />
-        <motion.div
-          id={"releases-content"}
-          style={{
-            width: "100%",
-            height: "auto",
-            background: theme.colors.tertiary,
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            padding: "50px 10% 50px 10%",
-          }}
-        >
-          {allReleases
-            .sort((a, b) => {
-              return (
-                moment(b.releaseDate, "DD.MM.YYYY") -
-                moment(a.releaseDate, "DD.MM.YYYY")
-              )
-            })
-            .map((release, index) => {
-              return (
-                <ReleaseCard
-                  releaseName={release.releaseName}
-                  releaseDate={release.releaseDate}
-                  artistName={release.artistName}
-                  image={release.image}
-                  link={release.link}
-                  key={index}
-                />
-              )
-            })}
-        </motion.div>
+      <Navigation />
+      <motion.h3 className={"releases-header header"}>Releases</motion.h3>
+      <motion.div id={"releases-container"}>
+        {allReleasesAndImages
+          .sort((a, b) => {
+            return (
+              moment(b.releaseDate, "DD.MM.YYYY") -
+              moment(a.releaseDate, "DD.MM.YYYY")
+            )
+          })
+          .map((release, index) => {
+            return <ReleaseCard release={release} key={index} />
+          })}
       </motion.div>
       <Footer />
     </>
@@ -72,9 +60,15 @@ export const query = graphql`
           artistName
           releases {
             image
-            link
             releaseName
+            link
+            preOrderLink
+            releaseDescription
             releaseDate
+            trackListing {
+              trackDuration
+              trackName
+            }
           }
         }
       }
@@ -82,11 +76,29 @@ export const query = graphql`
     allReleasesJson {
       edges {
         node {
-          image
-          link
-          releaseName
-          releaseDate
           artistName
+          image
+          releaseName
+          link
+          preOrderLink
+          releaseDescription
+          releaseDate
+          trackListing {
+            trackDuration
+            trackName
+          }
+        }
+      }
+    }
+    allFile(filter: { internal: { mediaType: { regex: "images/" } } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          relativePath
         }
       }
     }

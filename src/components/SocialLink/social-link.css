@@ -1,0 +1,8 @@
+#social-link {
+  height: calc(350px / 3);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}

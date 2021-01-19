@@ -1,52 +1,43 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { motion } from "framer-motion"
+
 import SEO from "../components/layout/seo"
-import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
-import ArtistCard from "../components/ArtistCard"
-import { theme } from "../theme/theme"
-import * as utils from "../utils"
+import Navigation from "../components/Navigation/Navigation"
+import Footer from "../components/Footer/Footer"
+import ArtistCard from "../components/ArtistCard/ArtistCard"
 
 const ArtistsPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
+  const allImages = data.allFile.edges
+
+  // Reduce artists to include sharp images
+  const allArtistsAndImages = artists.reduce((prev, curr) => {
+    const sharpImage = allImages.find(image => {
+      return image.node.relativePath === curr.node.image
+    })
+    return [
+      ...prev,
+      {
+        ...curr,
+        sharpImage: sharpImage,
+      },
+    ]
+  }, [])
+
+  console.log(allArtistsAndImages)
 
   return (
     <>
       <SEO title="Artists" />
-      <motion.div
-        id={"artists-container"}
-        style={{
-          height: "auto",
-          background: theme.colors.tertiary,
-        }}
-      >
-        <Navigation />
-        <motion.div
-          id={"artists-content"}
-          style={{
-            width: "100%",
-            height: "auto",
-            background: theme.colors.tertiary,
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            padding: "50px 10% 50px 10%",
-          }}
-        >
-          {artists.map((artist, index) => {
-            return (
-              <ArtistCard
-                to={`/${utils.getArtistSlug(artist.node.artistName)}`}
-                spotify={artist.node.spotify}
-                soundcloud={artist.node.soundcloud}
-                artistName={artist.node.artistName}
-                image={artist.node.image}
-                key={index}
-              />
-            )
+      <Navigation />
+      <motion.h3 className={"artists-header header"}>Artists</motion.h3>
+      <motion.div id={"artists-container"}>
+        {allArtistsAndImages
+          .sort((a, b) => a.node.artistName.localeCompare(b.node.artistName))
+          .map((artist, index) => {
+            return <ArtistCard artist={artist} key={index} />
           })}
-        </motion.div>
       </motion.div>
       <Footer />
     </>
@@ -67,13 +58,31 @@ export const query = graphql`
           instagram
           releases {
             image
-            link
             releaseName
+            link
+            preOrderLink
+            releaseDescription
             releaseDate
+            trackListing {
+              trackDuration
+              trackName
+            }
           }
           soundcloud
           spotify
           twitter
+        }
+      }
+    }
+    allFile(filter: { internal: { mediaType: { regex: "images/" } } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          relativePath
         }
       }
     }

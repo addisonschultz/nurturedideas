@@ -1,0 +1,264 @@
+/*
+    Sets margins across the entire site.
+*/
+
+#page-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto auto;
+  padding: 0px 20px;
+}
+
+/* 
+
+  Index Page CSS
+
+*/
+
+#index-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 600px 350px auto;
+  grid-template-areas:
+    "hero-video hero-video"
+    "social-links newsletter-form"
+    "bio bio";
+}
+
+#social-links {
+  grid-area: social-links;
+}
+
+#newsletter-form {
+  background-color: #0d5c3e;
+  grid-area: newsletter-form;
+  padding: 25px 50px 50px 50px;
+}
+
+#bio {
+  grid-area: bio;
+  padding: 100px 50px;
+  text-align: left;
+}
+
+/* 
+
+  Artists Page CSS
+
+*/
+
+#artists-container {
+  height: auto;
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px 0px 60px 0px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.artists-header {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* 
+
+  Releases Page CSS
+
+*/
+
+#releases-container {
+  height: auto;
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px 0px 60px 0px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.releases-header {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* 
+
+  Resources Page CSS
+
+*/
+
+#resources-container {
+  height: auto;
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px 0px 60px 0px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto auto;
+  grid-template-areas:
+    "selector"
+    "description"
+    "resources-content";
+}
+
+#resources-selector-container {
+  display: flex;
+  grid-area: selector;
+}
+
+#resources-selector-container h3 {
+  height: 80px;
+  line-height: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#interview-section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+#articles-section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+/* 
+
+  Artist Template CSS
+
+*/
+
+#artist-template-container {
+  background-color: #0d5c3e;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 20px 0px 60px 0px;
+}
+
+#artist-template-details {
+  text-align: left;
+  padding: 30px;
+}
+
+#artist-name {
+  font-family: Georgia;
+  color: white;
+  font-weight: 600;
+}
+
+#artist-bio {
+  font-family: Georgia;
+  color: white;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 20px;
+  white-space: pre-line;
+}
+
+.artist-social-link {
+  height: 20px;
+  width: 20px;
+  margin: 10px 20px 10px 0px;
+}
+
+/* 
+
+  Release Template CSS
+
+*/
+
+#release-template-container {
+  background-color: #fff;
+  margin: 20px 0px 60px 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "release-image release-details";
+}
+
+#release-template-details {
+  grid-area: release-details;
+  background-color: #0d5c3e;
+  text-align: left;
+  display: grid;
+  grid-template-rows: 60% auto;
+}
+
+#release-template-pre-order {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  font-family: Georgia;
+  font-weight: 600;
+  color: #fff;
+}
+
+#release-name {
+  font-family: Georgia;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 5px;
+  padding: 30px 30px 0px 30px;
+}
+
+#release-artist {
+  font-family: Georgia;
+  font-weight: 600;
+  color: #ededed;
+  padding: 0px 30px;
+}
+
+#release-date {
+  font-family: Georgia;
+  font-weight: 600;
+  color: #ededed;
+  padding: 0px 30px;
+}
+
+#release-description {
+  padding: 0px 30px;
+  font-family: Georgia;
+  color: white;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 20px;
+  white-space: pre-line;
+}
+
+#release-tracks {
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+/* 
+
+  Terms Page CSS
+
+*/
+
+#terms-container {
+  height: auto;
+  width: 100%;
+  padding: 50px;
+  text-align: left;
+}

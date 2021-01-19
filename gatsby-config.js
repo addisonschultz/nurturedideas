@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-json`,
+    `gatsby-transformer-remark`,
     // Store src/images in filesystem
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,25 +19,54 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    /**
+     * Add all images from static to the filesystem
+     */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `staticImages`,
+        path: `${__dirname}/static`,
+      },
+    },
     // Store src/metadata in filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/metadata/`,
+        name: "metadata",
+        path: `${__dirname}/src/metadata/site.json`,
       },
     },
     // Store src/artists in filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/artists/`,
+        name: "artists",
+        path: `${__dirname}/src/artists/`,
       },
     },
     // Store src/releases in filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/releases/`,
+        name: "releases",
+        path: `${__dirname}/src/releases/`,
+      },
+    },
+    // Store src/interviews in filesystem
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "interviews",
+        path: `${__dirname}/src/interviews`,
+      },
+    },
+    // Store src/articles in filesystem
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "articles",
+        path: `${__dirname}/src/articles`,
       },
     },
     {

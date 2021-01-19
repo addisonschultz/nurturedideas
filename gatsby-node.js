@@ -1,7 +1,7 @@
-// import getArtistSlug from "./src/utils"
 const utils = require("./src/utils")
 
 exports.createPages = async function({ actions, graphql }) {
+  // Query for all data
   const { data } = await graphql(`
     query GetAllArtists {
       allArtistsJson {
@@ -16,24 +16,94 @@ exports.createPages = async function({ actions, graphql }) {
             instagram
             releases {
               image
-              link
               releaseName
+              link
+              preOrderLink
+              releaseDescription
               releaseDate
+              trackListing {
+                trackDuration
+                trackName
+              }
             }
             soundcloud
             spotify
             twitter
+            appleMusic
+            tiktok
+          }
+        }
+      }
+      allReleasesJson {
+        edges {
+          node {
+            artistName
+            image
+            releaseName
+            link
+            preOrderLink
+            releaseDescription
+            releaseDate
+            trackListing {
+              trackDuration
+              trackName
+            }
+          }
+        }
+      }
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___interviewReleaseDate] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              interviewName
+            }
           }
         }
       }
     }
   `)
-  data.allArtistsJson.edges.forEach(({ node }) => {
-    const slug = utils.getArtistSlug(node.artistName)
+
+  // Destructure data
+  const artists = data.allArtistsJson.edges
+  const nonArtistReleases = data.allReleasesJson.edges
+  const interviews = data.allMarkdownRemark.edges
+
+  // Combine all releases
+  const allReleases = utils.getAllReleases(artists, nonArtistReleases)
+
+  // Create all artist pages
+  artists.forEach(({ node }) => {
+    const slug = utils.getUrlSlug(node.artistName)
     actions.createPage({
       path: slug,
       component: require.resolve(`./src/templates/artist.js`),
-      context: { artistData: node },
+      context: { artistData: node, artistImage: node.image },
+    })
+  })
+
+  // Create all release pages
+  allReleases.forEach(release => {
+    const slug = utils.getUrlSlug(release.releaseName)
+    actions.createPage({
+      path: slug,
+      component: require.resolve(`./src/templates/release.js`),
+      context: { releaseData: release, releaseImage: release.image },
+    })
+  })
+
+  // Create all interview pages
+  interviews.forEach(({ node }) => {
+    const slug = utils.getUrlSlug(node.frontmatter.interviewName)
+    actions.createPage({
+      path: slug,
+      component: require.resolve(`./src/templates/interview.js`),
+      context: {
+        // additional data can be passed via context
+        interviewName: node.frontmatter.interviewName,
+      },
     })
   })
 }

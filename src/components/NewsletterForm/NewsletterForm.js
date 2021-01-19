@@ -1,7 +1,9 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { theme } from "../theme/theme"
+import { theme } from "../../theme/theme"
 import { Link } from "gatsby"
+
+import "./newsletter-form.css"
 
 const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
   const variants = {
@@ -129,9 +131,13 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
             ></motion.input>
           </div>
           <div
-            style={{ float: "left", position: "relative", marginBottom: 20 }}
+            style={{
+              float: "left",
+              position: "relative",
+              marginBottom: 20,
+            }}
           >
-            <label className="checkbox">
+            <label className="checkbox" style={{ cursor: "pointer" }}>
               <input
                 type="checkbox"
                 onChange={() => setCheckmark(!checkmark)}

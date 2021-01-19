@@ -1,0 +1,77 @@
+/* Smaller screen styles */
+@media only screen and (max-width: 900px) {
+  /* 
+
+    Index Page CSS
+
+  */
+
+  #index-container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 350px 350px auto;
+    grid-template-areas:
+      "hero-video"
+      "newsletter-form"
+      "social-links"
+      "bio";
+  }
+
+  /* 
+
+  Resources Page CSS
+
+  */
+
+  #resources-container {
+    height: auto;
+    width: 100%;
+    max-width: 1280px;
+    margin: 20px 0px 60px 0px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 250px auto;
+    grid-template-areas:
+      "selector"
+      "description"
+      "resources-content";
+  }
+
+  /* 
+
+  Artist Template CSS
+
+  */
+
+  #artist-template-container {
+    background-color: #0d5c3e;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 450px auto;
+    margin: 20px 0px 60px 0px;
+  }
+
+  /* 
+
+  Release Template CSS
+
+  */
+
+  #release-template-container {
+    background-color: #0d5c3e;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 550px;
+    margin: 20px 0px 60px 0px;
+    grid-template-areas:
+      "release-image"
+      "release-details";
+  }
+
+  #release-template-image {
+    grid-area: release-image;
+  }
+}
