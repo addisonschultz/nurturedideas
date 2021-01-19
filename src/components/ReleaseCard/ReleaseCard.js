@@ -17,7 +17,10 @@ const ReleaseCard = ({ release }) => {
 
   return (
     <Link to={`/${utils.getUrlSlug(release.releaseName)}`}>
-      <motion.div id={"release-card-container"}>
+      <motion.div
+        id={"release-card-container"}
+        whileHover={{ backgroundColor: "#E1EFE2" }}
+      >
         {preOrder ? (
           <motion.div id={"pre-order-banner"}>
             <motion.h5 id={"pre-order-text"}>Pre Order</motion.h5>
@@ -26,7 +29,10 @@ const ReleaseCard = ({ release }) => {
 
         <Img
           fluid={image.childImageSharp.fluid}
-          style={{ height: "200px", maxHeight: "200px" }}
+          style={{
+            height: "200px",
+            maxHeight: "200px",
+          }}
         />
         <motion.p className={"release-card-release-name"}>
           {release.releaseName}

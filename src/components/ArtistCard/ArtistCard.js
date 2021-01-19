@@ -5,8 +5,8 @@ import Img from "gatsby-image"
 
 import * as utils from "../../utils"
 
-import spotifyWhite1 from "../../svg/spotify-white1.svg"
-import soundcloudWhite1 from "../../svg/soundcloud-white1.svg"
+import spotifyGreen from "../../svg/spotify-green.svg"
+import soundcloudGreen from "../../svg/soundcloud-green.svg"
 
 import "./artist-card.css"
 
@@ -15,7 +15,10 @@ const ArtistCard = ({ artist }) => {
   const image = artist.sharpImage.node
 
   return (
-    <motion.div id={"artist-card-container"}>
+    <motion.div
+      id={"artist-card-container"}
+      whileHover={{ backgroundColor: "#E1EFE2" }}
+    >
       <Link to={`/${utils.getUrlSlug(artistData.artistName)}`}>
         <Img
           fluid={image.childImageSharp.fluid}
@@ -32,7 +35,7 @@ const ArtistCard = ({ artist }) => {
           rel="noopener noreferrer"
         >
           <motion.div id={"spotify-link"} className={"icon-container"}>
-            <motion.img src={spotifyWhite1} className={"icon"}></motion.img>
+            <motion.img src={spotifyGreen} className={"icon"}></motion.img>
           </motion.div>
         </a>
         <a
@@ -41,7 +44,7 @@ const ArtistCard = ({ artist }) => {
           rel="noopener noreferrer"
         >
           <motion.div id={"soundcloud-link"} className={"icon-container"}>
-            <motion.img src={soundcloudWhite1} className={"icon"}></motion.img>
+            <motion.img src={soundcloudGreen} className={"icon"}></motion.img>
           </motion.div>
         </a>
       </motion.div>

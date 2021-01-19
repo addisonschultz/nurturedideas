@@ -1,13 +1,14 @@
 #artist-card-container {
   height: auto;
   width: 100%;
-  background-color: #0d5c3e;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .artist-card-artist-name {
   font-family: "Georgia";
+  color: #0d5c3e;
   font-size: 18px;
-  color: #fff;
   text-align: left;
   margin: 10px 0px 0px 12px;
 }
