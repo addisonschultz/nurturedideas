@@ -26,7 +26,7 @@ export default ({ pageContext, data }) => {
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title={artist.artistName} />
       <Navigation />
       <motion.div id={"artist-template-container"}>
         <Img

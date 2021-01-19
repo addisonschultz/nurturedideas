@@ -24,7 +24,7 @@ export default ({ pageContext, data }) => {
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title={release.releaseName} />
       <Navigation />
       <motion.div id={"release-template-container"}>
         <a

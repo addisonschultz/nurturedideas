@@ -182,4 +182,4 @@ collections:
           format: "DD.MM.YYYY",
           timeFormat: false,
         }
-      - { label: 'Blog post content', name: 'body', widget: 'markdown' }
+      - { label: 'Interview Content', name: 'interviewContent', widget: 'markdown' }

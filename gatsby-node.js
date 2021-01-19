@@ -51,12 +51,25 @@ exports.createPages = async function({ actions, graphql }) {
           }
         }
       }
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___interviewReleaseDate] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              interviewName
+            }
+          }
+        }
+      }
     }
   `)
 
   // Destructure data
   const artists = data.allArtistsJson.edges
   const nonArtistReleases = data.allReleasesJson.edges
+  const interviews = data.allMarkdownRemark.edges
 
   // Combine all releases
   const allReleases = utils.getAllReleases(artists, nonArtistReleases)
@@ -78,6 +91,19 @@ exports.createPages = async function({ actions, graphql }) {
       path: slug,
       component: require.resolve(`./src/templates/release.js`),
       context: { releaseData: release, releaseImage: release.image },
+    })
+  })
+
+  // Create all interview pages
+  interviews.forEach(({ node }) => {
+    const slug = utils.getUrlSlug(node.frontmatter.interviewName)
+    actions.createPage({
+      path: slug,
+      component: require.resolve(`./src/templates/interview.js`),
+      context: {
+        // additional data can be passed via context
+        interviewName: node.frontmatter.interviewName,
+      },
     })
   })
 }
