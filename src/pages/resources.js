@@ -9,6 +9,7 @@ import Footer from "../components/Footer/Footer"
 
 const ResourcesPage = ({ data }) => {
   const interviews = data.allMarkdownRemark.edges
+  const articles = data.allArticlesJson.edges
 
   const [resource, setResource] = useState("interviews")
 
@@ -49,7 +50,7 @@ const ResourcesPage = ({ data }) => {
         {resource === "interviews" ? (
           <InterviewsSection interviews={interviews} />
         ) : (
-          <ArticlesSection />
+          <ArticlesSection articles={articles} />
         )}
       </motion.div>
       <Footer />
@@ -68,6 +69,15 @@ export const query = graphql`
             interviewName
             interviewReleaseDate
           }
+        }
+      }
+    }
+    allArticlesJson {
+      edges {
+        node {
+          articleImage
+          articleLink
+          articleName
         }
       }
     }

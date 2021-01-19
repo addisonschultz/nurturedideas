@@ -37,7 +37,11 @@ export default ({ pageContext, data }) => {
         <motion.div id={"release-template-details"}>
           <motion.div>
             {preOrder ? (
-              <a href={release.preOrderLink} targe={"_blank"}>
+              <a
+                href={release.preOrderLink}
+                target={"_blank"}
+                rel="noopener noreferrer"
+              >
                 <div id={"release-template-pre-order"}>PRE ORDER NOW</div>
               </a>
             ) : null}

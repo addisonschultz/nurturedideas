@@ -7,6 +7,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+#article-card-arrow {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 #article-card-title {
@@ -14,4 +21,5 @@
   font-weight: 600;
   font-size: 28px;
   color: #0d5c3e;
+  margin: 0px;
 }

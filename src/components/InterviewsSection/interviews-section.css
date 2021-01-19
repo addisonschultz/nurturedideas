@@ -10,3 +10,10 @@
   font-size: 20px;
   text-align: left;
 }
+
+@media only screen and (max-width: 900px) {
+  #interview-section-container {
+    grid-area: resources-content;
+    height: auto;
+  }
+}

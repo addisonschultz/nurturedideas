@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "metadata",
-        path: `./src/metadata/site.json`,
+        path: `${__dirname}/src/metadata/site.json`,
       },
     },
     // Store src/artists in filesystem
@@ -42,7 +42,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "artists",
-        path: `./src/artists/`,
+        path: `${__dirname}/src/artists/`,
       },
     },
     // Store src/releases in filesystem
@@ -50,7 +50,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "releases",
-        path: `./src/releases/`,
+        path: `${__dirname}/src/releases/`,
       },
     },
     // Store src/interviews in filesystem
@@ -59,6 +59,14 @@ module.exports = {
       options: {
         name: "interviews",
         path: `${__dirname}/src/interviews`,
+      },
+    },
+    // Store src/articles in filesystem
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "articles",
+        path: `${__dirname}/src/articles`,
       },
     },
     {

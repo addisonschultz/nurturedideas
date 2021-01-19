@@ -21,6 +21,27 @@
 
   /* 
 
+  Resources Page CSS
+
+  */
+
+  #resources-container {
+    height: auto;
+    width: 100%;
+    max-width: 1280px;
+    margin: 20px 0px 60px 0px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 250px auto;
+    grid-template-areas:
+      "selector"
+      "description"
+      "resources-content";
+  }
+
+  /* 
+
   Artist Template CSS
 
   */
