@@ -190,7 +190,7 @@
   background-color: #0d5c3e;
   text-align: left;
   display: grid;
-  grid-template-rows: 60% 40%;
+  grid-template-rows: 60% auto;
 }
 
 #release-template-pre-order {
