@@ -8,7 +8,7 @@ import logo from "../../images/logo.png"
 
 import "./interview-card.css"
 
-const ArtistCard = ({ interview }) => {
+const InterviewCard = ({ interview }) => {
   const interviewName = interview.node.frontmatter.interviewName
 
   return (
@@ -24,4 +24,4 @@ const ArtistCard = ({ interview }) => {
   )
 }
 
-export default ArtistCard
+export default InterviewCard

@@ -1,0 +1,17 @@
+#article-card-container {
+  height: 250px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#article-card-title {
+  font-family: "Sharpe Black";
+  font-weight: 600;
+  font-size: 28px;
+  color: #0d5c3e;
+}

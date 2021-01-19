@@ -183,3 +183,19 @@ collections:
           timeFormat: false,
         }
       - { label: 'Interview Content', name: 'interviewContent', widget: 'markdown' }
+  # Resources - Articles
+  - name: articles
+    label: "Articles"
+    label_singular: "Article"
+    folder: src/articles
+    create: true
+    editor:
+      preview: false
+    format: json-frontmatter
+    extension: json
+    slug: "{{articleName}}"
+    fields:
+      - { name: articleName, label: Article Name, widget: "string", }
+      - { name: articleLink, label: Article Link, widget: "string", }
+      - { name: articleImage, label: Article Image, widget: "image" }
+      
