@@ -1,5 +1,6 @@
 ---
 interviewName: Nurtured017
+interviewReleaseDate: 17.07.2021
 ---
 # Welcome to Nurtured Ideas
 
