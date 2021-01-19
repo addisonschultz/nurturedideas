@@ -3,3 +3,11 @@
   height: 500px;
   background-color: aqua;
 }
+
+#articles-section-description {
+  height: 150px;
+  width: 75%;
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: left;
+}

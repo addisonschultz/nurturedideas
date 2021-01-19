@@ -105,9 +105,10 @@
   background-color: #fff;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 80px auto;
+  grid-template-rows: 80px auto auto;
   grid-template-areas:
     "selector"
+    "description"
     "resources-content";
 }
 
