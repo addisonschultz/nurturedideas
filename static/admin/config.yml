@@ -163,3 +163,15 @@ collections:
         fields:
           - { name: trackName, label: Track Name, widget: "string" }
           - { name: trackDuration, label: Track Duration, widget: "string", hint: "ex. 3:05" }
+  # Resources - Interviews
+  - name: interviews
+    label: "Interviews"
+    label_singular: "Interview"
+    folder: src/interviews
+    create: true
+    editor:
+      preview: false
+    slug: "{{interviewName}}"
+    fields:
+      - { name: interviewName, label: Interview Name, widget: "string", hint: "ex. Nurtured018" }
+      - { label: 'Blog post content', name: 'body', widget: 'markdown' }
