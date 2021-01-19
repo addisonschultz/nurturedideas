@@ -6,7 +6,6 @@ import arrowUpRight from "../../svg/arrow-up-right.svg"
 import "./article-card.css"
 
 const ArticleCard = ({ article }) => {
-  console.log(article)
   return (
     <a
       href={article.node.articleLink}
