@@ -65,7 +65,10 @@
 
 .artists-header {
   text-align: left;
-  margin-top: 10px;
+  color: #000;
+  height: 80px;
+  line-height: 80px;
+  margin-top: 20px;
 }
 
 /* 
@@ -88,7 +91,10 @@
 
 .releases-header {
   text-align: left;
-  margin-top: 10px;
+  color: #000;
+  height: 80px;
+  line-height: 80px;
+  margin-top: 20px;
 }
 
 /* 
