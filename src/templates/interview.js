@@ -1,18 +1,29 @@
 import React from "react"
 import { motion } from "framer-motion"
-import Img from "gatsby-image"
-import moment from "moment"
+// import Img from "gatsby-image"
 
-// import SEO from "../components/layout/seo"
+import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
 
 export default ({ pageContext, data }) => {
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+
   return (
     <>
-      {/* <SEO title= /> */}
+      <SEO title={frontmatter.interviewName} />
       <Navigation />
-      <motion.div id={"interview-template-container"}></motion.div>
+      <motion.div id={"interview-template-container"}>
+        <div className="blog-post">
+          <h1>{frontmatter.interviewName}</h1>
+          <h2>{frontmatter.interviewReleaseDate}</h2>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+      </motion.div>
       <Footer />
     </>
   )
