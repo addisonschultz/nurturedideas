@@ -174,4 +174,12 @@ collections:
     slug: "{{interviewName}}"
     fields:
       - { name: interviewName, label: Interview Name, widget: "string", hint: "ex. Nurtured018" }
+      - {
+          name: interviewReleaseDate,
+          label: Release Date,
+          widget: "datetime",
+          dateFormat: "DD.MM.YYYY",
+          format: "DD.MM.YYYY",
+          timeFormat: false,
+        }
       - { label: 'Blog post content', name: 'body', widget: 'markdown' }

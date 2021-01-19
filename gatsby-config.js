@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-json`,
+    `gatsby-transformer-remark`,
     // Store src/images in filesystem
     {
       resolve: `gatsby-source-filesystem`,
@@ -50,6 +51,14 @@ module.exports = {
       options: {
         name: "releases",
         path: `./src/releases/`,
+      },
+    },
+    // Store src/interviews in filesystem
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "interviews",
+        path: `${__dirname}/src/interviews`,
       },
     },
     {
