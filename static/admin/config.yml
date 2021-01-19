@@ -195,7 +195,15 @@ collections:
     extension: json
     slug: "{{articleName}}"
     fields:
-      - { name: articleName, label: Article Name, widget: "string", }
-      - { name: articleLink, label: Article Link, widget: "string", }
+      - { name: articleName, label: Article Name, widget: "string" }
+      - {
+          name: articleReleaseDate,
+          label: Release Date,
+          widget: "datetime",
+          dateFormat: "DD.MM.YYYY",
+          format: "DD.MM.YYYY",
+          timeFormat: false,
+        }
+      - { name: articleLink, label: Article Link, widget: "string" }
       - { name: articleImage, label: Article Image, widget: "image" }
       
