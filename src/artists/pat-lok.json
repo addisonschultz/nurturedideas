@@ -3,22 +3,7 @@
   "facebook": "https://www.facebook.com/PatLokMusic/",
   "bio": "Since his widely-celebrated 2017 debut, accomplished producer Pat Lok has been synthesizing the sounds of the future. His penchant for blending R&B, soul, disco, and house has captivated listeners across the globe, resonating with the everyday music consumer and veteran music critics alike. Signed to French tastemaker label and fashion brand Kitsune Musique, Pat Lok’s forthcoming new record Gone Is Yesterday shifts towards the club with classic sounds and hardware synths, featuring various bits of sampled percussion and melodic inspiration from the geographic region (Malaysia, Indonesia, Thailand) surrounding his family's native Singapore. Steeped in a recognizable groove, Pat Lok’s already-impressive catalog is blossoming at an admirable rate with his Gone Is Yesterday EP set for release later this year.",
   "appleMusic": "https://music.apple.com/us/artist/pat-lok/431481761",
-  "releases": [
-    {
-      "releaseDescription": "test",
-      "preOrderLink": "immaterialcorp.com",
-      "releaseDate": "19.01.2021",
-      "image": "frame-13-25-08-857.jpg",
-      "releaseName": "Pat Lok test release",
-      "link": "immaterialcorp.com",
-      "trackListing": [
-        {
-          "trackName": "Track 1",
-          "trackDuration": "3:05"
-        }
-      ]
-    }
-  ],
+  "releases": [],
   "artistName": "Pat Lok",
   "instagram": "https://www.instagram.com/patlokmusic/",
   "twitter": "https://twitter.com/PatLokMusic",
