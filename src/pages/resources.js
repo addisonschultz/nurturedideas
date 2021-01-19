@@ -7,7 +7,9 @@ import InterviewsSection from "../components/InterviewsSection/InterviewsSection
 import ArticlesSection from "../components/ArticlesSection/ArticlesSection"
 import Footer from "../components/Footer/Footer"
 
-const ResourcesPage = () => {
+const ResourcesPage = ({ data }) => {
+  const interviews = data.allMarkdownRemark.edges
+
   const [resource, setResource] = useState("interviews")
 
   const selectorVariants = {
@@ -45,7 +47,7 @@ const ResourcesPage = () => {
           </motion.h3>
         </motion.div>
         {resource === "interviews" ? (
-          <InterviewsSection />
+          <InterviewsSection interviews={interviews} />
         ) : (
           <ArticlesSection />
         )}
@@ -54,4 +56,20 @@ const ResourcesPage = () => {
     </>
   )
 }
+
 export default ResourcesPage
+
+export const query = graphql`
+  query Interviews {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            interviewName
+            interviewReleaseDate
+          }
+        }
+      }
+    }
+  }
+`
