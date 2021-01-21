@@ -1,11 +1,12 @@
 {
+"soundcloud": "https://soundcloud.com/beauvois",
   "facebook": "https://www.facebook.com/beauvoisx/",
-  "twitter": "",
-  "instagram": "https://www.instagram.com/beauvoisx/",
-  "spotify": "https://open.spotify.com/artist/6AbXJxYckXHpMDApmUyP8A?si=ZllfWHFTTZO1PvPMQUyedw",
-  "soundcloud": "https://soundcloud.com/beauvois",
+  "bio": "also Kidswaste i think",
+  "appleMusic": "https://music.apple.com/us/artist/beauvois/984605149",
   "artistName": "Beauvois",
-  "image": "beauvois.png",
+  "instagram": "https://www.instagram.com/beauvoisx/",
+  "twitter": "",
+  "spotify": "https://open.spotify.com/artist/6AbXJxYckXHpMDApmUyP8A?si=ZllfWHFTTZO1PvPMQUyedw",
   "website": "",
-  "bio": "also Kidswaste i think"
+  "image": "beauvois.png"
 }
