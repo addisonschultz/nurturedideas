@@ -2,6 +2,7 @@
 "soundcloud": "https://soundcloud.com/nickam",
   "facebook": "https://www.facebook.com/nickam",
   "bio": "Nick AM is Nick Momeni. Born in Manhattan to Iranian immigrants, Momeni’s artistry marries family heritage and contemporary influence. Following the Iranian revolution in the 1980’s, Momeni’s grandfather started a new life in New York City, selling Persian rugs and establishing the family business that still lives on today. \n\nMomeni’s love of house and electronic music was born from familial influence as well. His parents would often bring home mix CD’s from their travels, exposing him to Western pop and dance music and eventually spurring his obsession for house music with a mix brought from San Tropez. Momeni has chased electronic music ever since— coming of age in New York’s underground club scene and learning to produce through friends.",
+  "appleMusic": "https://music.apple.com/us/artist/nick-am/1104687880",
   "releases": [
     {
       "releaseName": "Take It Back",
@@ -25,13 +26,14 @@
       "link": "https://ffm.to/utopia_ep",
       "image": "album-art-utopia.jpg",
       "releaseDate": "01.05.2020",
-      "releaseDescription": "Utpoia"
+      "releaseDescription": "Utopia points at the irony of a perfect society. The best way of life for some, may not be for others, and there has always been some destruction in man’s quest to create a Utopia. \n\n“The quest for utopia is the root of conflict, thus a perfect society cannot exist,” says\nNick of the project. “The consequences of Iran’s conflict with the west and the fear of\nwar between my current home and my motherland inspired my process.”"
     }
   ],
   "artistName": "Nick AM",
   "instagram": "https://www.instagram.com/nick.am/",
   "twitter": "https://twitter.com/iamnickam",
+  "tiktok": "https://tiktok.com/@nickam0000",
   "spotify": "https://open.spotify.com/artist/1uPP0SnAHHgGKS0WqbSYwe?si=xpVBGiFUQbGcRo2oYnPw3w",
-  "website": "",
+  "website": "https://00-00.am/",
   "image": "nick-am.jpg"
 }
