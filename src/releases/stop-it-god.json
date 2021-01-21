@@ -5,5 +5,55 @@
   "releaseName": "Stop it God.",
   "artistName": "Zuli Jr.",
   "link": "https://orcd.co/stopitgod",
-  "image": "stop-it-god.-album-art-final.jpg"
+  "image": "stop-it-god.-album-art-final.jpg",
+  "trackListing": [
+    {
+      "trackName": "Out of The Blue",
+      "trackDuration": "3:45"
+    },
+    {
+      "trackName": "How to Feel",
+      "trackDuration": "3:26"
+    },
+    {
+      "trackName": "Daily Routine",
+      "trackDuration": "0:27"
+    },
+    {
+      "trackName": "Her Manner",
+      "trackDuration": "3:48"
+    },
+    {
+      "trackName": "Monolith",
+      "trackDuration": "2:35"
+    },
+    {
+      "trackName": "Felt Dreaming",
+      "trackDuration": "0:24"
+    },
+    {
+      "trackName": "Two",
+      "trackDuration": "3:02"
+    },
+    {
+      "trackName": "Drool Baby",
+      "trackDuration": "3:34"
+    },
+    {
+      "trackName": "Blue Sky",
+      "trackDuration": "4:01"
+    },
+    {
+      "trackName": "My Madonna",
+      "trackDuration": "3:05"
+    },
+    {
+      "trackName": "Daisy",
+      "trackDuration": "1:22"
+    },
+    {
+      "trackName": "4:49",
+      "trackDuration": "Find My Way"
+    }
+  ]
 }
