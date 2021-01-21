@@ -1,48 +1,137 @@
 {
-  "soundcloud": "https://soundcloud.com/camptcnc",
+"soundcloud": "https://soundcloud.com/camptcnc",
   "facebook": "",
-  "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019.  Although the group previously worked together on independent collaborations, the goal of their trips are to write, produce, and engineer an album in seclusion with no strings attached. \n\nAfter deeply exploring new creative avenues and challenges, the group tapped into ideas that reflected each artist, creating a 7-song album in just 5 days. CAMPTACONIC’s VOL 2 pushes the envelope of genre-bending pop music even further than their previous indie release success, VOL 1, with each song touching on different collective influences. \n",
+  "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019. Although the group members have previously worked together on independent collaborations, the goal of their trips are to write, produce, and engineer an album in seclusion with no strings attached. \n",
+  "appleMusic": "https://music.apple.com/us/artist/camptaconic/1471995903",
   "releases": [
     {
       "releaseName": "Popcorn",
       "link": "https://ffm.to/ct_popcorn",
       "image": "camptaconic-popcorn-art-updated.jpg",
-      "releaseDate": "27.03.2020"
+      "releaseDate": "27.03.2020",
+      "trackListing": [
+        {
+          "trackDuration": "2:32",
+          "trackName": "Popcorn"
+        }
+      ],
+      "releaseDescription": "The first single from VOL. 2, 'Popcorn' is a catchy indie-pop tune that captures the group's unique writing and production, balanced with forward-thinking pop structure.\n"
     },
     {
       "releaseName": "Sweat",
       "image": "camptaconic-sweat-art-updated.jpg",
       "link": "https://ffm.to/ct_sweat",
-      "releaseDate": "17.04.2020"
+      "releaseDate": "17.04.2020",
+      "trackListing": [
+        {
+          "trackName": "Sweat",
+          "trackDuration": "2:36"
+        }
+      ],
+      "releaseDescription": "The second single from VOL. 2, 'Sweat' is a catchy, tight-groove record that finds production influence from a 70’s house party dance floor, with an addicting and infectious chorus.\n"
     },
     {
       "releaseName": "VOL. 1",
       "image": "camptaconic-vol-i-ep-art-10.jpg",
       "link": "https://smarturl.it/CT_VOL1",
-      "releaseDate": "16.08.2019"
+      "releaseDate": "16.08.2019",
+      "trackListing": [
+        {
+          "trackName": "Better for You",
+          "trackDuration": "3:37"
+        },
+        {
+          "trackName": "Struggle for a Little",
+          "trackDuration": "3:05"
+        },
+        {
+          "trackName": "Less Alone",
+          "trackDuration": "2:56"
+        },
+        {
+          "trackName": "Tired Hands (Interlude)",
+          "trackDuration": "0:46"
+        },
+        {
+          "trackName": "Blood Moon",
+          "trackDuration": "3:16"
+        },
+        {
+          "trackName": "Carried Away",
+          "trackDuration": "2:54"
+        },
+        {
+          "trackName": "Tommy Gun",
+          "trackDuration": "2:21"
+        }
+      ]
     },
     {
       "releaseName": "Struggle For A Little",
       "link": "https://smarturl.it/CT_SFAL",
       "image": "camptaconic-struggle-for-a-little.jpg",
-      "releaseDate": "09.08.2019"
+      "releaseDate": "09.08.2019",
+      "trackListing": [
+        {
+          "trackName": "Struggle for a Little",
+          "trackDuration": "3:05"
+        }
+      ]
     },
     {
       "releaseName": "Better For You",
       "image": "camptaconic-better-for-you-01-3000x3000.jpg",
       "link": "https://smarturl.it/CT_BetterForYou",
-      "releaseDate": "02.08.2019"
+      "releaseDate": "02.08.2019",
+      "trackListing": [
+        {
+          "trackName": "Better for You",
+          "trackDuration": "3:37"
+        }
+      ]
     },
     {
       "releaseDate": "08.05.2020",
       "releaseName": "VOL. 2",
       "image": "camptaconic-vol2-art-updated.jpg",
-      "link": "https://ffm.to/ct_vol2"
+      "link": "https://ffm.to/ct_vol2",
+      "trackListing": [
+        {
+          "trackName": "Float",
+          "trackDuration": "3:03"
+        },
+        {
+          "trackName": "Popcorn",
+          "trackDuration": "2:32"
+        },
+        {
+          "trackName": "Can We Go Back",
+          "trackDuration": "2:43"
+        },
+        {
+          "trackName": "White Sand (Interlude)",
+          "trackDuration": "0:59"
+        },
+        {
+          "trackName": "Sweat",
+          "trackDuration": "2:36"
+        },
+        {
+          "trackName": "Olive",
+          "trackDuration": "3:19"
+        },
+        {
+          "trackName": "Run",
+          "trackDuration": "2:46"
+        }
+      ],
+      "releaseDescription": "VOL. 2 is the sophomore project from CAMPTACONIC and was written, recorded, and produced in just 5-days during writing trip upstate New York. The project pushes the envelope of genre-bending pop music even further than their previous indie release success, VOL. 1, with each song touching on different collective influences. \n"
     }
   ],
   "artistName": "CAMPTACONIC",
   "instagram": "https://www.instagram.com/camptcnc/",
   "twitter": "https://twitter.com/camptcnc",
+  "tiktok": "https://www.tiktok.com/@camptaconic",
   "spotify": "https://open.spotify.com/artist/4DDZ2T8rETAj6KnLeGnzWw?si=b9C5q0D1SBSgbrgQWBH4xw",
   "website": "",
   "image": "camptaconic.jpg"
