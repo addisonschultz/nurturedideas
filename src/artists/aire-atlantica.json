@@ -9,7 +9,17 @@
       "name": "A Wonderful Time",
       "image": "a-wonderful-time.jpg",
       "releaseDate": "14.06.2019",
-      "releaseName": "A Wonderful Time"
+      "releaseName": "A Wonderful Time",
+      "trackListing": [
+        {
+          "trackName": "What I Want (feat. Livvy Nicole)",
+          "trackDuration": "2:45"
+        },
+        {
+          "trackName": "Best Side (feat. Lando Chill, DreWel)",
+          "trackDuration": "2:58"
+        }
+      ]
     }
   ],
   "artistName": "Aire Atlantica",
