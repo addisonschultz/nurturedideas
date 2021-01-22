@@ -122,7 +122,7 @@ collections:
               timeFormat: false,
             }
           - { name: preOrderLink, label: Pre-Order Link, widget: "string", required: false, default: "" }
-          - { name: link, label: Link, widget: "string" }
+          - { name: link, label: Link, widget: "string", hint: "Include the full link e.g https://orcd/release-name.com" }
           - name: trackListing
             label: Track Listing
             label_singular: Track
