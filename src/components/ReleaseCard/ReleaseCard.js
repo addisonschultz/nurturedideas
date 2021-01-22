@@ -35,6 +35,7 @@ const ReleaseCard = ({ release, variants }) => {
             style={{
               height: "200px",
               maxHeight: "200px",
+              borderRadius: "5px 5px 0px 0px",
             }}
           />
         </motion.div>
