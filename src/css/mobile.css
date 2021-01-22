@@ -47,11 +47,19 @@
   */
 
   #artist-template-container {
-    background-color: #0d5c3e;
+    background-color: #fff;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 450px auto;
     margin: 20px 0px 60px 0px;
+  }
+
+  #artist-template-details {
+    background-color: #0d5c3e;
+  }
+
+  #artist-image-container {
+    overflow: hidden;
   }
 
   /* 

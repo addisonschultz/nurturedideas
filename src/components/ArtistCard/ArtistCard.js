@@ -14,6 +14,8 @@ const ArtistCard = ({ artist, variants }) => {
   const artistData = artist.node
   const image = artist.sharpImage.node
 
+  const layoutId = utils.getUrlSlug(artist.node.artistName) + "-card-image"
+
   return (
     <motion.div
       id={"artist-card-container"}
@@ -21,10 +23,12 @@ const ArtistCard = ({ artist, variants }) => {
       whileHover={{ backgroundColor: "#E1EFE2" }}
     >
       <Link to={`/${utils.getUrlSlug(artistData.artistName)}`}>
-        <Img
-          fluid={image.childImageSharp.fluid}
-          style={{ height: "200px", maxHeight: "200px" }}
-        />
+        <motion.div id={"image-conatiner"} layoutId={layoutId}>
+          <Img
+            fluid={image.childImageSharp.fluid}
+            style={{ height: "200px", maxHeight: "200px" }}
+          />
+        </motion.div>
       </Link>
       <motion.h3 className={"artist-card-artist-name"}>
         {artistData.artistName}

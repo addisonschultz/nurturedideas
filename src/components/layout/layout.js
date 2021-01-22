@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { AnimateSharedLayout } from "framer-motion"
 
 import "../../css/layout.css"
 import "../../css/typography.css"
@@ -16,9 +17,11 @@ const Layout = ({ children }) => {
         position: "relative",
       }}
     >
-      <main>
-        <div id={"page-container"}>{children}</div>
-      </main>
+      <AnimateSharedLayout>
+        <main>
+          <div id={"page-container"}>{children}</div>
+        </main>
+      </AnimateSharedLayout>
     </div>
   )
 }

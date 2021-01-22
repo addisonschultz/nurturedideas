@@ -15,6 +15,8 @@ import twitterWhite1 from "../svg/twitter-white1.svg"
 import appleWhite1 from "../svg/apple-white1.svg"
 import tiktokWhite1 from "../svg/tiktok-white1.svg"
 
+import * as utils from "../utils"
+
 export default ({ pageContext, data }) => {
   const artist = pageContext.artistData
 
@@ -22,18 +24,38 @@ export default ({ pageContext, data }) => {
     return !str || 0 === str.length
   }
 
-  console.log(artist)
+  const layoutId = utils.getUrlSlug(artist.artistName) + "-card-image"
+
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.8,
+      },
+    },
+  }
 
   return (
     <>
       <SEO title={artist.artistName} />
       <Navigation />
       <motion.div id={"artist-template-container"}>
-        <Img
-          fluid={data.artistImage.childImageSharp.fluid}
-          id={"artist-template-image"}
-        ></Img>
-        <motion.div id={"artist-template-details"}>
+        <motion.div id={"artist-image-container"} layoutId={layoutId}>
+          <Img
+            fluid={data.artistImage.childImageSharp.fluid}
+            id={"artist-template-image"}
+            style={{
+              height: "100%",
+            }}
+          ></Img>
+        </motion.div>
+        <motion.div
+          id={"artist-template-details"}
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+        >
           <motion.h2 id={"artist-name"}>{artist.artistName}</motion.h2>
           <motion.h5 id={"artist-bio"}>{artist.bio}</motion.h5>
           <motion.div id={"artist-template-links"}>
