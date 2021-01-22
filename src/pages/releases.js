@@ -10,6 +10,8 @@ import ReleaseCard from "../components/ReleaseCard/ReleaseCard"
 
 import * as utils from "../utils"
 
+import { containerVariants, cardVariants } from "../variants/variants"
+
 const ReleasesPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
   const nonArtistReleases = data.allReleasesJson.edges
@@ -35,7 +37,12 @@ const ReleasesPage = ({ data }) => {
       <SEO title="Releases" />
       <Navigation />
       <motion.h3 className={"releases-header header"}>Releases</motion.h3>
-      <motion.div id={"releases-container"}>
+      <motion.div
+        id={"releases-container"}
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {allReleasesAndImages
           .sort((a, b) => {
             return (
@@ -44,7 +51,13 @@ const ReleasesPage = ({ data }) => {
             )
           })
           .map((release, index) => {
-            return <ReleaseCard release={release} key={index} />
+            return (
+              <ReleaseCard
+                release={release}
+                key={index}
+                variants={cardVariants}
+              />
+            )
           })}
       </motion.div>
       <Footer />

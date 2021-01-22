@@ -8,7 +8,7 @@ import "./release-card.css"
 
 import * as utils from "../../utils"
 
-const ReleaseCard = ({ release }) => {
+const ReleaseCard = ({ release, variants }) => {
   const image = release.sharpImage.node
 
   const now = moment()
@@ -20,6 +20,7 @@ const ReleaseCard = ({ release }) => {
       <motion.div
         id={"release-card-container"}
         whileHover={{ backgroundColor: "#E1EFE2" }}
+        variants={variants}
       >
         {preOrder ? (
           <motion.div id={"pre-order-banner"}>

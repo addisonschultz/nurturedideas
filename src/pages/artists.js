@@ -7,6 +7,8 @@ import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
 import ArtistCard from "../components/ArtistCard/ArtistCard"
 
+import { containerVariants, cardVariants } from "../variants/variants"
+
 const ArtistsPage = ({ data }) => {
   const artists = data.allArtistsJson.edges
   const allImages = data.allFile.edges
@@ -25,18 +27,23 @@ const ArtistsPage = ({ data }) => {
     ]
   }, [])
 
-  console.log(allArtistsAndImages)
-
   return (
     <>
       <SEO title="Artists" />
       <Navigation />
       <motion.h3 className={"artists-header header"}>Artists</motion.h3>
-      <motion.div id={"artists-container"}>
+      <motion.div
+        id={"artists-container"}
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {allArtistsAndImages
           .sort((a, b) => a.node.artistName.localeCompare(b.node.artistName))
           .map((artist, index) => {
-            return <ArtistCard artist={artist} key={index} />
+            return (
+              <ArtistCard artist={artist} key={index} variants={cardVariants} />
+            )
           })}
       </motion.div>
       <Footer />

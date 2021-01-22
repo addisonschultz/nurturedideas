@@ -5,7 +5,7 @@ import arrowUpRight from "../../svg/arrow-up-right.svg"
 
 import "./article-card.css"
 
-const ArticleCard = ({ article }) => {
+const ArticleCard = ({ article, variants }) => {
   return (
     <a
       href={article.node.articleLink}
@@ -14,6 +14,7 @@ const ArticleCard = ({ article }) => {
     >
       <motion.div
         id={"article-card-container"}
+        variants={variants}
         whileHover={{ backgroundColor: "#E1EFE2" }}
       >
         <motion.img src={arrowUpRight} id={"article-card-arrow"} />

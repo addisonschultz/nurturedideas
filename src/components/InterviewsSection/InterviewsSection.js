@@ -3,6 +3,8 @@ import { motion } from "framer-motion"
 
 import InterviewCard from "../InterviewCard/InterviewCard"
 
+import { containerVariants, cardVariants } from "../../variants/variants"
+
 import "./interviews-section.css"
 
 const InterviewsSection = ({ interviews }) => {
@@ -13,9 +15,20 @@ const InterviewsSection = ({ interviews }) => {
         Nurtured Ideas. Sign up on the home page to stay in the loop, or read
         our past editions below.
       </motion.p>
-      <motion.div id={"interview-section-container"}>
+      <motion.div
+        id={"interview-section-container"}
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {interviews.map((interview, index) => {
-          return <InterviewCard interview={interview} key={index} />
+          return (
+            <InterviewCard
+              interview={interview}
+              key={index}
+              variants={cardVariants}
+            />
+          )
         })}
       </motion.div>
     </>

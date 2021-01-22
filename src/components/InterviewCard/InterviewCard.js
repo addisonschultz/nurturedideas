@@ -8,13 +8,14 @@ import logo from "../../images/logo.png"
 
 import "./interview-card.css"
 
-const InterviewCard = ({ interview }) => {
+const InterviewCard = ({ interview, variants }) => {
   const interviewName = interview.node.frontmatter.interviewName
 
   return (
     <Link to={`/${utils.getUrlSlug(interviewName)}`}>
       <motion.div
         id={"interview-card-container"}
+        variants={variants}
         whileHover={{ backgroundColor: "#E1EFE2" }}
       >
         <motion.img src={logo} id={"interview-card-logo"} />

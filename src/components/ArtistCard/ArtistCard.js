@@ -10,13 +10,14 @@ import soundcloudGreen from "../../svg/soundcloud-green.svg"
 
 import "./artist-card.css"
 
-const ArtistCard = ({ artist }) => {
+const ArtistCard = ({ artist, variants }) => {
   const artistData = artist.node
   const image = artist.sharpImage.node
 
   return (
     <motion.div
       id={"artist-card-container"}
+      variants={variants}
       whileHover={{ backgroundColor: "#E1EFE2" }}
     >
       <Link to={`/${utils.getUrlSlug(artistData.artistName)}`}>
