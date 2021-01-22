@@ -15,6 +15,8 @@ const ReleaseCard = ({ release, variants }) => {
   const releaseDate = moment(release.releaseDate, "DD.MM.YYYY")
   const preOrder = releaseDate.isAfter(now)
 
+  const layoutId = utils.getUrlSlug(release.releaseName) + "-card-image"
+
   return (
     <Link to={`/${utils.getUrlSlug(release.releaseName)}`}>
       <motion.div
@@ -27,14 +29,15 @@ const ReleaseCard = ({ release, variants }) => {
             <motion.h5 id={"pre-order-text"}>Pre Order</motion.h5>
           </motion.div>
         ) : null}
-
-        <Img
-          fluid={image.childImageSharp.fluid}
-          style={{
-            height: "200px",
-            maxHeight: "200px",
-          }}
-        />
+        <motion.div id={"image-conatiner"} layoutId={layoutId}>
+          <Img
+            fluid={image.childImageSharp.fluid}
+            style={{
+              height: "200px",
+              maxHeight: "200px",
+            }}
+          />
+        </motion.div>
         <motion.p className={"release-card-release-name"}>
           {release.releaseName}
         </motion.p>

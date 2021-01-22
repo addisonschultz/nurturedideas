@@ -16,6 +16,9 @@
   margin: 0px;
   padding-left: 20px;
   user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #track-duration {

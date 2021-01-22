@@ -8,6 +8,8 @@ import Navigation from "../components/Navigation/Navigation"
 import Footer from "../components/Footer/Footer"
 import TrackRow from "../components/TrackRow/TrackRow"
 
+import * as utils from "../utils"
+
 export default ({ pageContext, data }) => {
   const release = pageContext.releaseData
 
@@ -22,20 +24,39 @@ export default ({ pageContext, data }) => {
     "DD.MM.YYYY"
   )
 
+  const layoutId = utils.getUrlSlug(release.releaseName) + "-card-image"
+
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.8,
+      },
+    },
+  }
+
   return (
     <>
       <SEO title={release.releaseName} />
       <Navigation />
       <motion.div id={"release-template-container"}>
-        <a
-          href={pageContext.releaseData.link}
-          target={"_blank"}
-          rel="noreferrer"
-          id={"release-template-image"}
+        <motion.div id={"release-image-container"} layoutId={layoutId}>
+          <a
+            href={pageContext.releaseData.link}
+            target={"_blank"}
+            rel="noreferrer"
+            id={"release-template-image"}
+          >
+            <Img fluid={data.releaseImage.childImageSharp.fluid}></Img>
+          </a>
+        </motion.div>
+        <motion.div
+          id={"release-template-details"}
+          variants={variants}
+          initial="hidden"
+          animate="visible"
         >
-          <Img fluid={data.releaseImage.childImageSharp.fluid}></Img>
-        </a>
-        <motion.div id={"release-template-details"}>
           <motion.div>
             {preOrder ? (
               <a
