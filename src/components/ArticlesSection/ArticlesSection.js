@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import moment from "moment"
 
 import ArticleCard from "../ArticleCard/ArticleCard"
 
@@ -20,15 +21,22 @@ const ArticlesSection = ({ articles }) => {
         initial="hidden"
         animate="visible"
       >
-        {articles.map((article, index) => {
-          return (
-            <ArticleCard
-              article={article}
-              key={index}
-              variants={cardVariants}
-            />
-          )
-        })}
+        {articles
+          .sort((a, b) => {
+            return (
+              moment(b.node.articleReleaseDate, "DD.MM.YYYY") -
+              moment(a.node.articleReleaseDate, "DD.MM.YYYY")
+            )
+          })
+          .map((article, index) => {
+            return (
+              <ArticleCard
+                article={article}
+                key={index}
+                variants={cardVariants}
+              />
+            )
+          })}
       </motion.div>
     </>
   )

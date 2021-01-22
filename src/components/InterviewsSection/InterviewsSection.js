@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import moment from "moment"
 
 import InterviewCard from "../InterviewCard/InterviewCard"
 
@@ -21,15 +22,25 @@ const InterviewsSection = ({ interviews }) => {
         initial="hidden"
         animate="visible"
       >
-        {interviews.map((interview, index) => {
-          return (
-            <InterviewCard
-              interview={interview}
-              key={index}
-              variants={cardVariants}
-            />
-          )
-        })}
+        {interviews
+          .sort((a, b) => {
+            return (
+              moment(b.node.frontmatter.interviewReleaseDate, "DD.MM.YYYY") -
+              moment(
+                a.node.frontmatter.interviewReleaseDatereleaseDate,
+                "DD.MM.YYYY"
+              )
+            )
+          })
+          .map((interview, index) => {
+            return (
+              <InterviewCard
+                interview={interview}
+                key={index}
+                variants={cardVariants}
+              />
+            )
+          })}
       </motion.div>
     </>
   )
