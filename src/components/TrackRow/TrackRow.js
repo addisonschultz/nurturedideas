@@ -9,7 +9,7 @@ const TrackRow = ({ track, index }) => {
   return (
     <motion.div
       id={"track-row-container"}
-      whileHover={{ backgroundColor: "#eee" }}
+      whileHover={{ backgroundColor: "#E1EFE2" }}
     >
       <motion.h5 id={"track-title"}>
         {trackNumber}. {track.trackName}

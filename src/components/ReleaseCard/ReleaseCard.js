@@ -13,7 +13,7 @@ const ReleaseCard = ({ release, variants }) => {
 
   const now = moment()
   const releaseDate = moment(release.releaseDate, "DD.MM.YYYY")
-  const preOrder = releaseDate.isAfter(now)
+  const preOrder = releaseDate.isAfter(now) && release.preOrderLink !== ""
 
   const layoutId = utils.getUrlSlug(release.releaseName) + "-card-image"
 

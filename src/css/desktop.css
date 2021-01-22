@@ -213,13 +213,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
+  background-color: #e1efe2;
   font-family: Georgia;
   font-weight: 600;
-  color: #fff;
+  color: #0d5c3e;
 }
 
 #release-name {
+  font-size: 38px;
   font-family: Georgia;
   font-weight: 600;
   color: white;
@@ -228,15 +229,18 @@
 }
 
 #release-artist {
+  font-size: 14px;
   font-family: Georgia;
-  font-weight: 600;
+  font-weight: 400;
   color: #ededed;
   padding: 0px 30px;
+  margin-bottom: 5px;
 }
 
 #release-date {
+  font-size: 14px;
   font-family: Georgia;
-  font-weight: 600;
+  font-weight: 400;
   color: #ededed;
   padding: 0px 30px;
 }

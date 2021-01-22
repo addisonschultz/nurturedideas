@@ -23,7 +23,11 @@ const ArtistCard = ({ artist, variants }) => {
       whileHover={{ backgroundColor: "#E1EFE2" }}
     >
       <Link to={`/${utils.getUrlSlug(artistData.artistName)}`}>
-        <motion.div id={"image-conatiner"} layoutId={layoutId}>
+        <motion.div
+          id={"image-container"}
+          layoutId={layoutId}
+          transition={{ duration: 0.3 }}
+        >
           <Img
             fluid={image.childImageSharp.fluid}
             style={{ height: "200px", maxHeight: "200px" }}

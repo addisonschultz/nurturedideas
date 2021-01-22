@@ -18,10 +18,10 @@ export default ({ pageContext, data }) => {
 
   const now = moment()
   const releaseDate = moment(release.releaseDate, "DD.MM.YYYY")
-  const preOrder = releaseDate.isAfter(now)
+  const preOrder = releaseDate.isAfter(now) && release.preOrderLink !== ""
 
   const releaseDateFormatted = moment(release.releaseDate, "DD.MM.YYYY").format(
-    "DD.MM.YYYY"
+    "MMMM Do, YYYY"
   )
 
   const layoutId = utils.getUrlSlug(release.releaseName) + "-card-image"
@@ -41,7 +41,11 @@ export default ({ pageContext, data }) => {
       <SEO title={release.releaseName} />
       <Navigation />
       <motion.div id={"release-template-container"}>
-        <motion.div id={"release-image-container"} layoutId={layoutId}>
+        <motion.div
+          id={"release-image-container"}
+          layoutId={layoutId}
+          whileHover={{ opacity: 0.9 }}
+        >
           <a
             href={pageContext.releaseData.link}
             target={"_blank"}
@@ -69,11 +73,11 @@ export default ({ pageContext, data }) => {
             ) : null}
             <motion.h2 id={"release-name"}>{release.releaseName}</motion.h2>
             <motion.h5 id={"release-artist"}>{release.artistName}</motion.h5>
-            <motion.h5 id={"release-description"}>
-              {release.releaseDescription}
-            </motion.h5>
             <motion.h5 id={"release-date"}>
               Release Date: {releaseDateFormatted}
+            </motion.h5>
+            <motion.h5 id={"release-description"}>
+              {release.releaseDescription}
             </motion.h5>
           </motion.div>
           {hasTracks ? (

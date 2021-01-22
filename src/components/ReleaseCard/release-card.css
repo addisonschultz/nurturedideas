@@ -27,7 +27,7 @@
 #pre-order-banner {
   height: 40px;
   width: 140px;
-  background-color: tomato;
+  background-color: #e1efe2;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 40px;
   margin: 0px;
-  color: #fff;
+  color: #0d5c3e;
 }
 
 /* Smaller screen styles */
