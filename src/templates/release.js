@@ -30,6 +30,7 @@ export default ({ pageContext, data }) => {
         <a
           href={pageContext.releaseData.link}
           target={"_blank"}
+          rel="noreferrer"
           id={"release-template-image"}
         >
           <Img fluid={data.releaseImage.childImageSharp.fluid}></Img>
