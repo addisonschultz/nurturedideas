@@ -77,7 +77,8 @@
     grid-template-areas:
       "release-image"
       "release-details"
-      "release-tracks";
+      "release-tracks"
+      "release-formats";
   }
 
   #release-template-details {

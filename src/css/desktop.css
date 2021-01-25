@@ -198,7 +198,7 @@
   grid-template-rows: auto auto;
   grid-template-areas:
     "release-image release-details"
-    ". release-tracks";
+    "release-formats release-tracks";
 }
 
 #release-template-details {
@@ -257,7 +257,22 @@
   white-space: pre-line;
 }
 
-#release-tracks {
+#release-template-formats {
+  grid-area: release-formats;
+  background-color: #0d5c3e;
+  text-align: right;
+}
+
+#release-format-title {
+  font-size: 38px;
+  font-family: Georgia;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 5px;
+  padding: 30px 30px 0px 30px;
+}
+
+#release-template-tracks {
   grid-area: release-tracks;
   height: 100%;
   background-color: #fff;
