@@ -1,7 +1,14 @@
 {
-  "artistName": "Lenii",
+"artistName": "Lenii",
   "link": "https://ffm.to/lenii_yellow",
   "releaseName": "Yellow",
   "image": "lenii_album_art_final_01.jpg",
-  "releaseDate": "25.10.2019"
+  "releaseDate": "25.10.2019",
+  "releaseDescription": "Leniiʼs tone on Yellow is sarcastic and playful as she calls out being complacent in a situation youʼre not totally happy with. Yellow was written on a rainy day when Lenii was feeling kind of meh. She took a walk to the studio bathroom and found the room drenched in bright yellow - floor to ceiling, sinks, mirrors, lights, everything. As cool as it was, the monochrome setting echoed her feelings and she thought ‘wouldnʼt the world be very boring if everything stayed the same?ʼ. So the lyrics poured out. The song is a playful take on settling for a less-than-ideal situation, with the colour ‘yellowʼ being a metaphor for the mundane. ",
+  "trackListing": [
+    {
+      "trackName": "Yellow",
+      "trackDuration": "3:15"
+    }
+  ]
 }
