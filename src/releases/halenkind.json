@@ -3,5 +3,11 @@
   "artistName": "Marcioz",
   "releaseName": "HALENKIND",
   "link": "http://smarturl.it/HALENKIND",
-  "image": "halenkind_newcoverart.png"
+  "image": "halenkind_newcoverart.png",
+  "trackListing": [
+    {
+      "trackName": "HALENKIND",
+      "trackDuration": "2:40"
+    }
+  ]
 }
