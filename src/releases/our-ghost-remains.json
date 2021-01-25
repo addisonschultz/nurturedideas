@@ -1,7 +1,42 @@
 {
-  "releaseDate": "14.02.2020",
+"releaseDate": "14.02.2020",
   "artistName": "Erkaï",
   "releaseName": "Our Ghost Remains",
   "link": "https://ffm.to/ourghostremains",
-  "image": "00.-ogr-cover.jpg"
+  "image": "00.-ogr-cover.jpg",
+  "trackListing": [
+    {
+      "trackName": "Erkaï",
+      "trackDuration": "0:47"
+    },
+    {
+      "trackName": "Forever Life",
+      "trackDuration": "3:11"
+    },
+    {
+      "trackName": "Solstice #1",
+      "trackDuration": "3:45"
+    },
+    {
+      "trackName": "Leave It All Behind",
+      "trackDuration": "3:42"
+    },
+    {
+      "trackName": "Forgotten Sun",
+      "trackDuration": "2:09"
+    },
+    {
+      "trackName": "We Can Shine",
+      "trackDuration": "3:05"
+    },
+    {
+      "trackName": "Golden Age",
+      "trackDuration": "3:35"
+    },
+    {
+      "trackName": "Under The Shadow Of Your Sun",
+      "trackDuration": "4:03"
+    }
+  ],
+  "releaseDescription": "Matisse Roger, formally known as Erkaï was raised on the path to become a film director but ultimately found his artistic voice in music. He started learning drums at the age of seven with his father before expanding his horizons to any instrument he could get his hands on. Holding fascination with the connection between song, story and imagery - Erkaï describes himself as a patchwork of inspiration drawn from people, places and cultures that he’s encountered; of which his debut project Our Ghost Remains is a direct reflection.\n"
 }
