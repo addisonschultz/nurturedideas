@@ -3,13 +3,16 @@ import { motion } from "framer-motion"
 
 import "./track-row.css"
 
-const TrackRow = ({ track, index }) => {
+const TrackRow = ({ track, index, ...props }) => {
   const trackNumber = index + 1
+
+  console.log(props)
 
   return (
     <motion.div
       id={"track-row-container"}
       whileHover={{ backgroundColor: "#E1EFE2" }}
+      {...props}
     >
       <motion.h5 id={"track-title"}>
         {trackNumber}. {track.trackName}

@@ -36,6 +36,23 @@ export default ({ pageContext, data }) => {
     },
   }
 
+  const trackContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.8,
+        delayChildren: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
+  const trackVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  }
+
   return (
     <>
       <SEO title={release.releaseName} />
@@ -80,14 +97,26 @@ export default ({ pageContext, data }) => {
               {release.releaseDescription}
             </motion.h5>
           </motion.div>
-          {hasTracks ? (
-            <motion.div id={"release-tracks"}>
-              {release.trackListing.map((track, index) => {
-                return <TrackRow track={track} key={index} index={index} />
-              })}
-            </motion.div>
-          ) : null}
         </motion.div>
+        {hasTracks ? (
+          <motion.div
+            id={"release-tracks"}
+            variants={trackContainerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {release.trackListing.map((track, index) => {
+              return (
+                <TrackRow
+                  track={track}
+                  key={index}
+                  index={index}
+                  variants={trackVariants}
+                />
+              )
+            })}
+          </motion.div>
+        ) : null}
       </motion.div>
       <Footer />
     </>
