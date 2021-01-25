@@ -76,7 +76,8 @@
     margin: 20px 0px 60px 0px;
     grid-template-areas:
       "release-image"
-      "release-details";
+      "release-details"
+      "release-tracks";
   }
 
   #release-template-details {

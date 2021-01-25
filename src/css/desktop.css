@@ -195,7 +195,7 @@
   margin: 20px 0px 60px 0px;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 620px auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
     "release-image release-details"
     ". release-tracks";
