@@ -14,6 +14,11 @@ exports.createPages = async function({ actions, graphql }) {
             id
             image
             instagram
+            soundcloud
+            spotify
+            twitter
+            appleMusic
+            tiktok
             releases {
               image
               releaseName
@@ -26,11 +31,6 @@ exports.createPages = async function({ actions, graphql }) {
                 trackName
               }
             }
-            soundcloud
-            spotify
-            twitter
-            appleMusic
-            tiktok
           }
         }
       }
@@ -101,7 +101,6 @@ exports.createPages = async function({ actions, graphql }) {
       path: slug,
       component: require.resolve(`./src/templates/interview.js`),
       context: {
-        // additional data can be passed via context
         interviewName: node.frontmatter.interviewName,
       },
     })
