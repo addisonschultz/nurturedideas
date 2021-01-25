@@ -22,7 +22,7 @@
     height: 80px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40px 40px;
+    grid-template-rows: 40px 80px;
   }
 
   #footer-left-container {
@@ -33,5 +33,19 @@
   #footer-right-container {
     display: flex;
     justify-content: center;
+  }
+
+  #footer-contact {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-contact a {
+    margin-bottom: 10px;
+  }
+
+  #footer-contact a span {
+    display: none;
   }
 }
