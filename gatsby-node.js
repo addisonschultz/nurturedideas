@@ -19,6 +19,7 @@ exports.createPages = async function({ actions, graphql }) {
             twitter
             appleMusic
             tiktok
+            youtube
             releases {
               image
               releaseName

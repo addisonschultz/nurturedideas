@@ -105,6 +105,13 @@ collections:
           required: false,
           default: "",
         }
+      - {
+          name: youtube,
+          label: YouTube,
+          widget: "string",
+          required: false,
+          default: "",
+        }
       - name: releases
         label: Releases
         label_singular: release
