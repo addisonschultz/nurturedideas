@@ -9,13 +9,34 @@ import logo from "../../images/logo.png"
 import "./navigation.css"
 
 const Navigation = () => {
+  const [modalOpen, setModalOpen] = React.useState(false)
+
+  const modalVariants = {
+    closed: {
+      display: "none",
+    },
+    open: {
+      display: "block",
+    },
+  }
+
+  const handleLogoClick = () => {
+    setModalOpen(true)
+  }
+
   return (
     <motion.div
       id={"navigation-container"}
       style={{ background: theme.colors.white0 }}
     >
       <motion.div id={"navigation-header-container"}>
-        <motion.img src={logo} id={"navigation-logo"}></motion.img>
+        <motion.img
+          src={logo}
+          id={"navigation-logo"}
+          whileHover={{ rotate: -7, scale: 1.07 }}
+          transition={{ duration: 0.4 }}
+          onClick={handleLogoClick}
+        />
         <Link to={"/"}>
           <motion.h3 id={"navigation-header"}>Nurtured Ideas</motion.h3>
         </Link>
@@ -45,6 +66,17 @@ const Navigation = () => {
             Resources
           </motion.h3>
         </Link>
+      </motion.div>
+      <motion.div
+        id={"modal-container"}
+        variants={modalVariants}
+        initial={"closed"}
+        animate={modalOpen ? "open" : "closed"}
+        onClick={() => setModalOpen(false)}
+      >
+        <motion.div id={"modal-content"}>
+          <h2>Thanks for stopping by!</h2>
+        </motion.div>
       </motion.div>
     </motion.div>
   )
