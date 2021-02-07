@@ -1,5 +1,6 @@
 {
-"soundcloud": "https://soundcloud.com/aireatlantica",
+"youtube": "https://www.youtube.com/",
+  "soundcloud": "https://soundcloud.com/aireatlantica",
   "facebook": "https://www.facebook.com/aireatlantica",
   "bio": "Aire Atlantica is a producer, songwriter, and artist from NYC.",
   "appleMusic": "https://music.apple.com/us/artist/aire-atlantica/519819030",
@@ -19,6 +20,11 @@
           "trackName": "Best Side (feat. Lando Chill, DreWel)",
           "trackDuration": "2:58"
         }
+      ],
+      "releaseImages": [
+        {
+          "releaseImage": "a-wonderful-time.jpg"
+        }
       ]
     }
   ],
@@ -27,6 +33,5 @@
   "twitter": "https://twitter.com/aireatlantica",
   "spotify": "https://open.spotify.com/artist/6Ta9RS3a6sLulTlM4FWY5K?si=ayAWWp8YQc2hiG0YiemGFQ",
   "website": "",
-  "image": "aire-atlantica.jpg",
-  "youtube": "https://www.youtube.com/"
+  "image": "aire-atlantica.jpg"
 }
