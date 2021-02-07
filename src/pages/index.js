@@ -47,16 +47,17 @@ const IndexPage = ({ data }) => {
           />
         </motion.div>
         <motion.div id={"newsletter-form"}>
-          <motion.h2
+          <motion.h3
             style={{
               textAlign: "left",
               color: theme.colors.white0,
               fontFamily: theme.font.sharpeBlack,
               paddingTop: theme.spacing[6],
+              fontSize: "1.5rem",
             }}
           >
             Sign up for our Monthly Newsletter
-          </motion.h2>
+          </motion.h3>
           <NewsletterForm namePlaceholder={"Name"} emailPlaceholder={"Email"} />
         </motion.div>
         <motion.div id={"bio"}>

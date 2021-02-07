@@ -26,18 +26,19 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
     disabled: { opacity: 0.5, userSelect: "none", cursor: "initial" },
   }
 
+  const [state, setState] = React.useState({
+    fullName: "",
+    email: "",
+  })
   const [checkmark, setCheckmark] = React.useState(false)
+
+  const disabled = !checkmark || !state.email.includes("@")
 
   function encode(data) {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&")
   }
-
-  const [state, setState] = React.useState({
-    fullName: "",
-    email: "",
-  })
 
   const [success, setSuccess] = React.useState(false)
 
@@ -179,10 +180,10 @@ const NewsletterForm = ({ namePlaceholder, emailPlaceholder }) => {
             type="submit"
             variants={buttonVariants}
             initial={"default"}
-            whileHover={checkmark ? "hover" : "disabled"}
-            animate={checkmark ? "default" : "disabled"}
+            whileHover={disabled ? "disabled" : "hover"}
+            animate={disabled ? "disabled" : "default"}
             transition={{ duration: 0.3 }}
-            disabled={!checkmark}
+            disabled={disabled}
             style={{
               width: "100%",
               padding: 10,
