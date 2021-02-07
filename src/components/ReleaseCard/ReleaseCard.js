@@ -29,12 +29,12 @@ const ReleaseCard = ({ release, variants }) => {
             <motion.h5 id={"pre-order-text"}>Pre Order</motion.h5>
           </motion.div>
         ) : null}
-        <motion.div id={"image-conatiner"} layoutId={layoutId}>
+        <motion.div layoutId={layoutId}>
           <Img
             fluid={image.childImageSharp.fluid}
             style={{
-              height: "200px",
-              maxHeight: "200px",
+              width: "100%",
+              height: "auto",
               borderRadius: "5px 5px 0px 0px",
             }}
           />
