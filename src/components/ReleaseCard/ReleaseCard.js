@@ -10,6 +10,7 @@ import * as utils from "../../utils"
 
 const ReleaseCard = ({ release, variants }) => {
   const image = release.sharpImage.node
+  console.log(release)
 
   const now = moment()
   const releaseDate = moment(release.releaseDate, "DD.MM.YYYY")

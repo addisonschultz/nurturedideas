@@ -209,6 +209,16 @@
 
 #release-carousel-container {
   position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+#release-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 600px;
+  width: 100%;
 }
 
 #release-carousel-controls {
@@ -218,6 +228,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   bottom: 0px;
+  z-index: 3;
 }
 
 #release-carousel-back {

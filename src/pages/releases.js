@@ -21,7 +21,7 @@ const ReleasesPage = ({ data }) => {
   // Reduce releases to include sharp images
   const allReleasesAndImages = allReleases.reduce((prev, curr) => {
     const sharpImage = allImages.find(image => {
-      return image.node.relativePath === curr.image
+      return image.node.relativePath === curr.releaseImages[0].releaseImage
     })
     return [
       ...prev,
@@ -32,6 +32,7 @@ const ReleasesPage = ({ data }) => {
     ]
   }, [])
 
+  console.log(allReleasesAndImages)
   return (
     <>
       <SEO title="Releases" />

@@ -97,7 +97,18 @@ exports.createPages = async function({ actions, graphql }) {
     actions.createPage({
       path: slug,
       component: require.resolve(`./src/templates/release.js`),
-      context: { releaseData: release, releaseImage: release.image },
+      context: {
+        releaseData: release,
+        releaseImage1: release.releaseImages[0].releaseImage,
+        releaseImage2:
+          release.releaseImages[1] !== undefined
+            ? release.releaseImages[1].releaseImage
+            : "no-image",
+        releaseImage3:
+          release.releaseImages[2] !== undefined
+            ? release.releaseImages[2].releaseImage
+            : "no-image",
+      },
     })
   })
 

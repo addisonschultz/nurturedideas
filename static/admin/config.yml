@@ -123,6 +123,7 @@ collections:
             label: Release Images
             label_singular: Image
             widget: "list"
+            max: 3
             fields:
               - { name: releaseImage, label: Image, widget: "image" }
           - {
@@ -171,6 +172,7 @@ collections:
         label: Release Images
         label_singular: Image
         widget: "list"
+        max: 3
         fields:
           - { name: releaseImage, label: Image, widget: "image" }
       - name: trackListing
