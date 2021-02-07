@@ -204,7 +204,7 @@
   grid-template-rows: auto auto;
   grid-template-areas:
     "release-image release-details"
-    "release-formats release-tracks";
+    "release-tracks release-tracks";
 }
 
 #release-template-details {

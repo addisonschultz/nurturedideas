@@ -98,14 +98,6 @@ export default ({ pageContext, data }) => {
             </motion.h5>
           </motion.div>
         </motion.div>
-        {/* <motion.div
-          id={"release-template-formats"}
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.h2 id={"release-format-title"}>Formats</motion.h2>
-        </motion.div> */}
         {hasTracks ? (
           <motion.div
             id={"release-template-tracks"}
