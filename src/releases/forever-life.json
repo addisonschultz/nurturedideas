@@ -3,5 +3,10 @@
   "artistName": "Erkaï",
   "releaseName": "Forever Life",
   "link": "https://ffm.to/foreverlife",
-  "image": "02.-forever-life.jpg"
+  "image": "02.-forever-life.jpg",
+  "releaseImages": [
+    {
+      "releaseImage": "02.-forever-life.jpg"
+    }
+  ]
 }
