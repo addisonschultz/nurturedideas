@@ -25,12 +25,14 @@
   grid-template-rows: 600px 350px auto;
   grid-template-areas:
     "hero-video hero-video"
-    "social-links newsletter-form"
-    "bio bio";
+    "newsletter-form newsletter-form"
+    "bio bio"
+    "social-links social-links";
 }
 
 #social-links {
   grid-area: social-links;
+  margin-bottom: 30px;
 }
 
 #newsletter-form {
@@ -41,8 +43,12 @@
 
 #bio {
   grid-area: bio;
-  padding: 100px 50px;
+  padding: 70px 50px;
   text-align: left;
+}
+
+#bio p {
+  margin-bottom: 0px;
 }
 
 /* 
