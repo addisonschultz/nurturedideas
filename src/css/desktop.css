@@ -207,24 +207,41 @@
     "release-tracks release-tracks";
 }
 
+#release-carousel-container {
+  position: relative;
+}
+
+#release-carousel-controls {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  bottom: 0px;
+}
+
+#release-carousel-back {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#release-carousel-forward {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 #release-template-details {
   grid-area: release-details;
   background-color: #0d5c3e;
   text-align: left;
   display: grid;
   grid-template-rows: 60% auto;
-}
-
-#release-template-pre-order {
-  height: 40px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e1efe2;
-  font-family: Georgia;
-  font-weight: 600;
-  color: #0d5c3e;
 }
 
 #release-name {
@@ -251,6 +268,15 @@
   font-weight: 400;
   color: #ededed;
   padding: 0px 30px;
+}
+
+#release-template-order-buttons {
+  height: 50px;
+  width: 100%;
+  padding: 0px 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 #release-description {

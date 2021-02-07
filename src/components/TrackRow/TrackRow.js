@@ -6,8 +6,6 @@ import "./track-row.css"
 const TrackRow = ({ track, index, ...props }) => {
   const trackNumber = index + 1
 
-  console.log(props)
-
   return (
     <motion.div
       id={"track-row-container"}
