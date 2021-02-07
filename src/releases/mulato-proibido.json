@@ -3,5 +3,10 @@
   "artistName": "Marcioz",
   "releaseName": "Mulato Proibido",
   "link": "https://smarturl.it/mulatoproibido",
-  "image": "mulato-proibido__new-coverart.png"
+  "image": "mulato-proibido__new-coverart.png",
+  "releaseImages": [
+    {
+      "releaseImage": "mulato-proibido__new-coverart.png"
+    }
+  ]
 }
