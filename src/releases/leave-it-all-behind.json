@@ -3,5 +3,10 @@
   "artistName": "Erkaï",
   "releaseName": "Leave It All Behind",
   "link": "https://ffm.to/leaveitallbehind",
-  "image": "04.-leave-it-all-behind.jpg"
+  "image": "04.-leave-it-all-behind.jpg",
+  "releaseImages": [
+    {
+      "releaseImage": "04.-leave-it-all-behind.jpg"
+    }
+  ]
 }
