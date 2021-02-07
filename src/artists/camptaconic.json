@@ -1,9 +1,9 @@
 {
-"soundcloud": "https://soundcloud.com/camptcnc",
+"youtube": "https://www.youtube.com/",
+  "soundcloud": "https://soundcloud.com/camptcnc",
   "facebook": "",
   "bio": "CAMPTACONIC is the genre-bending creative brainchild of artists Aire Atlantica, Zuli, BlackJeans, TK The Architect, which spawned from a five day trip to upstate New York in January 2019. Although the group members have previously worked together on independent collaborations, the goal of their trips are to write, produce, and engineer an album in seclusion with no strings attached. \n",
   "appleMusic": "https://music.apple.com/us/artist/camptaconic/1471995903",
-  "youtube": "https://www.youtube.com/",
   "releases": [
     {
       "releaseName": "Popcorn",
@@ -16,7 +16,12 @@
           "trackName": "Popcorn"
         }
       ],
-      "releaseDescription": "The first single from VOL. 2, 'Popcorn' is a catchy indie-pop tune that captures the group's unique writing and production, balanced with forward-thinking pop structure.\n"
+      "releaseDescription": "The first single from VOL. 2, 'Popcorn' is a catchy indie-pop tune that captures the group's unique writing and production, balanced with forward-thinking pop structure.\n",
+      "releaseImages": [
+        {
+          "releaseImage": "camptaconic-popcorn-art-updated.jpg"
+        }
+      ]
     },
     {
       "releaseName": "Sweat",
@@ -29,7 +34,12 @@
           "trackDuration": "2:36"
         }
       ],
-      "releaseDescription": "The second single from VOL. 2, 'Sweat' is a catchy, tight-groove record that finds production influence from a 70’s house party dance floor, with an addicting and infectious chorus.\n"
+      "releaseDescription": "The second single from VOL. 2, 'Sweat' is a catchy, tight-groove record that finds production influence from a 70’s house party dance floor, with an addicting and infectious chorus.\n",
+      "releaseImages": [
+        {
+          "releaseImage": "camptaconic-sweat-art-updated.jpg"
+        }
+      ]
     },
     {
       "releaseName": "VOL. 1",
@@ -66,7 +76,12 @@
           "trackDuration": "2:21"
         }
       ],
-      "releaseDescription": ""
+      "releaseDescription": "",
+      "releaseImages": [
+        {
+          "releaseImage": "camptaconic-vol-i-ep-art-10.jpg"
+        }
+      ]
     },
     {
       "releaseName": "Struggle For A Little",
@@ -77,6 +92,11 @@
         {
           "trackName": "Struggle for a Little",
           "trackDuration": "3:05"
+        }
+      ],
+      "releaseImages": [
+        {
+          "releaseImage": "camptaconic-struggle-for-a-little.jpg"
         }
       ]
     },
@@ -89,6 +109,11 @@
         {
           "trackName": "Better for You",
           "trackDuration": "3:37"
+        }
+      ],
+      "releaseImages": [
+        {
+          "releaseImage": "camptaconic-better-for-you-01-3000x3000.jpg"
         }
       ]
     },
@@ -127,7 +152,12 @@
           "trackDuration": "2:46"
         }
       ],
-      "releaseDescription": "VOL. 2 is the sophomore project from CAMPTACONIC and was written, recorded, and produced in just 5-days during writing trip upstate New York. The project pushes the envelope of genre-bending pop music even further than their previous indie release success, VOL. 1, with each song touching on different collective influences. \n"
+      "releaseDescription": "VOL. 2 is the sophomore project from CAMPTACONIC and was written, recorded, and produced in just 5-days during writing trip upstate New York. The project pushes the envelope of genre-bending pop music even further than their previous indie release success, VOL. 1, with each song touching on different collective influences. \n",
+      "releaseImages": [
+        {
+          "releaseImage": "camptaconic-vol2-art-updated.jpg"
+        }
+      ]
     }
   ],
   "artistName": "CAMPTACONIC",
