@@ -73,6 +73,9 @@ export const query = graphql`
           artistName
           releases {
             image
+            releaseImages {
+              releaseImage
+            }
             releaseName
             link
             preOrderLink
@@ -91,6 +94,9 @@ export const query = graphql`
         node {
           artistName
           image
+          releaseImages {
+            releaseImage
+          }
           releaseName
           link
           preOrderLink

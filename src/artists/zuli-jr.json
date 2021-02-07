@@ -33,6 +33,11 @@
       "releaseDate": "14.05.2021",
       "releaseName": "Stop it God.",
       "image": "stop-it-god-album-art-2-.jpg",
+      "releaseImages": [
+        {
+          "releaseImage": "stop-it-god-album-art-2-.jpg"
+        }
+      ],
       "trackListing": [
         {
           "trackName": "Out of The Blue",

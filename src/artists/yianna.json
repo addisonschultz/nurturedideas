@@ -10,6 +10,11 @@
       "releaseDate": "17.07.2020",
       "releaseName": "Class of 1995",
       "image": "class-of-1995-1-.jpeg",
+      "releaseImages": [
+        {
+          "releaseImage": "class-of-1995-1-.jpeg"
+        }
+      ],
       "link": "https://ffm.to/co1995",
       "trackListing": [
         {
@@ -56,6 +61,11 @@
       "releaseDate": "28.04.2020",
       "releaseName": "When I'm Loving You",
       "image": "when-i-m-loving-you.jpg",
+      "releaseImages": [
+        {
+          "releaseImage": "when-i-m-loving-you.jpg"
+        }
+      ],
       "link": "https://ffm.to/yianna_wily",
       "trackListing": [
         {
@@ -76,7 +86,12 @@
           "trackDuration": "3:02"
         }
       ],
-      "image": "yianna_hpts.jpg"
+      "image": "yianna_hpts.jpg",
+      "releaseImages": [
+        {
+          "releaseImage": "yianna_hpts.jpg"
+        }
+      ]
     },
     {
       "releaseDescription": "Drawing influences from alt-rock, pop, R&B and soul, Heavy Waters is completely unrestricted by traditional genre boundaries. There is a raw vulnerability to Yianna's music that is wise beyond her years; she taps into a soulful energy that is often absent from today's mainstream hits. Marked by sultry vocals, laidback R&B stylings, and catchy melodies, the song takes the listener on a uniquely picturesque journey,",
@@ -90,7 +105,12 @@
           "trackDuration": "3:42"
         }
       ],
-      "image": "yianna_hw_artwork.jpg"
+      "image": "yianna_hw_artwork.jpg",
+      "releaseImages": [
+        {
+          "releaseImage": "yianna_hw_artwork.jpg"
+        }
+      ]
     },
     {
       "releaseDescription": "Inspired from personal trials tribulations Yianna delivers raw lyrics in her usual grandioso performance.\n\n“If I Never Left is about someone in my life who was really abusive and manipulative. One day I just stopped answering the phone. I changed my number, blocked their email. I knew if I wanted to better my life and myself, I’d have to get away from them. And I did. I wouldn't change anything. I learned a lot from that experience. It helped me grow as a person. As for advice I would say, don't let people put you down. Sometimes when you have nothing, you let people take advantage of you because you feel like they're your only way out of a bad situation, but the reality is that no one can save you but yourself.”\n",
@@ -104,6 +124,11 @@
         }
       ],
       "image": "100000x100000-999-6-.jpg",
+      "releaseImages": [
+        {
+          "releaseImage": "100000x100000-999-6-.jpg"
+        }
+      ],
       "link": "http://smarturl.it/yianna_iinl"
     }
   ],

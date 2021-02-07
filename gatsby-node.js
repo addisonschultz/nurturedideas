@@ -22,6 +22,9 @@ exports.createPages = async function({ actions, graphql }) {
             youtube
             releases {
               image
+              releaseImages {
+                releaseImage
+              }
               releaseName
               link
               preOrderLink
@@ -40,6 +43,9 @@ exports.createPages = async function({ actions, graphql }) {
           node {
             artistName
             image
+            releaseImages {
+              releaseImage
+            }
             releaseName
             link
             preOrderLink

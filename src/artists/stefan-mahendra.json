@@ -10,6 +10,11 @@
       "releaseDate": "19.01.2021",
       "releaseName": "Alright",
       "image": "alright-final.jpg",
+      "releaseImages": [
+        {
+          "releaseImage": "alright-final.jpg"
+        }
+      ],
       "link": "https://orcd.co/sm-alright",
       "trackListing": [
         {
@@ -28,6 +33,11 @@
       "releaseDate": "17.11.2020",
       "link": "https://orcd.co/lovinyouiseasy",
       "image": "lovin-you-is-easy-packshot.jpg",
+      "releaseImages": [
+        {
+          "releaseImage": "lovin-you-is-easy-packshot.jpg"
+        }
+      ],
       "trackListing": [
         {
           "trackName": "Loving You is Easy",
