@@ -85,6 +85,10 @@
       "release-formats";
   }
 
+  #release-carousel-controls {
+    opacity: 1 !important;
+  }
+
   #release-template-details {
     background-color: #0d5c3e;
     grid-template-rows: auto auto;
