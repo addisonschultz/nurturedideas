@@ -8,9 +8,9 @@ import "./release-card.css"
 
 import * as utils from "../../utils"
 
-const ReleaseCard = ({ release, variants }) => {
-  const image = release.sharpImage.node
-  console.log(release)
+const ReleaseCard = ({ release, variants, artist }) => {
+  const sharpImage =
+    release.sharpImage !== undefined ? release.sharpImage.node : null
 
   const now = moment()
   const releaseDate = moment(release.releaseDate, "DD.MM.YYYY")
@@ -31,20 +31,26 @@ const ReleaseCard = ({ release, variants }) => {
           </motion.div>
         ) : null}
         <motion.div layoutId={layoutId}>
-          <Img
-            fluid={image.childImageSharp.fluid}
-            style={{
-              width: "100%",
-              height: "auto",
-              borderRadius: "5px 5px 0px 0px",
-            }}
-          />
+          {sharpImage !== null ? (
+            <Img
+              fluid={sharpImage.childImageSharp.fluid}
+              style={{
+                width: "100%",
+                height: "auto",
+                borderRadius: "5px 5px 0px 0px",
+              }}
+            />
+          ) : (
+            <motion.img
+              src={`../${release.releaseImages[0].releaseImage}`}
+            ></motion.img>
+          )}
         </motion.div>
         <motion.p className={"release-card-release-name"}>
           {release.releaseName}
         </motion.p>
         <motion.p className={"release-card-artist-name"}>
-          {release.artistName}
+          {release.artistName ? release.releaseName : artist.artistName}
         </motion.p>
       </motion.div>
     </Link>

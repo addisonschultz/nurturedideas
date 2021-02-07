@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { wrap } from "popmotion"
-import Img from "gatsby-image"
 import moment from "moment"
 
 import SEO from "../components/layout/seo"

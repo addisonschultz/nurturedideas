@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
+import ReleaseCard from "../components/ReleaseCard/ReleaseCard"
 import Footer from "../components/Footer/Footer"
 
 import externalLink1 from "../svg/external-link-white1.svg"
@@ -14,6 +15,8 @@ import spotifyWhite1 from "../svg/spotify-white1.svg"
 import twitterWhite1 from "../svg/twitter-white1.svg"
 import appleWhite1 from "../svg/apple-white1.svg"
 import tiktokWhite1 from "../svg/tiktok-white1.svg"
+
+import { cardVariants } from "../variants/variants"
 
 import * as utils from "../utils"
 
@@ -156,6 +159,20 @@ export default ({ pageContext, data }) => {
               </a>
             )}
           </motion.div>
+        </motion.div>
+        <motion.div id={"artist-template-albums"}>
+          {artist.releases.length > 0
+            ? artist.releases.map((release, index) => {
+                return (
+                  <ReleaseCard
+                    release={release}
+                    artist={artist}
+                    key={index}
+                    variants={cardVariants}
+                  />
+                )
+              })
+            : null}
         </motion.div>
       </motion.div>
 

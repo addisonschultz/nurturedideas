@@ -32,7 +32,6 @@ const ReleasesPage = ({ data }) => {
     ]
   }, [])
 
-  console.log(allReleasesAndImages)
   return (
     <>
       <SEO title="Releases" />
