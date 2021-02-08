@@ -13,3 +13,13 @@
   font-weight: 600;
   color: #0d5c3e;
 }
+
+@media only screen and (max-width: 900px) {
+  #button-container {
+    height: 40px;
+    width: auto;
+    margin: 10px 0px;
+    padding: 10px;
+    display: flex;
+  }
+}
