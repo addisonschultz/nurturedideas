@@ -338,7 +338,7 @@
 
 #release-template-tracks {
   grid-area: release-tracks;
-  height: 100%;
+  height: auto;
   background-color: #fff;
   overflow-y: scroll;
 }
