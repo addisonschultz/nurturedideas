@@ -1,12 +1,17 @@
 import React from "react"
-import Layout from "../components/layout/layout"
+import Navigation from "../components/Navigation/Navigation"
 import SEO from "../components/layout/seo"
 
 const NotFoundPage = () => (
-  <Layout>
+  <>
+    <Navigation />
     <SEO title="404: Not found" />
-    <h1>This page unfortunately does not exist.</h1>
-  </Layout>
+    <div style={{ height: "100vh", display: "flex" }}>
+      <h1 style={{ margin: "auto auto" }} className={"header"}>
+        We don't have a page for this yet!
+      </h1>
+    </div>
+  </>
 )
 
 export default NotFoundPage

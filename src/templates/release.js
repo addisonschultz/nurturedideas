@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { wrap } from "popmotion"
 import moment from "moment"
+import { Link } from "gatsby"
 
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
@@ -179,7 +180,14 @@ export default ({ pageContext }) => {
         >
           <motion.div>
             <motion.h2 id={"release-name"}>{release.releaseName}</motion.h2>
-            <motion.h5 id={"release-artist"}>{release.artistName}</motion.h5>
+            <Link to={`/${utils.getUrlSlug(release.artistName)}`}>
+              <motion.h5
+                id={"release-artist"}
+                whileHover={{ color: "#e1efe2" }}
+              >
+                {release.artistName}
+              </motion.h5>
+            </Link>
             <motion.h5 id={"release-date"}>
               Release Date: {releaseDateFormatted}
             </motion.h5>
