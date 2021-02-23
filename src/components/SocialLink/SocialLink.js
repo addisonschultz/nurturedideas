@@ -1,60 +1,18 @@
 import React from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { theme } from "../../theme/theme"
+import { motion } from "framer-motion"
 
 import "./social-link.css"
 
-const SocialLink = ({
-  iconSrc,
-  text,
-  href,
-  background,
-  hoverBackground = theme.colors.white0,
-}) => {
-  const variants = {
-    default: {
-      background: background,
-    },
-    hover: {
-      background: hoverBackground,
-    },
-  }
-
-  const textVariants = {
-    default: { opacity: 0 },
-    hover: { opacity: 1 },
-  }
-
+const SocialLink = ({ iconSrc, href }) => {
   return (
     <>
-      <a href={href} target={"_blank"} rel="noopener noreferrer">
-        <motion.div
-          id={"social-link"}
-          variants={variants}
-          initial={"default"}
-          whileHover={"hover"}
-        >
-          <div style={{ margin: "auto auto" }}>
-            <motion.img
-              src={iconSrc}
-              style={{ height: 20, marginBottom: 10 }}
-            ></motion.img>
-            <AnimatePresence>
-              <motion.h5
-                variants={textVariants}
-                initial={"default"}
-                style={{
-                  color: theme.colors.black0,
-                  lineHeight: 1,
-                  fontFamily: theme.font.sharpeBlack,
-                  marginBottom: 0,
-                }}
-              >
-                {text}
-              </motion.h5>
-            </AnimatePresence>
-          </div>
-        </motion.div>
+      <a
+        href={href}
+        target={"_blank"}
+        rel="noopener noreferrer"
+        id={"social-link"}
+      >
+        <motion.img src={iconSrc}></motion.img>
       </a>
     </>
   )

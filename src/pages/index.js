@@ -14,6 +14,7 @@ import { theme } from "../theme/theme"
 import spotifyBlack0 from "../svg/spotify-black0.svg"
 import instagramBlack0 from "../svg/instagram-black0.svg"
 import twitterBlack0 from "../svg/twitter-black0.svg"
+import bandcampBlack0 from "../svg/bandcamp-black0.svg"
 
 const IndexPage = ({ data }) => {
   const metadata = data.allMetadataJson.edges[0].node
@@ -25,28 +26,6 @@ const IndexPage = ({ data }) => {
       <motion.div id={"index-container"}>
         <HeroCarousel videos={metadata.heroYoutubeVideos} />
 
-        <motion.div id={"social-links"}>
-          <SocialLink
-            iconSrc={spotifyBlack0}
-            background={theme.colors.white1}
-            text={"In Rotation"}
-            href={
-              "https://open.spotify.com/playlist/6IVeBCYTq0CXH3BsmtxaUq?si=_vAluEcbTmq6GLcAP1oIhw"
-            }
-          />
-          <SocialLink
-            iconSrc={instagramBlack0}
-            background={theme.colors.white2}
-            text={"@nurturedideas"}
-            href={"https://www.instagram.com/nurturedideas/"}
-          />
-          <SocialLink
-            iconSrc={twitterBlack0}
-            background={theme.colors.white3}
-            text={"@nurturedideas"}
-            href={"https://twitter.com/NurturedIdeas"}
-          />
-        </motion.div>
         <motion.div id={"newsletter-form"}>
           <motion.h3
             style={{
@@ -70,6 +49,26 @@ const IndexPage = ({ data }) => {
             Nurtured Ideas
           </motion.h3>
           <motion.p style={{ whiteSpace: "pre-line" }}>{metadata.bio}</motion.p>
+        </motion.div>
+        <motion.div id={"social-links"}>
+          <SocialLink
+            iconSrc={spotifyBlack0}
+            href={
+              "https://open.spotify.com/playlist/6IVeBCYTq0CXH3BsmtxaUq?si=_vAluEcbTmq6GLcAP1oIhw"
+            }
+          />
+          <SocialLink
+            iconSrc={instagramBlack0}
+            href={"https://www.instagram.com/nurturedideas/"}
+          />
+          <SocialLink
+            iconSrc={twitterBlack0}
+            href={"https://twitter.com/NurturedIdeas"}
+          />
+          <SocialLink
+            iconSrc={bandcampBlack0}
+            href={"https://nurturedideas.bandcamp.com/"}
+          />
         </motion.div>
       </motion.div>
       <Footer />

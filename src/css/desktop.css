@@ -30,11 +30,6 @@
     "social-links social-links";
 }
 
-#social-links {
-  grid-area: social-links;
-  margin-bottom: 30px;
-}
-
 #newsletter-form {
   background-color: #0d5c3e;
   grid-area: newsletter-form;
@@ -43,12 +38,19 @@
 
 #bio {
   grid-area: bio;
-  padding: 70px 50px;
+  padding: 70px 50px 30px 50px;
   text-align: left;
 }
 
 #bio p {
   margin-bottom: 0px;
+}
+
+#social-links {
+  grid-area: social-links;
+  display: flex;
+  padding-left: 50px;
+  margin-bottom: 50px;
 }
 
 /* 
