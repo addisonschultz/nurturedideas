@@ -50,7 +50,7 @@ const ReleaseCard = ({ release, variants, artist }) => {
           {release.releaseName}
         </motion.p>
         <motion.p className={"release-card-artist-name"}>
-          {release.artistName ? release.releaseName : artist.artistName}
+          {release.artistName ? release.artistName : artist.artistName}
         </motion.p>
       </motion.div>
     </Link>

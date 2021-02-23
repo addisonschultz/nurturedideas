@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import Img from "gatsby-image"
+import { graphql } from "gatsby"
 
 import SEO from "../components/layout/seo"
 import Navigation from "../components/Navigation/Navigation"
