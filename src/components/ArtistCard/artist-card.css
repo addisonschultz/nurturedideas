@@ -11,25 +11,5 @@
   color: #0d5c3e;
   font-size: 18px;
   text-align: left;
-  margin: 10px 0px 0px 12px;
-}
-
-.music-link-container {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  margin: 0px 0px 5px 5px;
-}
-
-.icon-container {
-  height: 35px;
-  width: 35px;
-  margin: 0px;
-  display: flex;
-}
-
-.icon {
-  height: 20px;
-  width: 20px;
-  margin: auto auto;
+  margin: 10px 0px 40px 12px;
 }
