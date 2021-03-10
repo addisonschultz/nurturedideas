@@ -347,6 +347,30 @@
 
 /* 
 
+  Interview
+
+*/
+
+#interview-template-container {
+  margin: 50px 0px;
+}
+
+#interview-date {
+  font-size: 18px;
+  font-family: Georgia;
+  font-weight: 400;
+  padding: 0px 30px;
+  margin-top: 20px;
+}
+
+.interview-content h1 {
+  font-family: "Sharpe Black";
+  font-size: 32px;
+  margin: 0;
+}
+
+/* 
+
   Terms Page CSS
 
 */

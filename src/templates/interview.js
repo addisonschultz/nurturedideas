@@ -18,14 +18,12 @@ export default ({ pageContext, data }) => {
       <SEO title={frontmatter.interviewName} />
       <Navigation />
       <motion.div id={"interview-template-container"}>
-        <div className="blog-post">
-          <h1>{frontmatter.interviewName}</h1>
-          <h2>{frontmatter.interviewReleaseDate}</h2>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
+        <h1 className={"header"}>{frontmatter.interviewName}</h1>
+        <h4 id={"interview-date"}>{frontmatter.interviewReleaseDate}</h4>
+        <div
+          className="interview-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </motion.div>
       <Footer />
     </>
