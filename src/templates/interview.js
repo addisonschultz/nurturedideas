@@ -11,6 +11,8 @@ export default ({ pageContext, data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
+  console.log(markdownRemark)
+
   return (
     <>
       <SEO title={frontmatter.interviewName} />

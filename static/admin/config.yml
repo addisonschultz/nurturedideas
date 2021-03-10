@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  # name: github
+  # name: git-gateway
+  name: github
   repo: addisonschultz/nurturedideas
   branch: master
 
@@ -202,7 +202,7 @@ collections:
           format: "DD.MM.YYYY",
           timeFormat: false,
         }
-      - { label: 'Interview Content', name: 'interviewContent', widget: 'markdown' }
+      - { label: 'Interview Content', name: body, widget: 'markdown' }
   # Resources - Articles
   - name: articles
     label: "Articles"
