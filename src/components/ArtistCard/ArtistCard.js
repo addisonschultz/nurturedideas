@@ -14,12 +14,12 @@ const ArtistCard = ({ artist, variants }) => {
   const layoutId = utils.getUrlSlug(artist.node.artistName) + "-card-image"
 
   return (
-    <motion.div
-      id={"artist-card-container"}
-      variants={variants}
-      whileHover={{ backgroundColor: "#E1EFE2" }}
-    >
-      <Link to={`/${utils.getUrlSlug(artistData.artistName)}`}>
+    <Link to={`/${utils.getUrlSlug(artistData.artistName)}`}>
+      <motion.div
+        id={"artist-card-container"}
+        variants={variants}
+        whileHover={{ backgroundColor: "#E1EFE2" }}
+      >
         <motion.div
           id={"image-container"}
           layoutId={layoutId}
@@ -30,11 +30,11 @@ const ArtistCard = ({ artist, variants }) => {
             style={{ height: "200px", maxHeight: "200px" }}
           />
         </motion.div>
-      </Link>
-      <motion.h3 className={"artist-card-artist-name"}>
-        {artistData.artistName}
-      </motion.h3>
-    </motion.div>
+        <motion.h3 className={"artist-card-artist-name"}>
+          {artistData.artistName}
+        </motion.h3>
+      </motion.div>
+    </Link>
   )
 }
 
