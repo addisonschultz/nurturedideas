@@ -1,6 +1,6 @@
 ---
 interviewName: Jacob Moore
-interviewReleaseDate: 11.03.2021
+interviewReleaseDate: 01.07.2020
 ---
 Jacob Moore is the founder and editor-in-chief of the worshiped and culture-shaping music discovery platform Pigeons and Planes. Jacob has witnessed countless artists' exponential rises to popularity since the site was founded in 2008.
 
