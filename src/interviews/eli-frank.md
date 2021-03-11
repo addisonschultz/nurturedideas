@@ -1,6 +1,6 @@
 ---
 interviewName: Eli Frank
-interviewReleaseDate: 11.03.2021
+interviewReleaseDate: 30.10.2019
 ---
 Eli is an A&R at 12 Tone Music Group, an independent record label founded in 2018 by legendary executive Doug Morris. 12 Tone serves as a home to releases from the likes of Anderson .Paak, Joji, Rich Brian, NIKI, 88rising's 'Head In The Clouds' compilations and many more. Eli himself has had a truly impressive career path so far, having worked in various roles at several major music companies and record labels.
 
