@@ -199,7 +199,12 @@ export default ({ pageContext }) => {
                 link={release.link}
               />
               {preOrder && (
-                <Button text={preOrder ? "Pre Order Vinyl" : "Vinyl"} />
+                <Button
+                  text={preOrder ? "Pre Order Vinyl" : "Vinyl"}
+                  preOrder={preOrder}
+                  preOrderLink={release.preOrderLink}
+                  link={release.link}
+                />
               )}
             </motion.div>
             <motion.h5 id={"release-description"}>
