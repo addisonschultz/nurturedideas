@@ -133,12 +133,12 @@ Jen: *That’s a great question as well. Definitely I’d love to. There’s a s
 
 **The raw energy those shows have is insane. We’ve gone to a lot of electronic shows as we started out primarily in that space and it just hails in comparison to a lot of rock shows.**
 
-Jen: Yeah, no. I agree. That’s what I came up with, or I’d love to work with a show that also has more of an industrial kind of goth vibe? Like I love old Wax Trax records, like that kind of ministry stuff. But I guess that could be lumped in with the more 70s kind of rock stuff, I can see that being lumped in an all encompassing vibe of a show. I would love to dig into that type of catalogue.
+Jen: *Yeah, no. I agree. That’s what I came up with, or I’d love to work with a show that also has more of an industrial kind of goth vibe? Like I love old Wax Trax records, like that kind of ministry stuff. But I guess that could be lumped in with the more 70s kind of rock stuff, I can see that being lumped in an all encompassing vibe of a show. I would love to dig into that type of catalogue.*
 
-NI: We would definitely watch a show that had that crossover happening. Feels like it’d be an edge of the seat ride, but a fun one nonetheless.
+**We would definitely watch a show that had that crossover happening. Feels like it’d be an edge of the seat ride, but a fun one nonetheless.**
 
-Jen: Right? It would, it would be really fun. But it’s the same thing, cause the stuff I would listen to, a lot of them have samples in them from movies or whatever so I think that licensing them would probably be a nightmare. Obviously I never tried but stuff like that would be really fun, to work on stuff I grew up on.
+Jen: *Right? It would, it would be really fun. But it’s the same thing, cause the stuff I would listen to, a lot of them have samples in them from movies or whatever so I think that licensing them would probably be a nightmare. Obviously I never tried but stuff like that would be really fun, to work on stuff I grew up on.*
 
-NI: Fingers crossed, hopefully the more you put it into the universe it’ll happen.
+**Fingers crossed, hopefully the more you put it into the universe it’ll happen.**
 
-Jen: But at the same time I’m very lucky with the shows I have. I work with great people and great shows, so just more of that!
+Jen: *But at the same time I’m very lucky with the shows I have. I work with great people and great shows, so just more of that!*
