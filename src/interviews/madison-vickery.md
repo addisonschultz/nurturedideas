@@ -1,6 +1,6 @@
 ---
 interviewName: Madison Vickery
-interviewReleaseDate: 11.03.2021
+interviewReleaseDate: 20.05.2020
 ---
 Madison Vickery is an A&R's at Atlantic Records. We spoke about how she approaches putting sessions together and how the COVID climate has forced songwriters and producers to adapt. Her roster includes the likes of Arlie, Chappell Roan, Electric Guest, MILCK, Wafia, Jake Troth, and Breland, as well as working on teams for Portugal The Man and Miike Snow.
 
