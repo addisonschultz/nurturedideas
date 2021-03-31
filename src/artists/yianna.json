@@ -1,5 +1,6 @@
 {
-"soundcloud": "https://soundcloud.com/yianna-music",
+"youtube": "https://www.youtube.com/",
+  "soundcloud": "https://soundcloud.com/yianna-music",
   "facebook": "https://www.facebook.com/yiannamusic",
   "bio": "Originally from New Jersey, Yianna began singing in high school after entering a talent show on a whim. With no true sense of direction what to do after high school, she initially had planned to enroll in the military but was later heard by local music producers and encouraged to start writing songs. \n\nAfter enrolling in a local community college to major in computer science, Fran dropped out after one semester and moved to New York City to pursue music. After spending time writing for other artists and performing as a backup singer on shows like \"Good Morning America\", she knew she wanted to pursue her own artist career. Knowing nothing or no one in music, she began gigging all over new york - train stations, cafes, bar's - anywhere she could practice performing live.\n",
   "appleMusic": "https://music.apple.com/us/artist/yianna/1441120929",
@@ -130,6 +131,28 @@
         }
       ],
       "link": "http://smarturl.it/yianna_iinl"
+    },
+    {
+      "releaseDescription": "",
+      "preOrderLink": "",
+      "releaseDate": "26.05.2020",
+      "releaseName": "1-800-Superhorny",
+      "link": "https://ffm.to/1-800-superhorny",
+      "trackListing": [
+        {
+          "trackName": "1-800-Superhorny",
+          "trackDuration": "3:25"
+        },
+        {
+          "trackName": "When I'm Loving You",
+          "trackDuration": "3:46"
+        }
+      ],
+      "releaseImages": [
+        {
+          "releaseImage": "packshot-1-800-superhorny-1-.jpg"
+        }
+      ]
     }
   ],
   "artistName": "Yianna",
@@ -138,6 +161,5 @@
   "tiktok": "https://www.tiktok.com/@yiannamusic",
   "spotify": "https://open.spotify.com/artist/051lz9ZMNShdpFP1uQtd9m",
   "website": "https://www.yiannamusic.com/",
-  "image": "yianna_brooklyn_-3.jpeg",
-  "youtube": "https://www.youtube.com/"
+  "image": "yianna_brooklyn_-3.jpeg"
 }
