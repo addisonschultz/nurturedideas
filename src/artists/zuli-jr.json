@@ -114,6 +114,32 @@
           "releaseImage": "zuli-jr.-blue-sky.jpg"
         }
       ]
+    },
+    {
+      "releaseDescription": "Zuli Jr. is back with Two as the third single from his sophomore album Stop it God. out mark 14th. The indie r&b/pop singer-songwriter documents a broken heart and soul, as Zuli proclaims, “pause the world and never resume, hold me whole I’ve broken into two”.",
+      "preOrderLink": "",
+      "releaseDate": "06.04.2021",
+      "releaseName": "Two",
+      "releaseImages": [
+        {
+          "releaseImage": "two-low"
+        }
+      ],
+      "link": "https://orcd.co/z-two",
+      "trackListing": [
+        {
+          "trackName": "Two",
+          "trackDuration": "3:02"
+        },
+        {
+          "trackName": "Blue Sky",
+          "trackDuration": "4:01"
+        },
+        {
+          "trackDuration": "3:26",
+          "trackName": "How to Feel"
+        }
+      ]
     }
   ],
   "artistName": "Zuli Jr.",
