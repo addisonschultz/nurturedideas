@@ -18,6 +18,8 @@ const ReleaseCard = ({ release, variants, artist }) => {
 
   const layoutId = utils.getUrlSlug(release.releaseName) + "-card-image"
 
+  console.log(sharpImage)
+
   return (
     <Link to={`/${utils.getUrlSlug(release.releaseName)}`}>
       <motion.div
@@ -31,7 +33,7 @@ const ReleaseCard = ({ release, variants, artist }) => {
           </motion.div>
         ) : null}
         <motion.div layoutId={layoutId}>
-          {sharpImage !== null ? (
+          {sharpImage !== null && sharpImage.childImageSharp !== null ? (
             <Img
               fluid={sharpImage.childImageSharp.fluid}
               style={{
