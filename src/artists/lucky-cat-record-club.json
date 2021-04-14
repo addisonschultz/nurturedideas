@@ -48,6 +48,28 @@
           "trackDuration": "1:15"
         }
       ]
+    },
+    {
+      "releaseDescription": "",
+      "preOrderLink": "",
+      "releaseDate": "14.04.2021",
+      "releaseName": "Sketch 3",
+      "releaseImages": [
+        {
+          "releaseImage": "lcrc-sk-003-2-.jpg"
+        }
+      ],
+      "link": "https://orcd.co/lcrc-003",
+      "trackListing": [
+        {
+          "trackName": "Part 1 (Addicted To Growth)",
+          "trackDuration": "1:24"
+        },
+        {
+          "trackName": "Part 2 (Tread Carefully)",
+          "trackDuration": "1:27"
+        }
+      ]
     }
   ],
   "artistName": "Lucky Cat Record Club",
