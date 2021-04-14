@@ -54,11 +54,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          // content: site.siteMetadata.image,
+          content:
+            "https://www.nurtured-ideas.com/static/logo-55159456062375e3cd7a2ab2c342a56f.png",
         },
         {
           property: `image`,
-          content: site.siteMetadata.image,
+          // content: site.siteMetadata.image,
+          content:
+            "https://www.nurtured-ideas.com/static/logo-55159456062375e3cd7a2ab2c342a56f.png",
         },
         {
           name: `twitter:card`,
@@ -78,7 +82,9 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          // content: site.siteMetadata.image,
+          content:
+            "https://www.nurtured-ideas.com/static/logo-55159456062375e3cd7a2ab2c342a56f.png",
         },
       ].concat(meta)}
     />
