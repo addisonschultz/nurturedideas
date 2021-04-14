@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Nurtured Ideas`,
-    description: `Nurtured artists.`,
+    description: `Nurturing artists with nurtured ideas.`,
     author: `Addison Schultz`,
+    image: "/images/nurtured-ideas.png",
+    url: "https://nurtured-ideas.com",
+    twitterUsername: "@nurturedideas",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
