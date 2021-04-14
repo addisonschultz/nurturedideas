@@ -2,7 +2,7 @@
 interviewName: Grant Rindner
 interviewReleaseDate: 14.04.2021
 ---
-We were very grateful to speak with Grant Rinder, a regular contributor at Pigeons & Planes and one of our favorite freelance writers at the intersection of music and culture. Grant's work has been featured on the likes of Dazed, GQ, i-D, Rolling Stone, NYLON, and includes a variety of pieces across news coverage, profiles, and essays primarily covering music and fashion. Having written in-depth pieces about the likes of Juice WRLD, Beyoncé, Joji, and many more - Grant's perspective and observations on what it takes to make a lasting cultural impact are well worth the read.
+We were very grateful to speak with Grant Rindner, a regular contributor at Pigeons & Planes and one of our favorite freelance writers at the intersection of music and culture. Grant's work has been featured on the likes of Dazed, GQ, i-D, Rolling Stone, NYLON, and includes a variety of pieces across news coverage, profiles, and essays primarily covering music and fashion. Having written in-depth pieces about the likes of Juice WRLD, Beyoncé, Joji, and many more - Grant's perspective and observations on what it takes to make a lasting cultural impact are well worth the read.
 
 ![](heyguysitsme.jpg)
 
