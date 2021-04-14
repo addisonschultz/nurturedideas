@@ -2,19 +2,15 @@
 interviewName: Grant Rinder
 interviewReleaseDate: 14.04.2021
 ---
-We were very grateful to speak with Grant Rinder, a regular contributor at Pigeons & Planes, assistant editor for Airbnb Magazine, and one of our favorite freelance writers at the intersection of music and culture. Grant's work has been featured on the likes of Dazed, GQ, i-D, Rolling Stone, NYLON, and includes a variety of pieces across news coverage, profiles, and essays primarily covering music and fashion. Having written in-depth pieces about the likes of Juice WRLD, Beyoncé, Joji, and many more - Grant's perspective and observations on what it takes to make a lasting cultural impact are well worth the read.
+We were very grateful to speak with Grant Rinder, a regular contributor at Pigeons & Planes and one of our favorite freelance writers at the intersection of music and culture. Grant's work has been featured on the likes of Dazed, GQ, i-D, Rolling Stone, NYLON, and includes a variety of pieces across news coverage, profiles, and essays primarily covering music and fashion. Having written in-depth pieces about the likes of Juice WRLD, Beyoncé, Joji, and many more - Grant's perspective and observations on what it takes to make a lasting cultural impact are well worth the read.
 
 ![](heyguysitsme.jpg)
-
-
 
 **There's no denying the importance of timing in an artist telling their story and finding that sought-after sweet spot between having an active and engaged audience that yearns for more and the traction to grow and scale. Do you think this stands to be true? Are there any recent examples that come to mind?**
 
 *You definitely can’t force timing and do need some luck, but I think that having a long-term vision for your career can be really valuable. One example that I cite a lot is Guapdad 4000. He spent the last few years not just getting better as a rapper and songwriter, but also building a fanbase that cared about him as a public figure and entertainer. Now that he’s done that and has parlayed some of his high-profile friendships into a bigger audience, he released 1176, which is his most autobiographical record that really tells his story. Had he put out this record back in 2017, I’m not sure it would be reaching people at this level.*
 
 *That said, I don’t think brand new artists need to obsess over lining everything up perfectly. I think the key is to be able to react quickly when something happens. For example, Jensen McRae [went viral with a tweet related to Phoebe Bridgers](https://www.rollingstone.com/music/music-news/jensen-mcrae-phoebe-bridgers-parody-immune-1120140/), and quickly made it into a (quite good) full song that really shows off her talent.*
-
-
 
 **With traditional media continuing to be challenged by short-form video content and dwindling attention spans, long-form interviews and articles (like yours) continue to shine through the noise. Do you think there’s a genuine pathway where the two forms of digestion coexist?**
 
@@ -23,8 +19,6 @@ We were very grateful to speak with Grant Rinder, a regular contributor at Pigeo
 *I do think that the various mediums of music coverage can all exist together in a healthy and productive way, in large part because I think the people who care about music all have different strengths. I’m more of a writer, others are great at on-air interviews, some people are terrific at aggregation and the research that entails. Sometimes, I think the problem is that the media industry is looking for a cure-all that will never come, so if there’s belief that video is going to be the savior, then all the resources get poured into video, to the detriment of written/audio content.*
 
 *This is probably hacky to say, but balance is key, and that goes for the media that you consume as a fan, too!*
-
-
 
 **You’ve covered stories from artists who have shifted cultures and left an impact that will be felt for the generations to come - when tackling these stories, do you feel a sense of pressure since the idea is incepted to the article being published? If so, how do you work through these mental obstacles?**
 
