@@ -54,15 +54,13 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          // content: site.siteMetadata.image,
           content:
-            "https://www.nurtured-ideas.com/static/logo-55159456062375e3cd7a2ab2c342a56f.png",
+            "https://www.nurtured-ideas.com/static/nurtured-ideas-3608bcaf62c46fa1427cebe1256fbd0a.png",
         },
         {
           property: `image`,
-          // content: site.siteMetadata.image,
           content:
-            "https://www.nurtured-ideas.com/static/logo-55159456062375e3cd7a2ab2c342a56f.png",
+            "https://www.nurtured-ideas.com/static/nurtured-ideas-3608bcaf62c46fa1427cebe1256fbd0a.png",
         },
         {
           name: `twitter:card`,
@@ -82,9 +80,8 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          // content: site.siteMetadata.image,
           content:
-            "https://www.nurtured-ideas.com/static/logo-55159456062375e3cd7a2ab2c342a56f.png",
+            "https://www.nurtured-ideas.com/static/nurtured-ideas-3608bcaf62c46fa1427cebe1256fbd0a.png",
         },
       ].concat(meta)}
     />
