@@ -75,7 +75,8 @@ const Navigation = () => {
         onClick={() => setModalOpen(false)}
       >
         <motion.div id={"modal-content"}>
-          <h2>Thanks for stopping by!</h2>
+          <h2 className={"header"}>Thanks for stopping by!</h2>
+          <h2 className={"header"}>- Alistair & Jorge</h2>
         </motion.div>
       </motion.div>
     </motion.div>
