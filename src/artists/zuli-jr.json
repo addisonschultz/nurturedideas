@@ -140,6 +140,36 @@
           "trackName": "How to Feel"
         }
       ]
+    },
+    {
+      "releaseDescription": "Her Manner is an ode to romanticizing addiction. Learning to break the cycle and address issues rather than to perpetually seek out pleasure. The final preview ahead of Zuli Jr.’s new album Stop it God.\n",
+      "preOrderLink": "",
+      "releaseDate": "04.05.2021",
+      "releaseName": "Her Manner",
+      "releaseImages": [
+        {
+          "releaseImage": "nurt031-single-art_low.jpg"
+        }
+      ],
+      "link": "https://orcd.co/hermanner",
+      "trackListing": [
+        {
+          "trackName": "Her Manner",
+          "trackDuration": "3:48"
+        },
+        {
+          "trackName": "Two",
+          "trackDuration": "3:02"
+        },
+        {
+          "trackName": "Blue Sky",
+          "trackDuration": "4:01"
+        },
+        {
+          "trackName": "How to Feel",
+          "trackDuration": "3:26"
+        }
+      ]
     }
   ],
   "artistName": "Zuli Jr.",
