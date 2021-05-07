@@ -26,10 +26,7 @@ const InterviewsSection = ({ interviews }) => {
           .sort((a, b) => {
             return (
               moment(b.node.frontmatter.interviewReleaseDate, "DD.MM.YYYY") -
-              moment(
-                a.node.frontmatter.interviewReleaseDatereleaseDate,
-                "DD.MM.YYYY"
-              )
+              moment(a.node.frontmatter.interviewReleaseDate, "DD.MM.YYYY")
             )
           })
           .map((interview, index) => {
