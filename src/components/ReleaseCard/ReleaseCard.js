@@ -18,8 +18,6 @@ const ReleaseCard = ({ release, variants, artist }) => {
 
   const layoutId = utils.getUrlSlug(release.releaseName) + "-card-image"
 
-  console.log(sharpImage)
-
   return (
     <Link to={`/${utils.getUrlSlug(release.releaseName)}`}>
       <motion.div
