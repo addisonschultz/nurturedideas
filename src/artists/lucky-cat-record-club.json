@@ -35,7 +35,7 @@
       "releaseDescription": "",
       "preOrderLink": "",
       "releaseDate": "17.03.2021",
-      "releaseName": "Math",
+      "releaseName": "Math w/ Zuli Jr.",
       "releaseImages": [
         {
           "releaseImage": "lcrc-sk-002.jpg"
@@ -53,7 +53,7 @@
       "releaseDescription": "",
       "preOrderLink": "",
       "releaseDate": "14.04.2021",
-      "releaseName": "Addicted To Growth / Tread Carefully",
+      "releaseName": "Addicted To Growth / Tread Carefully w/ Montana Janel",
       "releaseImages": [
         {
           "releaseImage": "lcrc-sk-003-2-.jpg"
@@ -75,7 +75,7 @@
       "releaseDescription": "",
       "preOrderLink": "",
       "releaseDate": "19.05.2021",
-      "releaseName": "Nervous",
+      "releaseName": "Nervous w/ Ernest Brockenberry",
       "link": "https://orcd.co/sketch4",
       "trackListing": [
         {
@@ -86,6 +86,24 @@
       "releaseImages": [
         {
           "releaseImage": "lcrc-sk-004.jpg"
+        }
+      ]
+    },
+    {
+      "releaseDescription": "",
+      "preOrderLink": "",
+      "releaseDate": "15.09.2021",
+      "releaseName": "Little Flame w/ Lily Hain",
+      "link": "https://orcd.co/sketch5",
+      "trackListing": [
+        {
+          "trackName": "Little Flame",
+          "trackDuration": "1:10"
+        }
+      ],
+      "releaseImages": [
+        {
+          "releaseImage": "lcrc-sk-005-1-.jpg"
         }
       ]
     }
