@@ -19,7 +19,7 @@
     "gatsby-transformer-json": "^2.3.1",
     "gatsby-transformer-remark": "^2.14.0",
     "gatsby-transformer-sharp": "^2.3.19",
-    "moment": "^2.25.3",
+    "moment": "^2.29.2",
     "netlify-cms-app": "^2.12.7",
     "popmotion": "^9.1.0",
     "prop-types": "^15.7.2",
