@@ -33,9 +33,6 @@ const Navigation = () => {
         <motion.img
           src={logo}
           id={"navigation-logo"}
-          // whileHover={{ rotate: -7, scale: 1.07 }}
-          // transition={{ duration: 0.4 }}
-          // onClick={handleLogoClick}
         />
         <Link to={"/"}>
           <motion.h3 id={"navigation-header"}>Nurtured Ideas</motion.h3>
