@@ -38,9 +38,8 @@ const Footer = () => {
           }}
         >
           <a href="mailto:alistair@nurtured-ideas.com">
-            alistair@nurtured-ideas.com <span>|</span>
-          </a>{" "}
-          <a href="mailto:jorge@nurtured-ideas.com">jorge@nurtured-ideas.com</a>
+            alistair@nurtured-ideas.com
+          </a>
         </motion.h3>
       </motion.div>
     </motion.div>
